@@ -19,7 +19,7 @@ lutRaisen = np.array([int(102+0.6*i) for i in range(256)]).astype("uint8")
 lutSRaisen = np.dstack((lutEqual, lutRaisen, lutEqual))  # Saturation raisen
 # 2. 掩膜阈值定义
 lower_weight = np.array([0, 80, 17])
-upper_weight = np.array([179, 160, 119])
+upper_weight = np.array([179, 141, 80])
 # 3. 结构元素定义
 kernel = np.ones((7, 7), np.uint8)
 # 4. Serial Port Definition
@@ -65,24 +65,21 @@ while cap.isOpened():
         """
         weight_img = cv2.GaussianBlur(weight_img, (3, 3), 0)
         weight_img = cv2.medianBlur(weight_img, 5)
-        cv2.imshow("temp", weight_img)
         """
             4. 二值化
         """
         weight_gray = cv2.cvtColor(weight_img, cv2.COLOR_BGR2GRAY)
-        # weight_gray = cv2.GaussianBlur(weight_gray, (3, 3), 0)
-        # cv2.imshow('result',purple_gray)
-        # weight_thre = cv2.adaptiveThreshold(weight_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,5,-10)
+        weight_gray = cv2.GaussianBlur(weight_gray, (3, 3), 0)
+        weight_thre = cv2.adaptiveThreshold(weight_gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 5, -10)
         res, weight_thre = cv2.threshold(
             weight_gray, 0, 255, cv2.THRESH_BINARY)
-        # cv2.imshow('result', purple_thre)
         # cv2.imshow('result', weight_thre)
         weight_thre = cv2.morphologyEx(weight_thre, cv2.MORPH_OPEN, kernel)
         weight_thre = cv2.morphologyEx(weight_thre, cv2.MORPH_CLOSE, kernel)
         cv2.imshow('result_thre', weight_thre)
-        """
-        #         5. 球的检测
-        #     """
+        # """
+        # #         5. 球的检测
+        # #     """
         #     # 先进行霍夫圆变换
         #     weight_circles = cv2.HoughCircles(weight_thre, cv2.HOUGH_GRADIENT_ALT,
         #                                       1.5, 20, param1=30, param2=0.50, minRadius=10, maxRadius=200)

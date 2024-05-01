@@ -43,9 +43,6 @@ while cap.isOpened():
 
         cv2.imshow('hsv', hsv)
         blendSRaisen = cv2.LUT(hsv, lutSRaisen)             # 饱和度增大
-        # img_enhance_saturation = cv2.cvtColor(blendSRaisen, cv2.COLOR_HSV2RGB)
-        # cv2.imshow('img_enhance_saturation',img_enhance_saturation)
-
         # 2. 掩膜生成
         h_min = cv2.getTrackbarPos("Hue Min", "TrackBars")
         h_max = cv2.getTrackbarPos("Hue Max", "TrackBars")
