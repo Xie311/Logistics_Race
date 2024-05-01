@@ -15,19 +15,18 @@ import struct
 lutEqual = np.array([i for i in range(256)]).astype("uint8")
 lutRaisen = np.array([int(102+0.6*i) for i in range(256)]).astype("uint8")
 # 调节饱和度
+# 一个三通道的查找表，其中蓝色通道和红色通道采用了 lutEqual，而绿色通道采用了 lutRaisen。这样就实现了对图像的饱和度进行调节，同时保持了图像的亮度和色调。
 lutSRaisen = np.dstack((lutEqual, lutRaisen, lutEqual))  # Saturation raisen
 # 2. 掩膜阈值定义
-lower_green = np.array([30, 156, 58])
-upper_green = np.array([66, 223, 232])
-lower_red = np.array([117, 143, 0])
-upper_red = np.array([133, 255, 255])
+lower_weight = np.array([104, 247, 173])
+upper_weight = np.array([129, 255, 255])
 # 3. 结构元素定义
 kernel = np.ones((7, 7), np.uint8)
 # 4. Serial Port Definition
 # serial_port = serial.Serial("/dev/ttyACM0", 115200, timeout=0.5)
 # serial_port_state = serial_port.is_open
 # 5. Capture Definition
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 cap.set(10, -2)
 # 6. Weight Definition
 weight_x = 0.0
@@ -47,7 +46,7 @@ while cap.isOpened():
         """
             图像处理段
         """
-        color_image = cv2.flip(color_image, 0)
+        # color_image = cv2.flip(color_image, 0)  # 将图像水平翻转
         """
             1. 饱和度增强
         """
@@ -116,7 +115,7 @@ while cap.isOpened():
                         color_image, (cir_[0], cir_[1]), cir_[2], (0, 255, 255), 2)
                     cv2.circle(color_image, (cir_[0], cir_[
                         1]), 2, (255, 255, 0), 2)
-                
+
             else:
                 # 提取轮廓
                 contours_weight, hierarchy_weight = cv2.findContours(
@@ -145,13 +144,13 @@ while cap.isOpened():
                         weight_r = radius_weight
                         cv2.circle(color_image, center_weight,
                                    radius_weight, (0, 0, 255), 3)
-                
+
         cv2.imshow('result', color_image)
         print(weight_x, weight_y, weight_r)
         weight_data = [weight_x, weight_y, weight_r]
         pack_data = struct.pack('<BfffB', 0xFF, weight_data[0], weight_data[1], weight_data[2], 0xEE)
         # serial_port.write(pack_data)
-        
+
         key = cv2.waitKey(1)
         if key == 27:
             break
