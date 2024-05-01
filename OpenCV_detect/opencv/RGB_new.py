@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # 打开摄像头
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 while True:
     # 读取图像
@@ -11,8 +11,8 @@ while True:
         break
 
     # 假设砝码为特定颜色，设置过滤阈值
-    lower_color = np.array([83,26,95])  # 示例为黑色物体的阈值
-    upper_color = np.array([138,92,218])
+    lower_color = np.array([83, 26, 95])  # 示例为黑色物体的阈值
+    upper_color = np.array([138, 92, 218])
 
     # 创建掩膜以过滤出特定颜色的物体
     mask = cv2.inRange(frame, lower_color, upper_color)

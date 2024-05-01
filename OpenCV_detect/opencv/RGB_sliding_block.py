@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 
+
 def nothing(x):
     pass
 
@@ -17,7 +18,7 @@ cv2.createTrackbar('B Min', 'image', 0, 255, nothing)
 cv2.createTrackbar('B Max', 'image', 255, 255, nothing)
 
 # 打开摄像头
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 while True:
     # 读取图像
