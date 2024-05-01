@@ -1,10 +1,10 @@
 /*
  * @Author: szf
  * @Date: 2023-02-22 12:04:21
- * @LastEditTime: 2024-04-29 23:20:01
+ * @LastEditTime: 2024-05-01 20:00:25
  * @LastEditors: x311 
  * @brief 运动学逆解算及PID计算函数
- * @FilePath: \WTR_Omni_Auto_Chassis\UserCode\Lib\Calculate\wtr_calculate.c
+ * @FilePath: \Chassis_01\UserCode\Lib\Calculate\wtr_calculate.c
  */
 
 #include "wtr_calculate.h"
@@ -84,7 +84,7 @@ void OPS_Servo(CHASSIS_MOVING_STATE *ChassisControl, OPS_t *OPS_Data)
     OPS_Data->opsPID_y.ref = ChassisControl->position.y;
 
     OPS_Data->opsPID_x.fdb = OPS_Data->pos_x;
-    OPS_Data->opsPID_y.fdb = OPS_Data->pos_y;
+    OPS_Data->opsPID_y.fdb = (OPS_Data->pos_y + 216.66); //码盘安装不在底盘中央
 
     P_Calc(&(OPS_Data->opsPID_x));
     P_Calc(&(OPS_Data->opsPID_y));
