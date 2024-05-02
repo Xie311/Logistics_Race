@@ -1,6 +1,5 @@
 '''2024 物流赛 砝码识别检测
     @Time 2024.5.1
-    @Author X311
 '''
 import cv2
 import numpy as np
@@ -84,8 +83,8 @@ while cap.isOpened():
         weight_thre = cv2.morphologyEx(weight_thre, cv2.MORPH_OPEN, kernel)
         # cv2.imshow("result_thre_01", weight_thre)
         """
-        #         6. 砝码检测
-        #     """
+        #   6. 砝码检测
+        """
         # 先进行霍夫圆变换
         weight_circles = cv2.HoughCircles(weight_thre, cv2.HOUGH_GRADIENT_ALT,
                                           1.5, 20, param1=30, param2=0.50, minRadius=10, maxRadius=200)
