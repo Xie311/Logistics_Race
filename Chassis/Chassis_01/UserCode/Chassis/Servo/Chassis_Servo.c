@@ -41,10 +41,10 @@ void Chassis_Servo_Task(void const *argument)
         // 创建一个数组存储四个电机的速度
         double motor_velocity[4] = {0};
 
-        CalculateFourMecanumWheels(motor_velocity,
-                                   ChassisControl_tmp.velocity.x,
-                                   ChassisControl_tmp.velocity.y,
-                                   ChassisControl_tmp.velocity.w);
+        CalculateOmniWheel(motor_velocity,
+                           ChassisControl_tmp.velocity.x,
+                           ChassisControl_tmp.velocity.y,
+                           ChassisControl_tmp.velocity.w);
         // 创建一个数组存储四个电机的状态
         DJI_t hDJI_tmp[4];
 
@@ -105,9 +105,9 @@ void Chassis_Servo_DjiMotorInit()
     DJI_Init();
     for (uint16_t i = 0; i < 4; i++)
     {
-        hDJI[i].speedPID.KP        = 4;//5
-        hDJI[i].speedPID.KI        = 0.2;//0.2
-        hDJI[i].speedPID.KD        = 0.8;//0.8
+        hDJI[i].speedPID.KP        = 2;//5
+        hDJI[i].speedPID.KI        = 0.8;//0.2
+        hDJI[i].speedPID.KD        = 1.0;//0.8
         hDJI[i].speedPID.outputMax = 5000;
 
     }

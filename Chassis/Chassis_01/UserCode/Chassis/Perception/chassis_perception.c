@@ -12,13 +12,13 @@ void Chassis_Perception_Init(void)
     HAL_UART_Receive_IT(&huart8, ops_buffer, sizeof(ops_buffer));
 
     // 码盘PID初始化
-    OPS_Data.opsPID_x.KP = 0.015; 
-    OPS_Data.opsPID_x.KI = 0.001;
+    OPS_Data.opsPID_x.KP = 50; 
+    OPS_Data.opsPID_x.KI = 0;
     OPS_Data.opsPID_x.KD = 0;
     OPS_Data.opsPID_x.outputMax = 8000;
 
-    OPS_Data.opsPID_y.KP = 0.015;
-    OPS_Data.opsPID_y.KI = 0.001;
+    OPS_Data.opsPID_y.KP = 50;
+    OPS_Data.opsPID_y.KI = 0;
     OPS_Data.opsPID_y.KD = 0;
     OPS_Data.opsPID_y.outputMax = 8000;
 }
