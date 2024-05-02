@@ -98,18 +98,8 @@ while cap.isOpened():
                 x = cir[0]
                 y = cir[1]
                 r = cir[2]
-                # # 创建一个与 weight_thre 具有相同形状和数据类型的全零数组，作为空白的掩膜，用于判断凹凸性
-                # weight_circle_mask = np.zeros_like(weight_thre)
-                # # 在掩膜上绘制圆，255表示白色，即要检测的圆区域
-                # cv2.circle(weight_circle_mask, (x, y), r, 255, thickness=-1)
-                # # 计算圆内与二值化图像不为零的像素数
-                # pixel_count = np.sum(np.logical_and(
-                #     weight_circle_mask, weight_thre) > 0)
-                # # 如果圆内大部分像素为白色，即圆内没有黑色，判断为凸
-                # if pixel_count > 0.9 * np.pi * r * r:
-
-                # 判断圆的半径是否大于20
-                if r > 20:
+                # 判断圆的半径是否大于22
+                if r > 22:
                     filter_circle.append((x, y, r))
             if len(filter_circle) > 0:
                 for cir_ in filter_circle:
@@ -144,7 +134,7 @@ while cap.isOpened():
                     else:
                         (x_weight, y_weight), radius_weight = cv2.minEnclosingCircle(
                             contours_weight[max_id_weight])
-                        if radius_weight > 20:
+                        if radius_weight > 22:
                             center_weight = (int(x_weight), int(y_weight))
                             radius_weight = int(radius_weight)
                             weight_x = x_weight
