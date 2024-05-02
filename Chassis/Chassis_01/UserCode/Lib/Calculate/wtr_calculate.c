@@ -1,7 +1,7 @@
 /*
  * @Author: szf
  * @Date: 2023-02-22 12:04:21
- * @LastEditTime: 2024-05-02 20:42:38
+ * @LastEditTime: 2024-05-02 22:17:18
  * @LastEditors: x311 
  * @brief 运动学逆解算及PID计算函数
  * @FilePath: \Chassis_01\UserCode\Lib\Calculate\wtr_calculate.c
@@ -35,8 +35,8 @@ double moter_speed[4];
 
 /*****************全向轮底盘*****************************************/
 // 全向轮底盘参数
-#define wheel_radius  1.0       //全向轮半径
-#define rotate_ratio    0.3615   // 正方形边长 ， 也即 (Width + Length)/2 
+#define wheel_radius  0.127       //全向轮半径
+#define rotate_ratio    0.53325   // 正方形边长 ， 也即 (Width + Length)/2 
 #define wheel_rpm_ratio 2387.324 // 减速比，换算线速度到rpm
 
 
