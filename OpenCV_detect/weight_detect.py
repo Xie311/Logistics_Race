@@ -95,20 +95,19 @@ while cap.isOpened():
             weight_circles = np.uint16(np.around(weight_circles))  # 将检测到的圆的坐标和半径转换为整数类型，并四舍五入（OpenCV要求）
             for cir_ in weight_circles:
                 cir = cir_[0]
-                # 凹凸判断，通过创建掩膜进行逻辑与进行凹凸性判断
                 x = cir[0]
                 y = cir[1]
                 r = cir[2]
-                # 创建一个与 weight_thre 具有相同形状和数据类型的全零数组，作为空白的掩膜，用于判断凹凸性
-                weight_circle_mask = np.zeros_like(weight_thre)
-                # 在掩膜上绘制圆，255表示白色，即要检测的圆区域
-                cv2.circle(weight_circle_mask, (x, y), r, 255, thickness=-1)
-                # 计算圆内与二值化图像不为零的像素数
-                pixel_count = np.sum(np.logical_and(
-                    weight_circle_mask, weight_thre) > 0)
-                # 如果圆内大部分像素为白色，即圆内没有黑色，判断为凸
-                if pixel_count > 0.9 * np.pi * r * r:
-                    filter_circle.append((x, y, r))
+                # # 创建一个与 weight_thre 具有相同形状和数据类型的全零数组，作为空白的掩膜，用于判断凹凸性
+                # weight_circle_mask = np.zeros_like(weight_thre)
+                # # 在掩膜上绘制圆，255表示白色，即要检测的圆区域
+                # cv2.circle(weight_circle_mask, (x, y), r, 255, thickness=-1)
+                # # 计算圆内与二值化图像不为零的像素数
+                # pixel_count = np.sum(np.logical_and(
+                #     weight_circle_mask, weight_thre) > 0)
+                # # 如果圆内大部分像素为白色，即圆内没有黑色，判断为凸
+                # if pixel_count > 0.9 * np.pi * r * r:
+                filter_circle.append((x, y, r))
             if len(filter_circle) > 0:
                 for cir_ in filter_circle:
                     weight_x = cir_[0]
@@ -116,7 +115,7 @@ while cap.isOpened():
                     weight_r = cir_[2]
                     # 在原图上绘制检测到的圆
                     cv2.circle(
-                        color_image, (cir_[0], cir_[1]), cir_[2], (0, 255, 255), 2)
+                        color_image, (cir_[0], cir_[1]), cir_[2], (0, 255, 255), 2)  # 线条颜色为黄色
                     # 在圆心处绘制标记点
                     cv2.circle(color_image, (cir_[0], cir_[1]), 2, (255, 255, 0), 2)  # 颜色为青色
 
