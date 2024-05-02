@@ -1,5 +1,2 @@
-        lower = np.array([h_min, s_min, v_min])
-        upper = np.array([h_max, s_max, v_max])
-        mask = cv2.inRange(blendSRaisen, lower, upper)
-        imgResult = cv2.bitwise_and(frame, frame, mask=mask)
-        cv2.imshow('result', imgResult)
+
+                if not contours_weight:

@@ -4,7 +4,7 @@
 import cv2
 import numpy as np
 import time
-import struct
+# import struct
 
 '''
 # 全局定义段
@@ -88,20 +88,25 @@ while cap.isOpened():
         # 先进行霍夫圆变换
         weight_circles = cv2.HoughCircles(weight_thre, cv2.HOUGH_GRADIENT_ALT,
                                           1.5, 20, param1=30, param2=0.50, minRadius=10, maxRadius=200)
+
         # 如果找到了球，则直接判定
         if weight_circles is not None:
             filter_circle = []
-            weight_circles = np.uint16(np.around(weight_circles))
+            weight_circles = np.uint16(np.around(weight_circles))  # 将检测到的圆的坐标和半径转换为整数类型，并四舍五入（OpenCV要求）
             for cir_ in weight_circles:
                 cir = cir_[0]
                 # 凹凸判断，通过创建掩膜进行逻辑与进行凹凸性判断
                 x = cir[0]
                 y = cir[1]
                 r = cir[2]
+                # 创建一个与 weight_thre 具有相同形状和数据类型的全零数组，作为空白的掩膜，用于判断凹凸性
                 weight_circle_mask = np.zeros_like(weight_thre)
+                # 在掩膜上绘制圆，255表示白色，即要检测的圆区域
                 cv2.circle(weight_circle_mask, (x, y), r, 255, thickness=-1)
+                # 计算圆内与二值化图像不为零的像素数
                 pixel_count = np.sum(np.logical_and(
                     weight_circle_mask, weight_thre) > 0)
+                # 如果圆内大部分像素为白色，即圆内没有黑色，判断为凸
                 if pixel_count > 0.9 * np.pi * r * r:
                     filter_circle.append((x, y, r))
             if len(filter_circle) > 0:
@@ -109,17 +114,19 @@ while cap.isOpened():
                     weight_x = cir_[0]
                     weight_y = cir_[1]
                     weight_r = cir_[2]
+                    # 在原图上绘制检测到的圆
                     cv2.circle(
                         color_image, (cir_[0], cir_[1]), cir_[2], (0, 255, 255), 2)
-                    cv2.circle(color_image, (cir_[0], cir_[
-                        1]), 2, (255, 255, 0), 2)
+                    # 在圆心处绘制标记点
+                    cv2.circle(color_image, (cir_[0], cir_[1]), 2, (255, 255, 0), 2)  # 颜色为青色
 
             else:
                 # 提取轮廓
                 contours_weight, hierarchy_weight = cv2.findContours(
                     weight_thre, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
+                # 在图像上绘制所有轮廓
                 cv2.drawContours(
-                    color_image, contours_weight, -1, (0, 255, 255), 1)
+                    color_image, contours_weight, -1, (0, 255, 255), 1)  # 线条颜色为黄色
                 if not contours_weight:
                     pass
                 else:
@@ -140,14 +147,16 @@ while cap.isOpened():
                         weight_x = x_weight
                         weight_y = y_weight
                         weight_r = radius_weight
+                        # 在图像上绘制拟合出的圆
                         cv2.circle(color_image, center_weight,
-                                   radius_weight, (0, 0, 255), 3)
+                                   radius_weight, (0, 0, 255), 3)  # 线条颜色为红色
 
-            cv2.imshow('result', color_image)
-            print(weight_x, weight_y, weight_r)
-            weight_data = [weight_x, weight_y, weight_r]
-            pack_data = struct.pack('<BfffB', 0xFF, weight_data[0], weight_data[1], weight_data[2], 0xEE)
-            # serial_port.write(pack_data)
+        # 显示结果图像
+        cv2.imshow('result', color_image)
+        print(weight_x, weight_y, weight_r)  # 输出检测到的球体位置信息
+        weight_data = [weight_x, weight_y, weight_r]
+        # pack_data = struct.pack('<BfffB', 0xFF, weight_data[0], weight_data[1], weight_data[2], 0xEE)
+        # serial_port.write(pack_data)  # 将数据打包发送到串口
 
         key = cv2.waitKey(1)
         if key == 27:
