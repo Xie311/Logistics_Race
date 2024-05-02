@@ -107,7 +107,10 @@ while cap.isOpened():
                 #     weight_circle_mask, weight_thre) > 0)
                 # # 如果圆内大部分像素为白色，即圆内没有黑色，判断为凸
                 # if pixel_count > 0.9 * np.pi * r * r:
-                filter_circle.append((x, y, r))
+
+                # 判断圆的半径是否大于20
+                if r > 20:
+                    filter_circle.append((x, y, r))
             if len(filter_circle) > 0:
                 for cir_ in filter_circle:
                     weight_x = cir_[0]
@@ -141,14 +144,15 @@ while cap.isOpened():
                     else:
                         (x_weight, y_weight), radius_weight = cv2.minEnclosingCircle(
                             contours_weight[max_id_weight])
-                        center_weight = (int(x_weight), int(y_weight))
-                        radius_weight = int(radius_weight)
-                        weight_x = x_weight
-                        weight_y = y_weight
-                        weight_r = radius_weight
-                        # 在图像上绘制拟合出的圆
-                        cv2.circle(color_image, center_weight,
-                                   radius_weight, (0, 0, 255), 3)  # 线条颜色为红色
+                        if radius_weight > 20:
+                            center_weight = (int(x_weight), int(y_weight))
+                            radius_weight = int(radius_weight)
+                            weight_x = x_weight
+                            weight_y = y_weight
+                            weight_r = radius_weight
+                            # 在图像上绘制拟合出的圆
+                            cv2.circle(color_image, center_weight,
+                                       radius_weight, (0, 0, 255), 3)  # 线条颜色为红色
 
         # 显示结果图像
         cv2.imshow('result', color_image)
