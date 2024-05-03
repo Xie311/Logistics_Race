@@ -37,17 +37,16 @@ static void mavlink_test_chassis(uint8_t system_id, uint8_t component_id, mavlin
         uint8_t buffer[MAVLINK_MAX_PACKET_LEN];
         uint16_t i;
     mavlink_chassis_t packet_in = {
-        123.0,179.0,235.0,185.0,213.0,241.0,113
+        123.0,73.0,101.0,129.0,65,132
     };
     mavlink_chassis_t packet1, packet2;
         memset(&packet1, 0, sizeof(packet1));
-        packet1.vx = packet_in.vx;
-        packet1.vy = packet_in.vy;
-        packet1.wz = packet_in.wz;
+        packet1.radius = packet_in.radius;
         packet1.pos_x = packet_in.pos_x;
         packet1.pos_y = packet_in.pos_y;
         packet1.theta = packet_in.theta;
         packet1.state = packet_in.state;
+        packet1.flag = packet_in.flag;
         
         
 #ifdef MAVLINK_STATUS_FLAG_OUT_MAVLINK1
@@ -62,12 +61,12 @@ static void mavlink_test_chassis(uint8_t system_id, uint8_t component_id, mavlin
         MAVLINK_ASSERT(memcmp(&packet1, &packet2, sizeof(packet1)) == 0);
 
         memset(&packet2, 0, sizeof(packet2));
-    mavlink_msg_chassis_pack(system_id, component_id, &msg , packet1.pos_x , packet1.pos_y , packet1.theta , packet1.vx , packet1.vy , packet1.wz , packet1.state );
+    mavlink_msg_chassis_pack(system_id, component_id, &msg , packet1.pos_x , packet1.pos_y , packet1.radius , packet1.theta , packet1.state , packet1.flag );
     mavlink_msg_chassis_decode(&msg, &packet2);
         MAVLINK_ASSERT(memcmp(&packet1, &packet2, sizeof(packet1)) == 0);
 
         memset(&packet2, 0, sizeof(packet2));
-    mavlink_msg_chassis_pack_chan(system_id, component_id, MAVLINK_COMM_0, &msg , packet1.pos_x , packet1.pos_y , packet1.theta , packet1.vx , packet1.vy , packet1.wz , packet1.state );
+    mavlink_msg_chassis_pack_chan(system_id, component_id, MAVLINK_COMM_0, &msg , packet1.pos_x , packet1.pos_y , packet1.radius , packet1.theta , packet1.state , packet1.flag );
     mavlink_msg_chassis_decode(&msg, &packet2);
         MAVLINK_ASSERT(memcmp(&packet1, &packet2, sizeof(packet1)) == 0);
 
@@ -80,7 +79,7 @@ static void mavlink_test_chassis(uint8_t system_id, uint8_t component_id, mavlin
         MAVLINK_ASSERT(memcmp(&packet1, &packet2, sizeof(packet1)) == 0);
         
         memset(&packet2, 0, sizeof(packet2));
-    mavlink_msg_chassis_send(MAVLINK_COMM_1 , packet1.pos_x , packet1.pos_y , packet1.theta , packet1.vx , packet1.vy , packet1.wz , packet1.state );
+    mavlink_msg_chassis_send(MAVLINK_COMM_1 , packet1.pos_x , packet1.pos_y , packet1.radius , packet1.theta , packet1.state , packet1.flag );
     mavlink_msg_chassis_decode(last_msg, &packet2);
         MAVLINK_ASSERT(memcmp(&packet1, &packet2, sizeof(packet1)) == 0);
 

@@ -10,7 +10,7 @@
     #error Wrong include order: MAVLINK_CHASSIS_STATE.H MUST NOT BE DIRECTLY USED. Include mavlink.h from the same directory instead or set ALL AND EVERY defines from MAVLINK.H manually accordingly, including the #define MAVLINK_H call.
 #endif
 
-#define MAVLINK_CHASSIS_STATE_XML_HASH 288146562885911845
+#define MAVLINK_CHASSIS_STATE_XML_HASH 2354080619553557162
 
 #ifdef __cplusplus
 extern "C" {
@@ -23,7 +23,7 @@ extern "C" {
 #endif
 
 #ifndef MAVLINK_MESSAGE_CRCS
-#define MAVLINK_MESSAGE_CRCS {{1, 37, 37, 37, 0, 0, 0}}
+#define MAVLINK_MESSAGE_CRCS {{1, 116, 22, 22, 0, 0, 0}}
 #endif
 
 #include "../protocol.h"
