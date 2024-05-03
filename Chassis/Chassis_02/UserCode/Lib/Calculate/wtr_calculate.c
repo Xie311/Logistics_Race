@@ -15,8 +15,8 @@ double moter_speed[4];
 
 /****************麦克纳姆轮底盘***********************/
 //  麦轮底盘参数
- #define rotate_ratio    0.345   // (Width + Length)/2
- #define wheel_rpm_ratio 2387.324 // 换算线速度到rpm
+ #define rotate_ratio    0.3015   // (Width + Length)/2
+ #define wheel_rpm_ratio 1  //2387.324 // 换算线速度到rpm
 
  /**
  * @brief麦克纳姆轮底盘逆解算

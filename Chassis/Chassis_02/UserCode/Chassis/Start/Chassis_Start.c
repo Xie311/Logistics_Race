@@ -2,8 +2,8 @@
  * @Author Chen Yitong
  * @Date 2023-09-22 22:19:27
  * @LastEditors: x311 
- * @LastEditTime: 2024-04-27 21:34:01
- * @FilePath: \WTR_Omni_Auto_Chassis\UserCode\Chassis\Start\Chassis_Start.c
+ * @LastEditTime: 2024-05-03 03:09:04
+ * @FilePath: \Chassis_02\UserCode\Chassis\Start\Chassis_Start.c
  * @brief 底盘启动文件
  *
  * Copyright (c) 2023 by ChenYiTong, All Rights Reserved.

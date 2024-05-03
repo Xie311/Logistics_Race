@@ -3,7 +3,7 @@
  * @Date: 2023-09-23 13:49:36
  * @LastEditors: x311 
  * @LastEditTi 10-09 15:57:22
- * @FilePath: \WTR_Omni_Auto_Chassis\UserCode\Chassis\Servo\Chassis_Servo.c
+ * @FilePath: \Chassis_02\UserCode\Chassis\Servo\Chassis_Servo.c
  * @Brief: 底盘伺服函数
  *
  * Copyright (c) 2023 by ChenYiTong, All Rights Reserved.
@@ -67,6 +67,7 @@ void Chassis_Servo_Task(void const *argument)
         for (int i = 0; i < 4; i++) { memcpy(WheelComponent.hDJI[i], &(hDJI_tmp[i]), sizeof(DJI_t)); }
         vPortExitCritical();
 
+
         osDelay(8);
     }
 }
@@ -105,10 +106,10 @@ void Chassis_Servo_DjiMotorInit()
     DJI_Init();
     for (uint16_t i = 0; i < 4; i++)
     {
-        hDJI[i].speedPID.KP        = 4;//5
-        hDJI[i].speedPID.KI        = 0.1;//0.2
-        hDJI[i].speedPID.KD        = 0.4;//0.8
-        hDJI[i].speedPID.outputMax = 4000;
+        hDJI[i].speedPID.KP        = 6;//5
+        hDJI[i].speedPID.KI        = 0.2;//0.2
+        hDJI[i].speedPID.KD        = 0.8;//0.8
+        hDJI[i].speedPID.outputMax = 8000;
 
     }
 }
