@@ -1,0 +1,3 @@
+/home/lynliam/code_lab/find_ball/detectball/build/CMakeFiles/OpenCVTest.dir
+/home/lynliam/code_lab/find_ball/detectball/build/CMakeFiles/edit_cache.dir
+/home/lynliam/code_lab/find_ball/detectball/build/CMakeFiles/rebuild_cache.dir

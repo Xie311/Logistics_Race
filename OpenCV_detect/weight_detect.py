@@ -18,7 +18,7 @@ lutRaisen = np.array([int(102+0.6*i) for i in range(256)]).astype("uint8")
 lutSRaisen = np.dstack((lutEqual, lutRaisen, lutEqual))  # Saturation raisen
 # 2. 掩膜阈值定义
 lower_weight = np.array([0, 85, 29])
-upper_weight = np.array([179, 150, 86])
+upper_weight = np.array([179, 150, 97])
 # 3. 结构元素定义
 kernel = np.ones((7, 7), np.uint8)
 # 4. Serial Port Definition
@@ -98,8 +98,8 @@ while cap.isOpened():
                 x = cir[0]
                 y = cir[1]
                 r = cir[2]
-                # 判断圆的半径是否大于22
-                if r > 22:
+                # 判断圆的半径是否大于一定值
+                if r > 28:
                     filter_circle.append((x, y, r))
             if len(filter_circle) > 0:
                 for cir_ in filter_circle:
@@ -134,7 +134,7 @@ while cap.isOpened():
                     else:
                         (x_weight, y_weight), radius_weight = cv2.minEnclosingCircle(
                             contours_weight[max_id_weight])
-                        if radius_weight > 22:
+                        if radius_weight > 28:
                             center_weight = (int(x_weight), int(y_weight))
                             radius_weight = int(radius_weight)
                             weight_x = x_weight

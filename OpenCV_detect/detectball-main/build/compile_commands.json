@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/lynliam/code_lab/find_ball/detectball/build",
+  "command": "g++  -I/home/lynliam/code_lab/find_ball/detectball/ximgproc/include -I/home/lynliam/code_lab/find_ball/detectball/ximgproc/src -I/home/lynliam/code_lab/find_ball/detectball/inc -I/home/lynliam/code_lab/find_ball/detectball/ximgproc/include/opencv2 -isystem /usr/local/include/opencv4  -std=c++11 -Wl,-z,stack-size=1024000000  -O0 -Wall -g2 -ggdb -o CMakeFiles/OpenCVTest.dir/main.cpp.o -c /home/lynliam/code_lab/find_ball/detectball/main.cpp",
+  "file": "/home/lynliam/code_lab/find_ball/detectball/main.cpp"
+},
+{
+  "directory": "/home/lynliam/code_lab/find_ball/detectball/build",
+  "command": "g++  -I/home/lynliam/code_lab/find_ball/detectball/ximgproc/include -I/home/lynliam/code_lab/find_ball/detectball/ximgproc/src -I/home/lynliam/code_lab/find_ball/detectball/inc -I/home/lynliam/code_lab/find_ball/detectball/ximgproc/include/opencv2 -isystem /usr/local/include/opencv4  -std=c++11 -Wl,-z,stack-size=1024000000  -O0 -Wall -g2 -ggdb -o CMakeFiles/OpenCVTest.dir/ximgproc/src/edge_drawing.cpp.o -c /home/lynliam/code_lab/find_ball/detectball/ximgproc/src/edge_drawing.cpp",
+  "file": "/home/lynliam/code_lab/find_ball/detectball/ximgproc/src/edge_drawing.cpp"
+},
+{
+  "directory": "/home/lynliam/code_lab/find_ball/detectball/build",
+  "command": "g++  -I/home/lynliam/code_lab/find_ball/detectball/ximgproc/include -I/home/lynliam/code_lab/find_ball/detectball/ximgproc/src -I/home/lynliam/code_lab/find_ball/detectball/inc -I/home/lynliam/code_lab/find_ball/detectball/ximgproc/include/opencv2 -isystem /usr/local/include/opencv4  -std=c++11 -Wl,-z,stack-size=1024000000  -O0 -Wall -g2 -ggdb -o CMakeFiles/OpenCVTest.dir/ximgproc/src/find_ellipses.cpp.o -c /home/lynliam/code_lab/find_ball/detectball/ximgproc/src/find_ellipses.cpp",
+  "file": "/home/lynliam/code_lab/find_ball/detectball/ximgproc/src/find_ellipses.cpp"
+},
+{
+  "directory": "/home/lynliam/code_lab/find_ball/detectball/build",
+  "command": "g++  -I/home/lynliam/code_lab/find_ball/detectball/ximgproc/include -I/home/lynliam/code_lab/find_ball/detectball/ximgproc/src -I/home/lynliam/code_lab/find_ball/detectball/inc -I/home/lynliam/code_lab/find_ball/detectball/ximgproc/include/opencv2 -isystem /usr/local/include/opencv4  -std=c++11 -Wl,-z,stack-size=1024000000  -O0 -Wall -g2 -ggdb -o CMakeFiles/OpenCVTest.dir/src/FindBall.cpp.o -c /home/lynliam/code_lab/find_ball/detectball/src/FindBall.cpp",
+  "file": "/home/lynliam/code_lab/find_ball/detectball/src/FindBall.cpp"
+}
+]

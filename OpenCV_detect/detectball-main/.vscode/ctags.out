@@ -1,0 +1,2209 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	number	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/lyn/Code_Workspace/test/opencv_cpptest/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+$(VERBOSE).SILENT	build/Makefile	38;"	t
+$(VERBOSE)MAKESILENT	build/Makefile	35;"	m
+%	build/Makefile	18;"	t
+%	build/Makefile	21;"	t
+%	build/Makefile	24;"	t
+%	build/Makefile	27;"	t
+%	build/Makefile	30;"	t
+0	.vscode/launch.json	21;"	o	array:configurations.0.setupCommands
+0	.vscode/launch.json	7;"	o	array:configurations
+0	.vscode/tasks.json	6;"	o	array:tasks
+0	build/compile_commands.json	2;"	o
+1	build/compile_commands.json	8;"	o
+2	build/compile_commands.json	14;"	o
+A	ximgproc/src/edge_drawing_common.hpp	229;"	f	struct:EllipseEquation	typeref:typename:double
+ACC_A_SIZE	ximgproc/src/find_ellipses.cpp	215;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:int	file:
+ACC_N_SIZE	ximgproc/src/find_ellipses.cpp	215;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:int	file:
+ACC_R_SIZE	ximgproc/src/find_ellipses.cpp	215;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:int	file:
+AM_FILTER	ximgproc/include/opencv2/ximgproc/edge_filter.hpp	58;"	e	enum:cv::ximgproc::EdgeAwareFiltersList
+ANCHOR_PIXEL	ximgproc/src/edge_drawing_common.hpp	13;"	d
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	569;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	572;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	575;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	578;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	581;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	585;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	587;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	589;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	593;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	596;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	599;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	604;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	607;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	610;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	615;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	618;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	621;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	624;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	627;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	630;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	633;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	636;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	639;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	642;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	645;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	650;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	653;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	656;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	659;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	662;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	665;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	670;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	673;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	676;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	679;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	682;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	686;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	689;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	694;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	697;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	700;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	703;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	706;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	709;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	712;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	716;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	554;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	557;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	560;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	563;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	566;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	570;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	572;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	574;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	578;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	581;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	584;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	589;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	592;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	595;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	600;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	603;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	606;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	609;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	612;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	615;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	618;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	621;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	624;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	627;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	630;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	635;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	638;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	641;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	644;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	647;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	650;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	655;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	658;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	661;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	664;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	667;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	671;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	674;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	679;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	682;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	685;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	688;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	691;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	694;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	697;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	701;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	569;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	572;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	575;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	578;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	581;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	585;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	587;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	589;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	593;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	596;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	599;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	604;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	607;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	610;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	615;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	618;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	621;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	624;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	627;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	630;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	633;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	636;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	639;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	642;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	645;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	650;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	653;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	656;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	659;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	662;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	665;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	670;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	673;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	676;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	679;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	682;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	686;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	689;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	694;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	697;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	700;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	703;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	706;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	709;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	712;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	716;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	554;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	557;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	560;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	563;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	566;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	570;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	572;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	574;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	578;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	581;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	584;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	589;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	592;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	595;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	600;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	603;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	606;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	609;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	612;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	615;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	618;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	621;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	624;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	627;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	630;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	635;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	638;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	641;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	644;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	647;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	650;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	655;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	658;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	661;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	664;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	667;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	671;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	674;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	679;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	682;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	685;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	688;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	691;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	694;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	697;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	701;"	d	file:
+ARO_0_45	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	66;"	e	enum:cv::ximgproc::AngleRangeOption
+ARO_315_0	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	69;"	e	enum:cv::ximgproc::AngleRangeOption
+ARO_315_135	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	72;"	e	enum:cv::ximgproc::AngleRangeOption
+ARO_315_45	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	70;"	e	enum:cv::ximgproc::AngleRangeOption
+ARO_45_135	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	71;"	e	enum:cv::ximgproc::AngleRangeOption
+ARO_45_90	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	67;"	e	enum:cv::ximgproc::AngleRangeOption
+ARO_90_135	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	68;"	e	enum:cv::ximgproc::AngleRangeOption
+ARO_CTR_HOR	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	73;"	e	enum:cv::ximgproc::AngleRangeOption
+ARO_CTR_VER	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	75;"	e	enum:cv::ximgproc::AngleRangeOption
+AXIS_LENGTH_DIFF_THRESHOLD	ximgproc/src/edge_drawing.cpp	3422;"	d	file:
+A_TperB	ximgproc/src/edge_drawing.cpp	5474;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+Achanta2012	ximgproc/doc/ximgproc.bib	150;"	a
+AdaptiveManifoldFilter	ximgproc/include/opencv2/ximgproc/edge_filter.hpp	203;"	c	namespace:cv::ximgproc	inherits:Algorithm
+AllocateMatrix	ximgproc/src/edge_drawing.cpp	5461;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:double **
+AnchorThresholdValue	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	46;"	m	struct:cv::ximgproc::EdgeDrawing::Params	typeref:typename:CV_PROP_RW int
+AngleRangeOption	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	64;"	g	namespace:cv::ximgproc
+AngleSet	ximgproc/src/edge_drawing_common.hpp	295;"	s
+AngleSet	ximgproc/src/edge_drawing_common.hpp	301;"	f	struct:AngleSet
+AngleSetArc	ximgproc/src/edge_drawing_common.hpp	289;"	s
+AperB	ximgproc/src/edge_drawing.cpp	5633;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+AperB_T	ximgproc/src/edge_drawing.cpp	5620;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+ArcLength	ximgproc/src/edge_drawing_common.hpp	280;"	f	typeref:typename:double
+B	ximgproc/src/edge_drawing_common.hpp	230;"	f	struct:EllipseEquation	typeref:typename:double
+BINARIZATION_NIBLACK	ximgproc/include/opencv2/ximgproc.hpp	136;"	e	enum:cv::ximgproc::LocalBinarizationMethods
+BINARIZATION_NICK	ximgproc/include/opencv2/ximgproc.hpp	139;"	e	enum:cv::ximgproc::LocalBinarizationMethods
+BINARIZATION_SAUVOLA	ximgproc/include/opencv2/ximgproc.hpp	137;"	e	enum:cv::ximgproc::LocalBinarizationMethods
+BINARIZATION_WOLF	ximgproc/include/opencv2/ximgproc.hpp	138;"	e	enum:cv::ximgproc::LocalBinarizationMethods
+BLUE	main.cpp	12;"	e	enum:BallType	file:
+BOOKSTEIN	ximgproc/src/edge_drawing.cpp	102;"	e	enum:cv::ximgproc::EdgeDrawingImpl::EllipseFittingMethods	file:
+BallType	main.cpp	12;"	g	file:
+BarronPoole2016	ximgproc/doc/ximgproc.bib	314;"	j
+BarronPoole2016	ximgproc/doc/ximgproc.bib	323;"	j
+BergerRaghunathan1998	ximgproc/doc/ximgproc.bib	270;"	a
+Box	ximgproc/include/opencv2/ximgproc/edgeboxes.hpp	61;"	t	namespace:cv::ximgproc	typeref:struct:cv::ximgproc::__anon82eb1e000108
+Boxes	ximgproc/include/opencv2/ximgproc/edgeboxes.hpp	63;"	t	namespace:cv::ximgproc	typeref:typename:std::vector<Box>
+Breuel2008	ximgproc/doc/ximgproc.bib	292;"	j
+BufferManager	ximgproc/src/edge_drawing_common.hpp	544;"	s
+BufferManager	ximgproc/src/edge_drawing_common.hpp	548;"	f	struct:BufferManager
+C	ximgproc/src/edge_drawing_common.hpp	231;"	f	struct:EllipseEquation	typeref:typename:double
+CANDIDATE_CIRCLE_RATIO1	ximgproc/src/edge_drawing_common.hpp	32;"	d
+CANDIDATE_CIRCLE_RATIO2	ximgproc/src/edge_drawing_common.hpp	33;"	d
+CANDIDATE_ELLIPSE_RATIO	ximgproc/src/edge_drawing_common.hpp	38;"	d
+CENTER_DISTANCE_THRESHOLD	ximgproc/src/edge_drawing.cpp	3423;"	d	file:
+CIRCLE_MIN_LINE_LEN	ximgproc/src/edge_drawing.cpp	2461;"	d	file:
+CMAKE_AR	CMakeFiles/3.27.1/CMakeCCompiler.cmake	24;"	v
+CMAKE_AR	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	25;"	v
+CMAKE_AR	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	24;"	v
+CMAKE_AR	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	25;"	v
+CMAKE_BINARY_DIR	build/Makefile	63;"	m
+CMAKE_BUILD_TYPE	CMakeLists.txt	8;"	v
+CMAKE_C11_COMPILE_FEATURES	CMakeFiles/3.27.1/CMakeCCompiler.cmake	12;"	v
+CMAKE_C11_COMPILE_FEATURES	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	12;"	v
+CMAKE_C17_COMPILE_FEATURES	CMakeFiles/3.27.1/CMakeCCompiler.cmake	13;"	v
+CMAKE_C17_COMPILE_FEATURES	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	13;"	v
+CMAKE_C23_COMPILE_FEATURES	CMakeFiles/3.27.1/CMakeCCompiler.cmake	14;"	v
+CMAKE_C23_COMPILE_FEATURES	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	14;"	v
+CMAKE_C90_COMPILE_FEATURES	CMakeFiles/3.27.1/CMakeCCompiler.cmake	10;"	v
+CMAKE_C90_COMPILE_FEATURES	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	10;"	v
+CMAKE_C99_COMPILE_FEATURES	CMakeFiles/3.27.1/CMakeCCompiler.cmake	11;"	v
+CMAKE_C99_COMPILE_FEATURES	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	11;"	v
+CMAKE_CL_SHOWINCLUDES_PREFIX	CMakeFiles/3.27.1/CMakeCCompiler.cmake	64;"	v
+CMAKE_CL_SHOWINCLUDES_PREFIX	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	75;"	v
+CMAKE_CL_SHOWINCLUDES_PREFIX	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	64;"	v
+CMAKE_CL_SHOWINCLUDES_PREFIX	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	75;"	v
+CMAKE_COMMAND	build/Makefile	51;"	m
+CMAKE_COMPILER_IS_GNUCC	CMakeFiles/3.27.1/CMakeCCompiler.cmake	31;"	v
+CMAKE_COMPILER_IS_GNUCC	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	31;"	v
+CMAKE_COMPILER_IS_GNUCXX	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	32;"	v
+CMAKE_COMPILER_IS_GNUCXX	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	32;"	v
+CMAKE_CROSSCOMPILING	CMakeFiles/3.27.1/CMakeSystem.cmake	13;"	v
+CMAKE_CROSSCOMPILING	build/CMakeFiles/3.27.1/CMakeSystem.cmake	13;"	v
+CMAKE_CROSSCOMPILING	build/cmake_install.cmake	37;"	v
+CMAKE_CXX11_COMPILE_FEATURES	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	11;"	v
+CMAKE_CXX11_COMPILE_FEATURES	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	11;"	v
+CMAKE_CXX14_COMPILE_FEATURES	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	12;"	v
+CMAKE_CXX14_COMPILE_FEATURES	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	12;"	v
+CMAKE_CXX17_COMPILE_FEATURES	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	13;"	v
+CMAKE_CXX17_COMPILE_FEATURES	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	13;"	v
+CMAKE_CXX20_COMPILE_FEATURES	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	14;"	v
+CMAKE_CXX20_COMPILE_FEATURES	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	14;"	v
+CMAKE_CXX23_COMPILE_FEATURES	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	15;"	v
+CMAKE_CXX23_COMPILE_FEATURES	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	15;"	v
+CMAKE_CXX98_COMPILE_FEATURES	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	10;"	v
+CMAKE_CXX98_COMPILE_FEATURES	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	10;"	v
+CMAKE_CXX_ABI_COMPILED	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	35;"	v
+CMAKE_CXX_ABI_COMPILED	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	35;"	v
+CMAKE_CXX_BYTE_ORDER	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	58;"	v
+CMAKE_CXX_BYTE_ORDER	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	58;"	v
+CMAKE_CXX_CL_SHOWINCLUDES_PREFIX	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	73;"	v
+CMAKE_CXX_CL_SHOWINCLUDES_PREFIX	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	73;"	v
+CMAKE_CXX_COMPILER	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	1;"	v
+CMAKE_CXX_COMPILER	CMakeLists.txt	17;"	v
+CMAKE_CXX_COMPILER	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	1;"	v
+CMAKE_CXX_COMPILER_ABI	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	57;"	v
+CMAKE_CXX_COMPILER_ABI	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	57;"	v
+CMAKE_CXX_COMPILER_AR	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	26;"	v
+CMAKE_CXX_COMPILER_AR	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	26;"	v
+CMAKE_CXX_COMPILER_ARG1	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	2;"	v
+CMAKE_CXX_COMPILER_ARG1	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	2;"	v
+CMAKE_CXX_COMPILER_ENV_VAR	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	37;"	v
+CMAKE_CXX_COMPILER_ENV_VAR	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	37;"	v
+CMAKE_CXX_COMPILER_FRONTEND_VARIANT	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	19;"	v
+CMAKE_CXX_COMPILER_FRONTEND_VARIANT	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	19;"	v
+CMAKE_CXX_COMPILER_ID	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	3;"	v
+CMAKE_CXX_COMPILER_ID	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	3;"	v
+CMAKE_CXX_COMPILER_ID_RUN	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	39;"	v
+CMAKE_CXX_COMPILER_ID_RUN	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	39;"	v
+CMAKE_CXX_COMPILER_LOADED	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	33;"	v
+CMAKE_CXX_COMPILER_LOADED	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	33;"	v
+CMAKE_CXX_COMPILER_RANLIB	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	28;"	v
+CMAKE_CXX_COMPILER_RANLIB	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	28;"	v
+CMAKE_CXX_COMPILER_VERSION	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	4;"	v
+CMAKE_CXX_COMPILER_VERSION	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	4;"	v
+CMAKE_CXX_COMPILER_VERSION_INTERNAL	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	5;"	v
+CMAKE_CXX_COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	5;"	v
+CMAKE_CXX_COMPILER_WORKS	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	34;"	v
+CMAKE_CXX_COMPILER_WORKS	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	34;"	v
+CMAKE_CXX_COMPILER_WRAPPER	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	6;"	v
+CMAKE_CXX_COMPILER_WRAPPER	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	6;"	v
+CMAKE_CXX_COMPILE_FEATURES	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	9;"	v
+CMAKE_CXX_COMPILE_FEATURES	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	9;"	v
+CMAKE_CXX_EXTENSIONS_COMPUTED_DEFAULT	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	8;"	v
+CMAKE_CXX_EXTENSIONS_COMPUTED_DEFAULT	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	8;"	v
+CMAKE_CXX_FLAGS	CMakeLists.txt	12;"	v
+CMAKE_CXX_FLAGS_DEBUG	CMakeLists.txt	9;"	v
+CMAKE_CXX_FLAGS_RELEASE	CMakeLists.txt	10;"	v
+CMAKE_CXX_IGNORE_EXTENSIONS	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	41;"	v
+CMAKE_CXX_IGNORE_EXTENSIONS	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	41;"	v
+CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	82;"	v
+CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	82;"	v
+CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	84;"	v
+CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	84;"	v
+CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	85;"	v
+CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	85;"	v
+CMAKE_CXX_IMPLICIT_LINK_LIBRARIES	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	83;"	v
+CMAKE_CXX_IMPLICIT_LINK_LIBRARIES	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	83;"	v
+CMAKE_CXX_INCLUDE_REGEX_COMPLAIN	build/CMakeFiles/CMakeDirectoryInformation.cmake	16;"	v
+CMAKE_CXX_INCLUDE_REGEX_SCAN	build/CMakeFiles/CMakeDirectoryInformation.cmake	15;"	v
+CMAKE_CXX_LIBRARY_ARCHITECTURE	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	59;"	v
+CMAKE_CXX_LIBRARY_ARCHITECTURE	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	59;"	v
+CMAKE_CXX_LINKER_DEPFILE_SUPPORTED	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	53;"	v
+CMAKE_CXX_LINKER_DEPFILE_SUPPORTED	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	53;"	v
+CMAKE_CXX_LINKER_PREFERENCE	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	51;"	v
+CMAKE_CXX_LINKER_PREFERENCE	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	51;"	v
+CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	52;"	v
+CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	52;"	v
+CMAKE_CXX_PLATFORM_ID	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	17;"	v
+CMAKE_CXX_PLATFORM_ID	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	17;"	v
+CMAKE_CXX_SIMULATE_ID	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	18;"	v
+CMAKE_CXX_SIMULATE_ID	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	18;"	v
+CMAKE_CXX_SIMULATE_VERSION	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	20;"	v
+CMAKE_CXX_SIMULATE_VERSION	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	20;"	v
+CMAKE_CXX_SIZEOF_DATA_PTR	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	56;"	v
+CMAKE_CXX_SIZEOF_DATA_PTR	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	56;"	v
+CMAKE_CXX_SOURCE_FILE_EXTENSIONS	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	40;"	v
+CMAKE_CXX_SOURCE_FILE_EXTENSIONS	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	40;"	v
+CMAKE_CXX_STANDARD	CMakeLists.txt	3;"	v
+CMAKE_CXX_STANDARD_COMPUTED_DEFAULT	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	7;"	v
+CMAKE_CXX_STANDARD_COMPUTED_DEFAULT	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	7;"	v
+CMAKE_C_ABI_COMPILED	CMakeFiles/3.27.1/CMakeCCompiler.cmake	34;"	v
+CMAKE_C_ABI_COMPILED	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	34;"	v
+CMAKE_C_BYTE_ORDER	CMakeFiles/3.27.1/CMakeCCompiler.cmake	47;"	v
+CMAKE_C_BYTE_ORDER	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	47;"	v
+CMAKE_C_CL_SHOWINCLUDES_PREFIX	CMakeFiles/3.27.1/CMakeCCompiler.cmake	62;"	v
+CMAKE_C_CL_SHOWINCLUDES_PREFIX	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	62;"	v
+CMAKE_C_COMPILER	CMakeFiles/3.27.1/CMakeCCompiler.cmake	1;"	v
+CMAKE_C_COMPILER	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	1;"	v
+CMAKE_C_COMPILER_ABI	CMakeFiles/3.27.1/CMakeCCompiler.cmake	46;"	v
+CMAKE_C_COMPILER_ABI	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	46;"	v
+CMAKE_C_COMPILER_AR	CMakeFiles/3.27.1/CMakeCCompiler.cmake	25;"	v
+CMAKE_C_COMPILER_AR	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	25;"	v
+CMAKE_C_COMPILER_ARG1	CMakeFiles/3.27.1/CMakeCCompiler.cmake	2;"	v
+CMAKE_C_COMPILER_ARG1	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	2;"	v
+CMAKE_C_COMPILER_ENV_VAR	CMakeFiles/3.27.1/CMakeCCompiler.cmake	36;"	v
+CMAKE_C_COMPILER_ENV_VAR	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	36;"	v
+CMAKE_C_COMPILER_FRONTEND_VARIANT	CMakeFiles/3.27.1/CMakeCCompiler.cmake	18;"	v
+CMAKE_C_COMPILER_FRONTEND_VARIANT	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	18;"	v
+CMAKE_C_COMPILER_ID	CMakeFiles/3.27.1/CMakeCCompiler.cmake	3;"	v
+CMAKE_C_COMPILER_ID	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	3;"	v
+CMAKE_C_COMPILER_ID_RUN	CMakeFiles/3.27.1/CMakeCCompiler.cmake	38;"	v
+CMAKE_C_COMPILER_ID_RUN	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	38;"	v
+CMAKE_C_COMPILER_LOADED	CMakeFiles/3.27.1/CMakeCCompiler.cmake	32;"	v
+CMAKE_C_COMPILER_LOADED	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	32;"	v
+CMAKE_C_COMPILER_RANLIB	CMakeFiles/3.27.1/CMakeCCompiler.cmake	27;"	v
+CMAKE_C_COMPILER_RANLIB	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	27;"	v
+CMAKE_C_COMPILER_VERSION	CMakeFiles/3.27.1/CMakeCCompiler.cmake	4;"	v
+CMAKE_C_COMPILER_VERSION	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	4;"	v
+CMAKE_C_COMPILER_VERSION_INTERNAL	CMakeFiles/3.27.1/CMakeCCompiler.cmake	5;"	v
+CMAKE_C_COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	5;"	v
+CMAKE_C_COMPILER_WORKS	CMakeFiles/3.27.1/CMakeCCompiler.cmake	33;"	v
+CMAKE_C_COMPILER_WORKS	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	33;"	v
+CMAKE_C_COMPILER_WRAPPER	CMakeFiles/3.27.1/CMakeCCompiler.cmake	6;"	v
+CMAKE_C_COMPILER_WRAPPER	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	6;"	v
+CMAKE_C_COMPILE_FEATURES	CMakeFiles/3.27.1/CMakeCCompiler.cmake	9;"	v
+CMAKE_C_COMPILE_FEATURES	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	9;"	v
+CMAKE_C_EXTENSIONS_COMPUTED_DEFAULT	CMakeFiles/3.27.1/CMakeCCompiler.cmake	8;"	v
+CMAKE_C_EXTENSIONS_COMPUTED_DEFAULT	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	8;"	v
+CMAKE_C_IGNORE_EXTENSIONS	CMakeFiles/3.27.1/CMakeCCompiler.cmake	40;"	v
+CMAKE_C_IGNORE_EXTENSIONS	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	40;"	v
+CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES	CMakeFiles/3.27.1/CMakeCCompiler.cmake	71;"	v
+CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	71;"	v
+CMAKE_C_IMPLICIT_LINK_DIRECTORIES	CMakeFiles/3.27.1/CMakeCCompiler.cmake	73;"	v
+CMAKE_C_IMPLICIT_LINK_DIRECTORIES	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	73;"	v
+CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	CMakeFiles/3.27.1/CMakeCCompiler.cmake	74;"	v
+CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	74;"	v
+CMAKE_C_IMPLICIT_LINK_LIBRARIES	CMakeFiles/3.27.1/CMakeCCompiler.cmake	72;"	v
+CMAKE_C_IMPLICIT_LINK_LIBRARIES	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	72;"	v
+CMAKE_C_INCLUDE_REGEX_COMPLAIN	build/CMakeFiles/CMakeDirectoryInformation.cmake	14;"	v
+CMAKE_C_INCLUDE_REGEX_SCAN	build/CMakeFiles/CMakeDirectoryInformation.cmake	13;"	v
+CMAKE_C_LIBRARY_ARCHITECTURE	CMakeFiles/3.27.1/CMakeCCompiler.cmake	48;"	v
+CMAKE_C_LIBRARY_ARCHITECTURE	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	48;"	v
+CMAKE_C_LINKER_DEPFILE_SUPPORTED	CMakeFiles/3.27.1/CMakeCCompiler.cmake	42;"	v
+CMAKE_C_LINKER_DEPFILE_SUPPORTED	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	42;"	v
+CMAKE_C_LINKER_PREFERENCE	CMakeFiles/3.27.1/CMakeCCompiler.cmake	41;"	v
+CMAKE_C_LINKER_PREFERENCE	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	41;"	v
+CMAKE_C_PLATFORM_ID	CMakeFiles/3.27.1/CMakeCCompiler.cmake	16;"	v
+CMAKE_C_PLATFORM_ID	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	16;"	v
+CMAKE_C_SIMULATE_ID	CMakeFiles/3.27.1/CMakeCCompiler.cmake	17;"	v
+CMAKE_C_SIMULATE_ID	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	17;"	v
+CMAKE_C_SIMULATE_VERSION	CMakeFiles/3.27.1/CMakeCCompiler.cmake	19;"	v
+CMAKE_C_SIMULATE_VERSION	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	19;"	v
+CMAKE_C_SIZEOF_DATA_PTR	CMakeFiles/3.27.1/CMakeCCompiler.cmake	45;"	v
+CMAKE_C_SIZEOF_DATA_PTR	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	45;"	v
+CMAKE_C_SOURCE_FILE_EXTENSIONS	CMakeFiles/3.27.1/CMakeCCompiler.cmake	39;"	v
+CMAKE_C_SOURCE_FILE_EXTENSIONS	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	39;"	v
+CMAKE_C_STANDARD_COMPUTED_DEFAULT	CMakeFiles/3.27.1/CMakeCCompiler.cmake	7;"	v
+CMAKE_C_STANDARD_COMPUTED_DEFAULT	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	7;"	v
+CMAKE_DEPENDS_DEPENDENCY_FILES	build/CMakeFiles/OpenCVTest.dir/DependInfo.cmake	10;"	v
+CMAKE_DEPENDS_GENERATOR	build/CMakeFiles/Makefile.cmake	5;"	v
+CMAKE_DEPENDS_IN_PROJECT_ONLY	build/CMakeFiles/OpenCVTest.dir/DependInfo.cmake	3;"	v
+CMAKE_DEPENDS_LANGUAGES	build/CMakeFiles/OpenCVTest.dir/DependInfo.cmake	6;"	v
+CMAKE_DEPEND_INFO_FILES	build/CMakeFiles/Makefile.cmake	132;"	v
+CMAKE_EXPORT_COMPILE_COMMANDS	CMakeLists.txt	4;"	v
+CMAKE_FORCE_UNIX_PATHS	build/CMakeFiles/CMakeDirectoryInformation.cmake	9;"	v
+CMAKE_Fortran_TARGET_LINKED_INFO_FILES	build/CMakeFiles/OpenCVTest.dir/DependInfo.cmake	17;"	v
+CMAKE_Fortran_TARGET_MODULE_DIR	build/CMakeFiles/OpenCVTest.dir/DependInfo.cmake	21;"	v
+CMAKE_HOST_SYSTEM	CMakeFiles/3.27.1/CMakeSystem.cmake	1;"	v
+CMAKE_HOST_SYSTEM	build/CMakeFiles/3.27.1/CMakeSystem.cmake	1;"	v
+CMAKE_HOST_SYSTEM_NAME	CMakeFiles/3.27.1/CMakeSystem.cmake	2;"	v
+CMAKE_HOST_SYSTEM_NAME	build/CMakeFiles/3.27.1/CMakeSystem.cmake	2;"	v
+CMAKE_HOST_SYSTEM_PROCESSOR	CMakeFiles/3.27.1/CMakeSystem.cmake	4;"	v
+CMAKE_HOST_SYSTEM_PROCESSOR	build/CMakeFiles/3.27.1/CMakeSystem.cmake	4;"	v
+CMAKE_HOST_SYSTEM_VERSION	CMakeFiles/3.27.1/CMakeSystem.cmake	3;"	v
+CMAKE_HOST_SYSTEM_VERSION	build/CMakeFiles/3.27.1/CMakeSystem.cmake	3;"	v
+CMAKE_INSTALL_COMPONENT	build/cmake_install.cmake	24;"	v
+CMAKE_INSTALL_COMPONENT	build/cmake_install.cmake	26;"	v
+CMAKE_INSTALL_CONFIG_NAME	build/cmake_install.cmake	15;"	v
+CMAKE_INSTALL_MANIFEST	build/cmake_install.cmake	46;"	v
+CMAKE_INSTALL_MANIFEST	build/cmake_install.cmake	48;"	v
+CMAKE_INSTALL_PREFIX	build/cmake_install.cmake	5;"	v
+CMAKE_INSTALL_SO_NO_EXE	build/cmake_install.cmake	32;"	v
+CMAKE_INTERNAL_PLATFORM_ABI	CMakeFiles/3.27.1/CMakeCCompiler.cmake	55;"	v
+CMAKE_INTERNAL_PLATFORM_ABI	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	66;"	v
+CMAKE_INTERNAL_PLATFORM_ABI	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	55;"	v
+CMAKE_INTERNAL_PLATFORM_ABI	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	66;"	v
+CMAKE_LIBRARY_ARCHITECTURE	CMakeFiles/3.27.1/CMakeCCompiler.cmake	59;"	v
+CMAKE_LIBRARY_ARCHITECTURE	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	70;"	v
+CMAKE_LIBRARY_ARCHITECTURE	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	59;"	v
+CMAKE_LIBRARY_ARCHITECTURE	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	70;"	v
+CMAKE_LINKER	CMakeFiles/3.27.1/CMakeCCompiler.cmake	28;"	v
+CMAKE_LINKER	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	29;"	v
+CMAKE_LINKER	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	28;"	v
+CMAKE_LINKER	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	29;"	v
+CMAKE_MAKEFILE_DEPENDS	build/CMakeFiles/Makefile.cmake	8;"	v
+CMAKE_MAKEFILE_OUTPUTS	build/CMakeFiles/Makefile.cmake	116;"	v
+CMAKE_MAKEFILE_PRODUCTS	build/CMakeFiles/Makefile.cmake	122;"	v
+CMAKE_MT	CMakeFiles/3.27.1/CMakeCCompiler.cmake	29;"	v
+CMAKE_MT	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	30;"	v
+CMAKE_MT	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	29;"	v
+CMAKE_MT	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	30;"	v
+CMAKE_OBJDUMP	build/cmake_install.cmake	42;"	v
+CMAKE_RANLIB	CMakeFiles/3.27.1/CMakeCCompiler.cmake	26;"	v
+CMAKE_RANLIB	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	27;"	v
+CMAKE_RANLIB	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	26;"	v
+CMAKE_RANLIB	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	27;"	v
+CMAKE_RELATIVE_PATH_TOP_BINARY	build/CMakeFiles/CMakeDirectoryInformation.cmake	6;"	v
+CMAKE_RELATIVE_PATH_TOP_SOURCE	build/CMakeFiles/CMakeDirectoryInformation.cmake	5;"	v
+CMAKE_SIZEOF_VOID_P	CMakeFiles/3.27.1/CMakeCCompiler.cmake	51;"	v
+CMAKE_SIZEOF_VOID_P	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	62;"	v
+CMAKE_SIZEOF_VOID_P	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	51;"	v
+CMAKE_SIZEOF_VOID_P	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	62;"	v
+CMAKE_SOURCE_DIR	build/Makefile	60;"	m
+CMAKE_SYSTEM	CMakeFiles/3.27.1/CMakeSystem.cmake	8;"	v
+CMAKE_SYSTEM	build/CMakeFiles/3.27.1/CMakeSystem.cmake	8;"	v
+CMAKE_SYSTEM_LOADED	CMakeFiles/3.27.1/CMakeSystem.cmake	15;"	v
+CMAKE_SYSTEM_LOADED	build/CMakeFiles/3.27.1/CMakeSystem.cmake	15;"	v
+CMAKE_SYSTEM_NAME	CMakeFiles/3.27.1/CMakeSystem.cmake	9;"	v
+CMAKE_SYSTEM_NAME	build/CMakeFiles/3.27.1/CMakeSystem.cmake	9;"	v
+CMAKE_SYSTEM_PROCESSOR	CMakeFiles/3.27.1/CMakeSystem.cmake	11;"	v
+CMAKE_SYSTEM_PROCESSOR	build/CMakeFiles/3.27.1/CMakeSystem.cmake	11;"	v
+CMAKE_SYSTEM_VERSION	CMakeFiles/3.27.1/CMakeSystem.cmake	10;"	v
+CMAKE_SYSTEM_VERSION	build/CMakeFiles/3.27.1/CMakeSystem.cmake	10;"	v
+CMAKE_TAPI	CMakeFiles/3.27.1/CMakeCCompiler.cmake	30;"	v
+CMAKE_TAPI	CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	31;"	v
+CMAKE_TAPI	build/CMakeFiles/3.27.1/CMakeCCompiler.cmake	30;"	v
+CMAKE_TAPI	build/CMakeFiles/3.27.1/CMakeCXXCompiler.cmake	31;"	v
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	109;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	117;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	123;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	129;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	138;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	147;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	161;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	168;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	175;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	182;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	190;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	198;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	205;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	212;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	220;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	228;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	233;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	240;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	248;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	25;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	264;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	273;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	279;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	282;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	285;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	288;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	303;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	318;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	325;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	339;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	355;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	365;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	383;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	393;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	407;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	424;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	427;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	71;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	109;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	117;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	123;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	129;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	138;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	147;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	161;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	168;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	175;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	182;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	190;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	198;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	19;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	205;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	212;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	220;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	228;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	233;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	240;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	248;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	25;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	264;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	273;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	279;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	282;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	297;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	312;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	319;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	333;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	349;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	363;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	381;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	391;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	409;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	412;"	d	file:
+COMPILER_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	71;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	109;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	117;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	123;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	129;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	138;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	147;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	161;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	168;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	175;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	182;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	190;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	198;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	205;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	212;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	220;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	228;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	233;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	240;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	248;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	25;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	264;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	273;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	279;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	282;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	285;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	288;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	303;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	318;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	325;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	339;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	355;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	365;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	383;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	393;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	407;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	424;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	427;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	71;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	109;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	117;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	123;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	129;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	138;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	147;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	161;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	168;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	175;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	182;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	190;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	198;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	19;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	205;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	212;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	220;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	228;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	233;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	240;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	248;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	25;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	264;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	273;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	279;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	282;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	297;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	312;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	319;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	333;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	349;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	363;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	381;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	391;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	409;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	412;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	71;"	d	file:
+COMPILER_VERSION	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	250;"	d	file:
+COMPILER_VERSION	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	250;"	d	file:
+COMPILER_VERSION	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	250;"	d	file:
+COMPILER_VERSION	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	250;"	d	file:
+COMPILER_VERSION_INTERNAL	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	257;"	d	file:
+COMPILER_VERSION_INTERNAL	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	259;"	d	file:
+COMPILER_VERSION_INTERNAL	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	276;"	d	file:
+COMPILER_VERSION_INTERNAL	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	322;"	d	file:
+COMPILER_VERSION_INTERNAL	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	398;"	d	file:
+COMPILER_VERSION_INTERNAL	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	403;"	d	file:
+COMPILER_VERSION_INTERNAL	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	257;"	d	file:
+COMPILER_VERSION_INTERNAL	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	259;"	d	file:
+COMPILER_VERSION_INTERNAL	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	276;"	d	file:
+COMPILER_VERSION_INTERNAL	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	316;"	d	file:
+COMPILER_VERSION_INTERNAL	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	396;"	d	file:
+COMPILER_VERSION_INTERNAL	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	401;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	257;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	259;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	276;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	322;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	398;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	403;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	257;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	259;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	276;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	316;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	396;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	401;"	d	file:
+COMPILER_VERSION_INTERNAL_STR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	244;"	d	file:
+COMPILER_VERSION_INTERNAL_STR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	244;"	d	file:
+COMPILER_VERSION_INTERNAL_STR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	244;"	d	file:
+COMPILER_VERSION_INTERNAL_STR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	244;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	110;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	118;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	125;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	131;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	140;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	150;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	155;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	163;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	170;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	177;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	183;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	191;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	200;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	207;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	213;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	221;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	229;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	235;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	241;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	252;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	267;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	274;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	291;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	296;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	307;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	319;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	329;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	340;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	356;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	35;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	367;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	386;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	395;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	400;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	409;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	414;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	43;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	83;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	87;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	110;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	118;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	125;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	131;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	140;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	150;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	155;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	163;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	170;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	177;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	183;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	191;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	200;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	207;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	213;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	21;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	221;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	229;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	235;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	241;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	252;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	267;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	274;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	285;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	290;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	301;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	313;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	323;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	334;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	351;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	353;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	35;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	365;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	384;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	393;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	398;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	43;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	83;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	87;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	110;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	118;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	125;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	131;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	140;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	150;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	155;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	163;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	170;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	177;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	183;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	191;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	200;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	207;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	213;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	221;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	229;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	235;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	241;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	252;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	267;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	274;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	291;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	296;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	307;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	319;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	329;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	340;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	356;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	35;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	367;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	386;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	395;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	400;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	409;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	414;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	43;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	83;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	87;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	110;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	118;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	125;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	131;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	140;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	150;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	155;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	163;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	170;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	177;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	183;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	191;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	200;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	207;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	213;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	21;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	221;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	229;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	235;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	241;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	252;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	267;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	274;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	285;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	290;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	301;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	313;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	323;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	334;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	351;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	353;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	35;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	365;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	384;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	393;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	398;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	43;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	83;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	87;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	111;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	119;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	126;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	132;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	141;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	151;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	156;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	164;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	171;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	178;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	184;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	192;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	201;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	208;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	214;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	222;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	230;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	236;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	242;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	253;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	268;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	275;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	292;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	297;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	308;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	320;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	330;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	341;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	358;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	368;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	36;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	387;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	396;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	401;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	410;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	415;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	44;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	84;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	88;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	111;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	119;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	126;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	132;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	141;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	151;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	156;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	164;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	171;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	178;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	184;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	192;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	201;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	208;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	214;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	222;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	22;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	230;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	236;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	242;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	253;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	268;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	275;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	286;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	291;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	302;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	314;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	324;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	335;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	356;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	366;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	36;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	385;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	394;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	399;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	44;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	84;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	88;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	111;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	119;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	126;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	132;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	141;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	151;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	156;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	164;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	171;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	178;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	184;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	192;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	201;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	208;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	214;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	222;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	230;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	236;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	242;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	253;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	268;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	275;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	292;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	297;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	308;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	320;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	330;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	341;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	358;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	368;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	36;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	387;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	396;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	401;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	410;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	415;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	44;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	84;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	88;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	111;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	119;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	126;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	132;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	141;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	151;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	156;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	164;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	171;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	178;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	184;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	192;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	201;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	208;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	214;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	222;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	22;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	230;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	236;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	242;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	253;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	268;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	275;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	286;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	291;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	302;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	314;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	324;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	335;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	356;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	366;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	36;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	385;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	394;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	399;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	44;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	84;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	88;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	113;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	120;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	134;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	143;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	152;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	157;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	165;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	172;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	179;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	185;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	193;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	202;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	209;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	216;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	224;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	237;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	243;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	254;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	269;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	293;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	298;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	309;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	321;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	331;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	343;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	361;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	372;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	375;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	388;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	38;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	397;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	402;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	40;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	411;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	416;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	47;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	85;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	89;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	113;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	120;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	134;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	143;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	152;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	157;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	165;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	172;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	179;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	185;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	193;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	202;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	209;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	216;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	224;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	237;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	243;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	254;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	269;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	287;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	292;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	303;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	315;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	325;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	337;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	359;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	370;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	373;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	386;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	38;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	395;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	400;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	40;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	47;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	85;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	89;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	113;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	120;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	134;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	143;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	152;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	157;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	165;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	172;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	179;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	185;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	193;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	202;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	209;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	216;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	224;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	237;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	243;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	254;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	269;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	293;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	298;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	309;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	321;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	331;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	343;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	361;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	372;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	375;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	388;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	38;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	397;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	402;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	40;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	411;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	416;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	47;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	85;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	89;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	113;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	120;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	134;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	143;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	152;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	157;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	165;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	172;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	179;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	185;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	193;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	202;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	209;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	216;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	224;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	237;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	243;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	254;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	269;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	287;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	292;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	303;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	315;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	325;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	337;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	359;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	370;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	373;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	386;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	38;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	395;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	400;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	40;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	47;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	85;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	89;"	d	file:
+COMPILER_VERSION_TWEAK	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	186;"	d	file:
+COMPILER_VERSION_TWEAK	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	194;"	d	file:
+COMPILER_VERSION_TWEAK	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	315;"	d	file:
+COMPILER_VERSION_TWEAK	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	379;"	d	file:
+COMPILER_VERSION_TWEAK	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	389;"	d	file:
+COMPILER_VERSION_TWEAK	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	51;"	d	file:
+COMPILER_VERSION_TWEAK	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	186;"	d	file:
+COMPILER_VERSION_TWEAK	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	194;"	d	file:
+COMPILER_VERSION_TWEAK	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	309;"	d	file:
+COMPILER_VERSION_TWEAK	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	377;"	d	file:
+COMPILER_VERSION_TWEAK	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	387;"	d	file:
+COMPILER_VERSION_TWEAK	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	51;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	186;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	194;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	315;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	379;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	389;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	51;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	186;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	194;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	309;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	377;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	387;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	51;"	d	file:
+CXX_STD	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	789;"	d	file:
+CXX_STD	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	791;"	d	file:
+CXX_STD	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	794;"	d	file:
+CXX_STD	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	797;"	d	file:
+CXX_STD	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	799;"	d	file:
+CXX_STD	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	789;"	d	file:
+CXX_STD	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	791;"	d	file:
+CXX_STD	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	794;"	d	file:
+CXX_STD	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	797;"	d	file:
+CXX_STD	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	799;"	d	file:
+C_VERSION	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	803;"	d	file:
+C_VERSION	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	805;"	d	file:
+C_VERSION	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	808;"	d	file:
+C_VERSION	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	810;"	d	file:
+C_VERSION	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	812;"	d	file:
+C_VERSION	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	814;"	d	file:
+C_VERSION	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	816;"	d	file:
+C_VERSION	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	803;"	d	file:
+C_VERSION	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	805;"	d	file:
+C_VERSION	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	808;"	d	file:
+C_VERSION	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	810;"	d	file:
+C_VERSION	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	812;"	d	file:
+C_VERSION	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	814;"	d	file:
+C_VERSION	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	816;"	d	file:
+Cab	ximgproc/src/find_ellipses.cpp	180;"	m	struct:cv::ximgproc::EllipseData	typeref:typename:Point2f	file:
+CandidateArc	ximgproc/src/edge_drawing.cpp	3564;"	s	function:cv::ximgproc::EdgeDrawingImpl::JoinArcs1	file:
+CandidateArc	ximgproc/src/edge_drawing.cpp	3837;"	s	function:cv::ximgproc::EdgeDrawingImpl::JoinArcs2	file:
+CandidateArc	ximgproc/src/edge_drawing.cpp	4098;"	s	function:cv::ximgproc::EdgeDrawingImpl::JoinArcs3	file:
+Chain	ximgproc/src/edge_drawing_common.hpp	153;"	s
+Cho2014	ximgproc/doc/ximgproc.bib	194;"	a
+Circle	ximgproc/src/edge_drawing_common.hpp	238;"	s
+CircleFit	ximgproc/src/edge_drawing.cpp	5233;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:bool
+Circles	ximgproc/src/edge_drawing.cpp	192;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:std::vector<mCircle>	file:
+Comb	ximgproc/src/edge_drawing_common.hpp	121;"	f	class:NFALUT	typeref:typename:double
+ComputeAnchorPoints	ximgproc/src/edge_drawing.cpp	483;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+ComputeCirclePoints	ximgproc/src/edge_drawing.cpp	5316;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+ComputeClosestPoint	ximgproc/src/edge_drawing.cpp	1742;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+ComputeEllipseCenterAndAxisLengths	ximgproc/src/edge_drawing.cpp	4695;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:double
+ComputeEllipseError	ximgproc/src/edge_drawing.cpp	4518;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:double
+ComputeEllipsePoints	ximgproc/src/edge_drawing.cpp	4782;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+ComputeGradient	ximgproc/src/edge_drawing.cpp	458;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+ComputeGradientBody	ximgproc/src/edge_drawing.cpp	16;"	s	namespace:cv::ximgproc	file:	inherits:ParallelLoopBody
+ComputeMinDistance	ximgproc/src/edge_drawing.cpp	1695;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:double
+ComputeMinDistanceBetweenTwoLines	ximgproc/src/edge_drawing.cpp	2035;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:double
+ComputeMinLineLength	ximgproc/src/edge_drawing.cpp	1345;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int
+ComputeStartAndEndAngles	ximgproc/src/edge_drawing.cpp	5043;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+ContourFitting	ximgproc/include/opencv2/ximgproc/fourier_descriptors.hpp	20;"	c	namespace:cv::ximgproc	inherits:Algorithm
+ContourFitting	ximgproc/include/opencv2/ximgproc/fourier_descriptors.hpp	38;"	f	class:cv::ximgproc::ContourFitting
+D	ximgproc/src/edge_drawing_common.hpp	232;"	f	struct:EllipseEquation	typeref:typename:double
+DEC	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	720;"	d	file:
+DEC	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	705;"	d	file:
+DEC	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	720;"	d	file:
+DEC	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	705;"	d	file:
+DOWN	ximgproc/src/edge_drawing_common.hpp	19;"	d
+DTF_IC	ximgproc/include/opencv2/ximgproc/edge_filter.hpp	54;"	e	enum:cv::ximgproc::EdgeAwareFiltersList
+DTF_NC	ximgproc/include/opencv2/ximgproc/edge_filter.hpp	53;"	e	enum:cv::ximgproc::EdgeAwareFiltersList
+DTF_RF	ximgproc/include/opencv2/ximgproc/edge_filter.hpp	55;"	e	enum:cv::ximgproc::EdgeAwareFiltersList
+DTFilter	ximgproc/include/opencv2/ximgproc/edge_filter.hpp	66;"	c	namespace:cv::ximgproc	inherits:Algorithm
+DeallocateMatrix	ximgproc/src/edge_drawing.cpp	5613;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+DetectArcs	ximgproc/src/edge_drawing.cpp	2752;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+DisparityFilter	ximgproc/include/opencv2/ximgproc/disparity_filter.hpp	52;"	c	namespace:cv::ximgproc	inherits:Algorithm
+DisparityWLSFilter	ximgproc/include/opencv2/ximgproc/disparity_filter.hpp	82;"	c	namespace:cv::ximgproc	inherits:DisparityFilter
+Dollar2013	ximgproc/doc/ximgproc.bib	8;"	j
+E	ximgproc/src/edge_drawing_common.hpp	233;"	f	struct:EllipseEquation	typeref:typename:double
+EAST_EAST	ximgproc/src/edge_drawing_common.hpp	24;"	d
+EAST_SOUTH	ximgproc/src/edge_drawing_common.hpp	23;"	d
+EDArcs	ximgproc/src/edge_drawing_common.hpp	529;"	s
+EDArcs	ximgproc/src/edge_drawing_common.hpp	534;"	f	struct:EDArcs
+EDGE_HORIZONTAL	ximgproc/src/edge_drawing_common.hpp	11;"	d
+EDGE_PIXEL	ximgproc/src/edge_drawing_common.hpp	14;"	d
+EDGE_VERTICAL	ximgproc/src/edge_drawing_common.hpp	10;"	d
+EDLineSegment	ximgproc/src/edge_drawing_common.hpp	176;"	s
+EDLineSegment	ximgproc/src/edge_drawing_common.hpp	188;"	f	struct:EDLineSegment
+ELLIPSE_ERROR	ximgproc/src/edge_drawing_common.hpp	39;"	d
+EQUALS	build/Makefile	57;"	m
+EdgeAwareFiltersList	ximgproc/include/opencv2/ximgproc/edge_filter.hpp	51;"	g	namespace:cv::ximgproc
+EdgeAwareInterpolator	ximgproc/include/opencv2/ximgproc/sparse_match_interpolator.hpp	77;"	c	namespace:cv::ximgproc	inherits:SparseMatchInterpolator
+EdgeBoxes	ximgproc/include/opencv2/ximgproc/edgeboxes.hpp	67;"	c	namespace:cv::ximgproc	inherits:Algorithm
+EdgeDetectionOperator	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	42;"	m	struct:cv::ximgproc::EdgeDrawing::Params	typeref:typename:CV_PROP_RW int
+EdgeDrawing	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	21;"	c	namespace:cv::ximgproc	inherits:Algorithm
+EdgeDrawingImpl	ximgproc/src/edge_drawing.cpp	338;"	f	class:cv::ximgproc::EdgeDrawingImpl
+EdgeDrawingImpl	ximgproc/src/edge_drawing.cpp	96;"	c	namespace:cv::ximgproc	file:	inherits:EdgeDrawing
+Ellipse	ximgproc/src/find_ellipses.cpp	19;"	s	namespace:cv::ximgproc	file:
+Ellipse	ximgproc/src/find_ellipses.cpp	25;"	f	struct:cv::ximgproc::Ellipse	file:
+Ellipse	ximgproc/src/find_ellipses.cpp	31;"	f	struct:cv::ximgproc::Ellipse	file:
+Ellipse	ximgproc/src/find_ellipses.cpp	38;"	f	struct:cv::ximgproc::Ellipse	file:
+Ellipse	ximgproc/src/find_ellipses.cpp	45;"	f	struct:cv::ximgproc::Ellipse	file:
+EllipseData	ximgproc/src/find_ellipses.cpp	176;"	s	namespace:cv::ximgproc	file:
+EllipseDetectorImpl	ximgproc/src/find_ellipses.cpp	185;"	c	namespace:cv::ximgproc	file:
+EllipseDetectorImpl	ximgproc/src/find_ellipses.cpp	279;"	f	class:cv::ximgproc::EllipseDetectorImpl
+EllipseEquation	ximgproc/src/edge_drawing_common.hpp	222;"	s
+EllipseEquation	ximgproc/src/edge_drawing_common.hpp	225;"	f	struct:EllipseEquation
+EllipseFit	ximgproc/src/edge_drawing.cpp	5339;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:bool
+EllipseFittingMethods	ximgproc/src/edge_drawing.cpp	100;"	g	class:cv::ximgproc::EdgeDrawingImpl	file:
+Ellipses	ximgproc/src/edge_drawing.cpp	193;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:std::vector<mEllipse>	file:
+EnumerateRectPoints	ximgproc/src/edge_drawing.cpp	2116;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+ExtractNewSegments	ximgproc/src/edge_drawing.cpp	2377;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+F	ximgproc/src/edge_drawing_common.hpp	234;"	f	struct:EllipseEquation	typeref:typename:double
+FHT_ADD	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	94;"	e	enum:cv::ximgproc::HoughOp
+FHT_AVE	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	96;"	e	enum:cv::ximgproc::HoughOp
+FHT_MAX	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	92;"	e	enum:cv::ximgproc::HoughOp
+FHT_MIN	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	90;"	e	enum:cv::ximgproc::HoughOp
+FPF	ximgproc/src/edge_drawing.cpp	103;"	e	enum:cv::ximgproc::EdgeDrawingImpl::EllipseFittingMethods	file:
+FULL_CIRCLE_RATIO	ximgproc/src/edge_drawing_common.hpp	35;"	d
+Farbman2008	ximgproc/doc/ximgproc.bib	119;"	j
+FastBilateralSolverFilter	ximgproc/include/opencv2/ximgproc/edge_filter.hpp	382;"	c	namespace:cv::ximgproc	inherits:Algorithm
+FastGlobalSmootherFilter	ximgproc/include/opencv2/ximgproc/edge_filter.hpp	457;"	c	namespace:cv::ximgproc	inherits:Algorithm
+FastLineDetector	ximgproc/include/opencv2/ximgproc/fast_line_detector.hpp	24;"	c	namespace:cv::ximgproc	inherits:Algorithm
+FindBallServer	main.cpp	23;"	c	file:
+FindBallServer	main.cpp	28;"	f	class:FindBallServer	file:
+GUIDED_FILTER	ximgproc/include/opencv2/ximgproc/edge_filter.hpp	57;"	e	enum:cv::ximgproc::EdgeAwareFiltersList
+Gastal11	ximgproc/doc/ximgproc.bib	26;"	j
+Gastal12	ximgproc/doc/ximgproc.bib	37;"	a
+GenerateCandidateCircles	ximgproc/src/edge_drawing.cpp	2684;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+GradientOperator	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	25;"	g	class:cv::ximgproc::EdgeDrawing
+GradientThresholdValue	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	44;"	m	struct:cv::ximgproc::EdgeDrawing::Params	typeref:typename:CV_PROP_RW int
+GraphSegmentation	ximgproc/include/opencv2/ximgproc/segmentation.hpp	46;"	c	namespace:cv::ximgproc::segmentation	inherits:Algorithm
+GuidedFilter	ximgproc/include/opencv2/ximgproc/edge_filter.hpp	130;"	c	namespace:cv::ximgproc	inherits:Algorithm
+HALF_ARC_ERROR	ximgproc/src/edge_drawing_common.hpp	29;"	d
+HALF_CIRCLE_RATIO	ximgproc/src/edge_drawing_common.hpp	34;"	d
+HDO_DESKEW	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	108;"	e	enum:cv::ximgproc::HoughDeskewOption
+HDO_RAW	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	107;"	e	enum:cv::ximgproc::HoughDeskewOption
+HEX	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	731;"	d	file:
+HEX	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	716;"	d	file:
+HEX	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	731;"	d	file:
+HEX	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	716;"	d	file:
+HoughDeskewOption	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	105;"	g	namespace:cv::ximgproc
+HoughOp	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	88;"	g	namespace:cv::ximgproc
+Hu2017	ximgproc/doc/ximgproc.bib	332;"	j
+ID_VOID_MAIN	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
+ID_VOID_MAIN	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
+Info	ximgproc/src/edge_drawing_common.hpp	564;"	s
+JOINED_SHORT_ARC_ERROR_THRESHOLD	ximgproc/src/edge_drawing.cpp	3421;"	d	file:
+JoinAnchorPointsUsingSortedAnchors	ximgproc/src/edge_drawing.cpp	528;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+JoinArcs1	ximgproc/src/edge_drawing.cpp	3550;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+JoinArcs2	ximgproc/src/edge_drawing.cpp	3823;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+JoinArcs3	ximgproc/src/edge_drawing.cpp	4084;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+JoinCircles	ximgproc/src/edge_drawing.cpp	3371;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+JoinCollinearLines	ximgproc/src/edge_drawing.cpp	1466;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+Kaiming10	ximgproc/doc/ximgproc.bib	48;"	I
+Khurshid2009	ximgproc/doc/ximgproc.bib	261;"	j
+LEFT	ximgproc/src/edge_drawing_common.hpp	16;"	d
+LONG_ARC_ERROR	ximgproc/src/edge_drawing_common.hpp	30;"	d
+LS	ximgproc/src/edge_drawing_common.hpp	163;"	s
+LS	ximgproc/src/edge_drawing_common.hpp	168;"	f	struct:LS
+LSD	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	30;"	e	enum:cv::ximgproc::EdgeDrawing::GradientOperator
+LUT	ximgproc/src/edge_drawing_common.hpp	52;"	m	class:NFALUT	typeref:typename:int *
+LUTSize	ximgproc/src/edge_drawing_common.hpp	53;"	m	class:NFALUT	typeref:typename:int
+Lee14	ximgproc/doc/ximgproc.bib	57;"	j
+LiCVPR2015LSC	ximgproc/doc/ximgproc.bib	186;"	j
+Lim2013	ximgproc/doc/ximgproc.bib	66;"	j
+LineFit	ximgproc/src/edge_drawing.cpp	1790;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+LineFit	ximgproc/src/edge_drawing.cpp	1829;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+LineFitErrorThreshold	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	65;"	m	struct:cv::ximgproc::EdgeDrawing::Params	typeref:typename:CV_PROP_RW double
+Liu_2017_IEEE	ximgproc/doc/ximgproc.bib	170;"	j
+LocalBinarizationMethods	ximgproc/include/opencv2/ximgproc.hpp	135;"	g	namespace:cv::ximgproc
+LongestChain	ximgproc/src/edge_drawing.cpp	1234;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int
+MAX_GRAD_VALUE	ximgproc/src/edge_drawing_common.hpp	40;"	d
+MIMode	.vscode/launch.json	19;"	s	object:configurations.0
+MSLIC	ximgproc/include/opencv2/ximgproc/slic.hpp	64;"	e	enum:cv::ximgproc::SLICType
+M_RF	ximgproc/doc/ximgproc.bib	308;"	n
+Ma	ximgproc/src/find_ellipses.cpp	180;"	m	struct:cv::ximgproc::EllipseData	typeref:typename:Point2f	file:
+MaxDistanceBetweenTwoLines	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	63;"	m	struct:cv::ximgproc::EdgeDrawing::Params	typeref:typename:CV_PROP_RW double
+MaxErrorThreshold	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	67;"	m	struct:cv::ximgproc::EdgeDrawing::Params	typeref:typename:CV_PROP_RW double
+Mb	ximgproc/src/find_ellipses.cpp	180;"	m	struct:cv::ximgproc::EllipseData	typeref:typename:Point2f	file:
+Min2014	ximgproc/doc/ximgproc.bib	108;"	a
+MinLineLength	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	61;"	m	struct:cv::ximgproc::EdgeDrawing::Params	typeref:typename:CV_PROP_RW int
+MinPathLength	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	54;"	m	struct:cv::ximgproc::EdgeDrawing::Params	typeref:typename:CV_PROP_RW int
+MyArc	ximgproc/src/edge_drawing_common.hpp	255;"	s
+NFA	ximgproc/src/edge_drawing.cpp	2421;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:double
+NFALUT	ximgproc/src/edge_drawing_common.hpp	45;"	c
+NFALUT	ximgproc/src/edge_drawing_common.hpp	66;"	f	class:NFALUT
+NFAValidation	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	59;"	m	struct:cv::ximgproc::EdgeDrawing::Params	typeref:typename:CV_PROP_RW bool
+Niblack1985	ximgproc/doc/ximgproc.bib	233;"	b
+OpenCVTest	CMakeLists.txt	2;"	p
+OpenCVTest	build/Makefile	123;"	t
+OpenCVTest/fast	build/Makefile	128;"	t
+PAIR_12	ximgproc/src/find_ellipses.cpp	234;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:const ushort	file:
+PAIR_14	ximgproc/src/find_ellipses.cpp	237;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:const ushort	file:
+PAIR_23	ximgproc/src/find_ellipses.cpp	235;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:const ushort	file:
+PAIR_34	ximgproc/src/find_ellipses.cpp	236;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:const ushort	file:
+PFF2004	ximgproc/doc/ximgproc.bib	75;"	I
+PFmode	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	37;"	m	struct:cv::ximgproc::EdgeDrawing::Params	typeref:typename:CV_PROP_RW bool
+PFmode	ximgproc/src/edge_drawing.cpp	27;"	m	struct:cv::ximgproc::ComputeGradientBody	typeref:typename:bool	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	452;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	455;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	458;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	461;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	464;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	467;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	470;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	473;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	476;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	479;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	482;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	485;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	488;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	491;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	494;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	497;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	500;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	503;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	506;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	509;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	512;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	515;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	518;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	521;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	524;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	528;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	531;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	534;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	537;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	540;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	543;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	548;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	551;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	555;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	558;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	437;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	440;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	443;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	446;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	449;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	452;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	455;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	458;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	461;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	464;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	467;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	470;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	473;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	476;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	479;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	482;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	485;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	488;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	491;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	494;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	497;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	500;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	503;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	506;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	509;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	513;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	516;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	519;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	522;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	525;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	528;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	533;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	536;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	540;"	d	file:
+PLATFORM_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	543;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	452;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	455;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	458;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	461;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	464;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	467;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	470;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	473;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	476;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	479;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	482;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	485;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	488;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	491;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	494;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	497;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	500;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	503;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	506;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	509;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	512;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	515;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	518;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	521;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	524;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	528;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	531;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	534;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	537;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	540;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	543;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	548;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	551;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	555;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	558;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	437;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	440;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	443;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	446;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	449;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	452;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	455;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	458;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	461;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	464;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	467;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	470;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	473;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	476;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	479;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	482;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	485;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	488;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	491;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	494;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	497;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	500;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	503;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	506;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	509;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	513;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	516;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	519;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	522;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	525;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	528;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	533;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	536;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	540;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	543;"	d	file:
+PRECISION_ANGLE	ximgproc/src/edge_drawing.cpp	1513;"	d	file:
+PREWITT	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	27;"	e	enum:cv::ximgproc::EdgeDrawing::GradientOperator
+PURPLE	main.cpp	12;"	e	enum:BallType	file:
+Params	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	33;"	s	class:cv::ximgproc::EdgeDrawing
+Params	ximgproc/src/edge_drawing.cpp	266;"	f	class:cv::ximgproc::EdgeDrawing::Params
+PersoonFu1977	ximgproc/doc/ximgproc.bib	281;"	a
+RED	main.cpp	12;"	e	enum:BallType	file:
+RFFeatureGetter	ximgproc/include/opencv2/ximgproc/structured_edge_detection.hpp	65;"	c	namespace:cv::ximgproc	inherits:Algorithm
+RICInterpolator	ximgproc/include/opencv2/ximgproc/sparse_match_interpolator.hpp	146;"	c	namespace:cv::ximgproc	inherits:SparseMatchInterpolator
+RIGHT	ximgproc/src/edge_drawing_common.hpp	17;"	d
+RM	build/Makefile	54;"	m
+ROTATE	ximgproc/src/edge_drawing.cpp	5745;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+RO_IGNORE_BORDERS	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	118;"	e	enum:cv::ximgproc::__anoncc5e2ced0103
+RO_STRICT	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	117;"	e	enum:cv::ximgproc::__anoncc5e2ced0103
+RetrieveChainNos	ximgproc/src/edge_drawing.cpp	1263;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int
+Revaud2015	ximgproc/doc/ximgproc.bib	142;"	j
+RidgeDetectionFilter	ximgproc/include/opencv2/ximgproc/ridgefilter.hpp	27;"	c	namespace:cv::ximgproc	inherits:Algorithm
+RulesOption	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	119;"	t	namespace:cv::ximgproc	typeref:enum:cv::ximgproc::__anoncc5e2ced0103
+SCHARR	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	29;"	e	enum:cv::ximgproc::EdgeDrawing::GradientOperator
+SHELL	build/Makefile	48;"	m
+SHORT_ARC_ERROR	ximgproc/src/edge_drawing_common.hpp	28;"	d
+SIMULATE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	27;"	d	file:
+SIMULATE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	305;"	d	file:
+SIMULATE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	30;"	d	file:
+SIMULATE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	327;"	d	file:
+SIMULATE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	346;"	d	file:
+SIMULATE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	73;"	d	file:
+SIMULATE_ID	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	76;"	d	file:
+SIMULATE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	27;"	d	file:
+SIMULATE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	299;"	d	file:
+SIMULATE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	30;"	d	file:
+SIMULATE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	321;"	d	file:
+SIMULATE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	340;"	d	file:
+SIMULATE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	73;"	d	file:
+SIMULATE_ID	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	76;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	27;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	305;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	30;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	327;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	346;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	73;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	76;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	27;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	299;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	30;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	321;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	340;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	73;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	76;"	d	file:
+SIMULATE_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	312;"	d	file:
+SIMULATE_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	334;"	d	file:
+SIMULATE_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	347;"	d	file:
+SIMULATE_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	55;"	d	file:
+SIMULATE_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	59;"	d	file:
+SIMULATE_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	61;"	d	file:
+SIMULATE_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	93;"	d	file:
+SIMULATE_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	97;"	d	file:
+SIMULATE_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	99;"	d	file:
+SIMULATE_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	306;"	d	file:
+SIMULATE_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	328;"	d	file:
+SIMULATE_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	341;"	d	file:
+SIMULATE_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	55;"	d	file:
+SIMULATE_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	59;"	d	file:
+SIMULATE_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	61;"	d	file:
+SIMULATE_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	93;"	d	file:
+SIMULATE_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	97;"	d	file:
+SIMULATE_VERSION_MAJOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	99;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	312;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	334;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	347;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	55;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	59;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	61;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	93;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	97;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	99;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	306;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	328;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	341;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	55;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	59;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	61;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	93;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	97;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	99;"	d	file:
+SIMULATE_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	102;"	d	file:
+SIMULATE_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	313;"	d	file:
+SIMULATE_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	335;"	d	file:
+SIMULATE_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	348;"	d	file:
+SIMULATE_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	56;"	d	file:
+SIMULATE_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	64;"	d	file:
+SIMULATE_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	94;"	d	file:
+SIMULATE_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	102;"	d	file:
+SIMULATE_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	307;"	d	file:
+SIMULATE_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	329;"	d	file:
+SIMULATE_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	342;"	d	file:
+SIMULATE_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	56;"	d	file:
+SIMULATE_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	64;"	d	file:
+SIMULATE_VERSION_MINOR	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	94;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	102;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	313;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	335;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	348;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	56;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	64;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	94;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	102;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	307;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	329;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	342;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	56;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	64;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	94;"	d	file:
+SIMULATE_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	105;"	d	file:
+SIMULATE_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	350;"	d	file:
+SIMULATE_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	67;"	d	file:
+SIMULATE_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	105;"	d	file:
+SIMULATE_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	344;"	d	file:
+SIMULATE_VERSION_PATCH	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	67;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	105;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	350;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	67;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	105;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	344;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	67;"	d	file:
+SLIC	ximgproc/include/opencv2/ximgproc/slic.hpp	64;"	e	enum:cv::ximgproc::SLICType
+SLICO	ximgproc/include/opencv2/ximgproc/slic.hpp	64;"	e	enum:cv::ximgproc::SLICType
+SLICType	ximgproc/include/opencv2/ximgproc/slic.hpp	64;"	g	namespace:cv::ximgproc
+SOBEL	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	28;"	e	enum:cv::ximgproc::EdgeDrawing::GradientOperator
+SOUTH_EAST	ximgproc/src/edge_drawing_common.hpp	22;"	d
+SOUTH_SOUTH	ximgproc/src/edge_drawing_common.hpp	21;"	d
+SRC_DIR	CMakeLists.txt	20;"	v
+STRINGIFY	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	448;"	d	file:
+STRINGIFY	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	433;"	d	file:
+STRINGIFY	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	448;"	d	file:
+STRINGIFY	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	433;"	d	file:
+STRINGIFY_HELPER	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	447;"	d	file:
+STRINGIFY_HELPER	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	432;"	d	file:
+STRINGIFY_HELPER	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	447;"	d	file:
+STRINGIFY_HELPER	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	432;"	d	file:
+Sa	ximgproc/src/find_ellipses.cpp	181;"	m	struct:cv::ximgproc::EllipseData	typeref:typename:std::vector<float>	file:
+Sauvola1997	ximgproc/doc/ximgproc.bib	240;"	j
+Sb	ximgproc/src/find_ellipses.cpp	181;"	m	struct:cv::ximgproc::EllipseData	typeref:typename:std::vector<float>	file:
+ScanInterval	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	48;"	m	struct:cv::ximgproc::EdgeDrawing::Params	typeref:typename:CV_PROP_RW int
+ScanSegment	ximgproc/include/opencv2/ximgproc/scansegment.hpp	23;"	c	namespace:cv::ximgproc	inherits:Algorithm
+Segleafvein	ximgproc/doc/ximgproc.bib	302;"	n
+SelectiveSearchSegmentation	ximgproc/include/opencv2/ximgproc/segmentation.hpp	181;"	c	namespace:cv::ximgproc::segmentation	inherits:Algorithm
+SelectiveSearchSegmentationStrategy	ximgproc/include/opencv2/ximgproc/segmentation.hpp	74;"	c	namespace:cv::ximgproc::segmentation	inherits:Algorithm
+SelectiveSearchSegmentationStrategyColor	ximgproc/include/opencv2/ximgproc/segmentation.hpp	100;"	c	namespace:cv::ximgproc::segmentation	inherits:SelectiveSearchSegmentationStrategy
+SelectiveSearchSegmentationStrategyFill	ximgproc/include/opencv2/ximgproc/segmentation.hpp	127;"	c	namespace:cv::ximgproc::segmentation	inherits:SelectiveSearchSegmentationStrategy
+SelectiveSearchSegmentationStrategyMultiple	ximgproc/include/opencv2/ximgproc/segmentation.hpp	135;"	c	namespace:cv::ximgproc::segmentation	inherits:SelectiveSearchSegmentationStrategy
+SelectiveSearchSegmentationStrategySize	ximgproc/include/opencv2/ximgproc/segmentation.hpp	109;"	c	namespace:cv::ximgproc::segmentation	inherits:SelectiveSearchSegmentationStrategy
+SelectiveSearchSegmentationStrategyTexture	ximgproc/include/opencv2/ximgproc/segmentation.hpp	118;"	c	namespace:cv::ximgproc::segmentation	inherits:SelectiveSearchSegmentationStrategy
+Sigma	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	56;"	m	struct:cv::ximgproc::EdgeDrawing::Params	typeref:typename:CV_PROP_RW float
+SparseMatchInterpolator	ximgproc/include/opencv2/ximgproc/sparse_match_interpolator.hpp	52;"	c	namespace:cv::ximgproc	inherits:Algorithm
+SplitSegment2Lines	ximgproc/src/edge_drawing.cpp	1361;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+StackNode	ximgproc/src/edge_drawing_common.hpp	145;"	s
+StructuredEdgeDetection	ximgproc/include/opencv2/ximgproc/structured_edge_detection.hpp	97;"	c	namespace:cv::ximgproc	inherits:Algorithm
+SumFlag	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	57;"	m	struct:cv::ximgproc::EdgeDrawing::Params	typeref:typename:CV_PROP_RW bool
+SumFlag	ximgproc/src/edge_drawing.cpp	25;"	m	struct:cv::ximgproc::ComputeGradientBody	typeref:typename:bool	file:
+SuperpixelLSC	ximgproc/include/opencv2/ximgproc/lsc.hpp	71;"	c	namespace:cv::ximgproc	inherits:Algorithm
+SuperpixelSEEDS	ximgproc/include/opencv2/ximgproc/seeds.hpp	66;"	c	namespace:cv::ximgproc	inherits:Algorithm
+SuperpixelSLIC	ximgproc/include/opencv2/ximgproc/slic.hpp	78;"	c	namespace:cv::ximgproc	inherits:Algorithm
+T124	ximgproc/src/find_ellipses.cpp	819;"	d	file:
+T231	ximgproc/src/find_ellipses.cpp	820;"	d	file:
+T342	ximgproc/src/find_ellipses.cpp	821;"	d	file:
+T413	ximgproc/src/find_ellipses.cpp	822;"	d	file:
+THINNING_GUOHALL	ximgproc/include/opencv2/ximgproc.hpp	129;"	e	enum:cv::ximgproc::ThinningTypes
+THINNING_ZHANGSUEN	ximgproc/include/opencv2/ximgproc.hpp	128;"	e	enum:cv::ximgproc::ThinningTypes
+TestSegment	ximgproc/src/edge_drawing.cpp	2320;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+ThinningTypes	ximgproc/include/opencv2/ximgproc.hpp	127;"	g	namespace:cv::ximgproc
+TryToJoinTwoLineSegments	ximgproc/src/edge_drawing.cpp	1914;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:bool
+UP	ximgproc/src/edge_drawing_common.hpp	18;"	d
+UpdateLineParameters	ximgproc/src/edge_drawing.cpp	2079;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+VBRV14	ximgproc/doc/ximgproc.bib	17;"	I
+VERY_SHORT_ARC_ERROR	ximgproc/src/edge_drawing_common.hpp	27;"	d
+VP	ximgproc/src/find_ellipses.cpp	14;"	t	namespace:cv::ximgproc	typeref:typename:std::vector<Point>	file:
+VVP	ximgproc/src/find_ellipses.cpp	15;"	t	namespace:cv::ximgproc	typeref:typename:std::vector<VP>	file:
+ValidateCircles	ximgproc/src/edge_drawing.cpp	3116;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+ValidateLineSegmentRect	ximgproc/src/edge_drawing.cpp	1628;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:bool
+ValidateLineSegments	ximgproc/src/edge_drawing.cpp	1511;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+WMFWeightType	ximgproc/include/opencv2/ximgproc/weighted_median_filter.hpp	64;"	g	namespace:cv::ximgproc
+WMF_COS	ximgproc/include/opencv2/ximgproc/weighted_median_filter.hpp	69;"	e	enum:cv::ximgproc::WMFWeightType
+WMF_EXP	ximgproc/include/opencv2/ximgproc/weighted_median_filter.hpp	66;"	e	enum:cv::ximgproc::WMFWeightType
+WMF_IV1	ximgproc/include/opencv2/ximgproc/weighted_median_filter.hpp	67;"	e	enum:cv::ximgproc::WMFWeightType
+WMF_IV2	ximgproc/include/opencv2/ximgproc/weighted_median_filter.hpp	68;"	e	enum:cv::ximgproc::WMFWeightType
+WMF_JAC	ximgproc/include/opencv2/ximgproc/weighted_median_filter.hpp	70;"	e	enum:cv::ximgproc::WMFWeightType
+WMF_OFF	ximgproc/include/opencv2/ximgproc/weighted_median_filter.hpp	71;"	e	enum:cv::ximgproc::WMFWeightType
+Wolf2004	ximgproc/doc/ximgproc.bib	250;"	a
+Ximgproc_DIR	CMakeLists.txt	19;"	v
+ZitnickECCV14edgeBoxes	ximgproc/doc/ximgproc.bib	1;"	j
+_OPENCV_XIMGPROC_PRECOMP_HPP_	ximgproc/src/precomp.hpp	38;"	d
+__OPENCV_COLOR_MATCH_HPP__	ximgproc/include/opencv2/ximgproc/color_match.hpp	6;"	d
+__OPENCV_DERICHEFILTER_HPP__	ximgproc/include/opencv2/ximgproc/deriche_filter.hpp	38;"	d
+__OPENCV_DISPARITYFILTER_HPP__	ximgproc/include/opencv2/ximgproc/disparity_filter.hpp	38;"	d
+__OPENCV_EDGEBOXES_HPP__	ximgproc/include/opencv2/ximgproc/edgeboxes.hpp	44;"	d
+__OPENCV_EDGEFILTER_HPP__	ximgproc/include/opencv2/ximgproc/edge_filter.hpp	38;"	d
+__OPENCV_EDGEPRESERVINGFILTER_HPP__	ximgproc/include/opencv2/ximgproc/edgepreserving_filter.hpp	6;"	d
+__OPENCV_EDGE_DRAWING_COMMON_HPP__	ximgproc/src/edge_drawing_common.hpp	6;"	d
+__OPENCV_EDGE_DRAWING_HPP__	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	6;"	d
+__OPENCV_ESTIMATECOVARIANCE_HPP__	ximgproc/include/opencv2/ximgproc/estimated_covariance.hpp	52;"	d
+__OPENCV_FAST_HOUGH_TRANSFORM_HPP__	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	45;"	d
+__OPENCV_FAST_LINE_DETECTOR_HPP__	ximgproc/include/opencv2/ximgproc/fast_line_detector.hpp	6;"	d
+__OPENCV_FIND_ELLIPSES_HPP__	ximgproc/include/opencv2/ximgproc/find_ellipses.hpp	6;"	d
+__OPENCV_FOURIERDESCRIPTORS_HPP__	ximgproc/include/opencv2/ximgproc/fourier_descriptors.hpp	6;"	d
+__OPENCV_LSC_HPP__	ximgproc/include/opencv2/ximgproc/lsc.hpp	47;"	d
+__OPENCV_PAILLOUFILTER_HPP__	ximgproc/include/opencv2/ximgproc/paillou_filter.hpp	38;"	d
+__OPENCV_PEILIN_HPP__	ximgproc/include/opencv2/ximgproc/peilin.hpp	6;"	d
+__OPENCV_RADON_TRANSFORM_HPP__	ximgproc/include/opencv2/ximgproc/radon_transform.hpp	6;"	d
+__OPENCV_RUN_LENGTH_MORPHOLOGY_HPP__	ximgproc/include/opencv2/ximgproc/run_length_morphology.hpp	6;"	d
+__OPENCV_SEEDS_HPP__	ximgproc/include/opencv2/ximgproc/seeds.hpp	43;"	d
+__OPENCV_SLIC_HPP__	ximgproc/include/opencv2/ximgproc/slic.hpp	51;"	d
+__OPENCV_SPARSEMATCHINTERPOLATOR_HPP__	ximgproc/include/opencv2/ximgproc/sparse_match_interpolator.hpp	38;"	d
+__OPENCV_STRUCTURED_EDGE_DETECTION_HPP__	ximgproc/include/opencv2/ximgproc/structured_edge_detection.hpp	44;"	d
+__OPENCV_WEIGHTED_MEDIAN_FILTER_HPP__	ximgproc/include/opencv2/ximgproc/weighted_median_filter.hpp	44;"	d
+__OPENCV_XIMGPROC_HPP__	ximgproc/include/opencv2/ximgproc.hpp	38;"	d
+__OPENCV_XIMGPROC_RIDGEFILTER_HPP__	ximgproc/include/opencv2/ximgproc/ridgefilter.hpp	12;"	d
+__OPENCV_XIMGPROC_SCANSEGMENT_HPP__	ximgproc/include/opencv2/ximgproc/scansegment.hpp	8;"	d
+__OPENCV_XIMGPROC_SEGMENTATION_HPP__	ximgproc/include/opencv2/ximgproc/segmentation.hpp	33;"	d
+__anon3b5b11db0102	main.cpp	118;"	f	function:FindBallServer::find_ball	file:
+__anon3b5b11db0202	main.cpp	167;"	f	function:FindBallServer::find_ball	file:
+__anon82eb1e000108	ximgproc/include/opencv2/ximgproc/edgeboxes.hpp	58;"	s	namespace:cv::ximgproc
+__anoncc5e2ced0103	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	116;"	g	namespace:cv::ximgproc
+__has_include	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	17;"	d	file:
+__has_include	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	11;"	d	file:
+__has_include	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	17;"	d	file:
+__has_include	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	11;"	d	file:
+_imgSize	ximgproc/src/find_ellipses.cpp	213;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:Size	file:
+_kernelSize	ximgproc/src/find_ellipses.cpp	188;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:Size	file:
+_maxCenterDistance	ximgproc/src/find_ellipses.cpp	202;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:float	file:
+_maxCenterDistance2	ximgproc/src/find_ellipses.cpp	203;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:float	file:
+_maxDistanceToEllipseContour	ximgproc/src/find_ellipses.cpp	206;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:float	file:
+_minEdgeLength	ximgproc/src/find_ellipses.cpp	192;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:int	file:
+_minOrientedRectSide	ximgproc/src/find_ellipses.cpp	193;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:float	file:
+_minReliability	ximgproc/src/find_ellipses.cpp	210;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:float	file:
+_minScore	ximgproc/src/find_ellipses.cpp	209;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:float	file:
+_overlap	ximgproc/src/edge_drawing_common.hpp	413;"	f	class:AngleSet	typeref:typename:double
+_positionThreshold	ximgproc/src/find_ellipses.cpp	196;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:float	file:
+_set	ximgproc/src/edge_drawing_common.hpp	315;"	f	class:AngleSet	typeref:typename:void
+_sigma	ximgproc/src/find_ellipses.cpp	189;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:double	file:
+_uNs	ximgproc/src/find_ellipses.cpp	199;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:unsigned	file:
+a	ximgproc/include/opencv2/ximgproc/fourier_descriptors.hpp	25;"	m	class:cv::ximgproc::ContourFitting	typeref:typename:std::vector<std::complex<double>>
+a	ximgproc/src/edge_drawing_common.hpp	178;"	m	struct:EDLineSegment	typeref:typename:double
+a	ximgproc/src/find_ellipses.cpp	21;"	m	struct:cv::ximgproc::Ellipse	typeref:typename:float	file:
+accA	ximgproc/src/find_ellipses.cpp	216;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:int *	file:
+accN	ximgproc/src/find_ellipses.cpp	216;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:int *	file:
+accR	ximgproc/src/find_ellipses.cpp	216;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:int *	file:
+addArc	ximgproc/src/edge_drawing.cpp	4974;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+addArc	ximgproc/src/edge_drawing.cpp	5010;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+addCircle	ximgproc/src/edge_drawing.cpp	4372;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+addCircle	ximgproc/src/edge_drawing.cpp	4389;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+akinlar2011edlines	ximgproc/doc/ximgproc.bib	351;"	a
+akinlar2012edpf	ximgproc/doc/ximgproc.bib	362;"	a
+akinlar2013edcircles	ximgproc/doc/ximgproc.bib	373;"	a
+all	build/Makefile	89;"	t
+anchorNos	ximgproc/src/edge_drawing.cpp	147;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int	file:
+anchorPoints	ximgproc/src/edge_drawing.cpp	148;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:vector<Point>	file:
+anchorThresh	ximgproc/src/edge_drawing.cpp	159;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int	file:
+angle	ximgproc/src/edge_drawing_common.hpp	566;"	m	struct:Info	typeref:typename:double
+angles	ximgproc/src/edge_drawing_common.hpp	296;"	m	struct:AngleSet	typeref:typename:AngleSetArc[360]
+arcNo	ximgproc/src/edge_drawing.cpp	3566;"	m	struct:cv::ximgproc::EdgeDrawingImpl::JoinArcs1::CandidateArc	typeref:typename:int	file:
+arcNo	ximgproc/src/edge_drawing.cpp	3839;"	m	struct:cv::ximgproc::EdgeDrawingImpl::JoinArcs2::CandidateArc	typeref:typename:int	file:
+arcNo	ximgproc/src/edge_drawing.cpp	4100;"	m	struct:cv::ximgproc::EdgeDrawingImpl::JoinArcs3::CandidateArc	typeref:typename:int	file:
+arcs	ximgproc/src/edge_drawing_common.hpp	530;"	m	struct:EDArcs	typeref:typename:MyArc *
+axes	ximgproc/src/edge_drawing_common.hpp	213;"	m	struct:mEllipse	typeref:typename:Size
+b	ximgproc/include/opencv2/ximgproc/fourier_descriptors.hpp	24;"	m	class:cv::ximgproc::ContourFitting	typeref:typename:std::vector<std::complex<double>>
+b	ximgproc/src/edge_drawing_common.hpp	178;"	m	struct:EDLineSegment	typeref:typename:double
+b	ximgproc/src/find_ellipses.cpp	21;"	m	struct:cv::ximgproc::Ellipse	typeref:typename:float	file:
+ball_last_result	main.cpp	267;"	m	class:FindBallServer	typeref:typename:cv::Vec3d	file:
+ball_result	main.cpp	266;"	m	class:FindBallServer	typeref:typename:cv::Vec3d	file:
+bm	ximgproc/src/edge_drawing.cpp	208;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:BufferManager *	file:
+c	ximgproc/src/edge_drawing_common.hpp	147;"	m	struct:StackNode	typeref:typename:int
+cap	main.cpp	26;"	m	class:FindBallServer	typeref:typename:std::shared_ptr<cv::VideoCapture>	file:
+center	ximgproc/src/edge_drawing_common.hpp	205;"	m	struct:mCircle	typeref:typename:Point2d
+center	ximgproc/src/edge_drawing_common.hpp	212;"	m	struct:mEllipse	typeref:typename:Point2d
+center	ximgproc/src/find_ellipses.cpp	20;"	m	struct:cv::ximgproc::Ellipse	typeref:typename:Point2f	file:
+checkValidationByNFA	ximgproc/src/edge_drawing_common.hpp	103;"	f	class:NFALUT	typeref:typename:bool
+children	ximgproc/src/edge_drawing_common.hpp	158;"	m	struct:Chain	typeref:typename:int[2]
+choldc	ximgproc/src/edge_drawing.cpp	5491;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+circleFitError	ximgproc/src/edge_drawing_common.hpp	240;"	m	struct:Circle	typeref:typename:double
+circleFitError	ximgproc/src/edge_drawing_common.hpp	257;"	m	struct:MyArc	typeref:typename:double
+circles1	ximgproc/src/edge_drawing.cpp	195;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:Circle *	file:
+circles2	ximgproc/src/edge_drawing.cpp	196;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:Circle *	file:
+circles3	ximgproc/src/edge_drawing.cpp	197;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:Circle *	file:
+clean	build/Makefile	96;"	t
+clean/fast	build/Makefile	101;"	t
+clear	ximgproc/src/edge_drawing_common.hpp	302;"	f	struct:AngleSet	typeref:typename:void
+clusterEllipses	ximgproc/src/find_ellipses.cpp	1878;"	f	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:void
+cmake_check_build_system	build/Makefile	232;"	t
+cmake_force	build/Makefile	41;"	t
+cmake_minimum_required	CMakeLists.txt	6;"	v
+coeff	ximgproc/src/edge_drawing_common.hpp	223;"	m	struct:EllipseEquation	typeref:typename:double[7]
+command	.vscode/tasks.json	9;"	s	object:tasks.0
+command	build/compile_commands.json	10;"	s	object:1
+command	build/compile_commands.json	16;"	s	object:2
+command	build/compile_commands.json	4;"	s	object:0
+computeEllipsePerimeter	ximgproc/src/edge_drawing.cpp	4433;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:double
+computeStartEndTheta	ximgproc/src/edge_drawing_common.hpp	464;"	f	class:AngleSet	typeref:typename:void
+configurations	.vscode/launch.json	6;"	a
+const	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	10;"	d	file:
+const	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	10;"	d	file:
+count	main.cpp	269;"	m	class:FindBallServer	typeref:typename:int	file:
+countsOfFindEllipse	ximgproc/src/find_ellipses.cpp	219;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:float	file:
+countsOfGetFastCenter	ximgproc/src/find_ellipses.cpp	220;"	m	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:float	file:
+coverRatio	ximgproc/src/edge_drawing_common.hpp	241;"	m	struct:Circle	typeref:typename:double
+coverRatio	ximgproc/src/edge_drawing_common.hpp	260;"	m	struct:MyArc	typeref:typename:double
+coverRatio	ximgproc/src/edge_drawing_common.hpp	516;"	f	class:AngleSet	typeref:typename:double
+createEdgeDrawing	ximgproc/src/edge_drawing.cpp	261;"	f	namespace:cv::ximgproc	typeref:typename:Ptr<EdgeDrawing>
+ctrSize	ximgproc/include/opencv2/ximgproc/fourier_descriptors.hpp	22;"	m	class:cv::ximgproc::ContourFitting	typeref:typename:int
+cv	ximgproc/include/opencv2/ximgproc.hpp	122;"	n
+cv	ximgproc/include/opencv2/ximgproc/brightedges.hpp	45;"	n
+cv	ximgproc/include/opencv2/ximgproc/color_match.hpp	10;"	n
+cv	ximgproc/include/opencv2/ximgproc/deriche_filter.hpp	43;"	n
+cv	ximgproc/include/opencv2/ximgproc/disparity_filter.hpp	44;"	n
+cv	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	10;"	n
+cv	ximgproc/include/opencv2/ximgproc/edge_filter.hpp	43;"	n
+cv	ximgproc/include/opencv2/ximgproc/edgeboxes.hpp	48;"	n
+cv	ximgproc/include/opencv2/ximgproc/edgepreserving_filter.hpp	10;"	n
+cv	ximgproc/include/opencv2/ximgproc/estimated_covariance.hpp	57;"	n
+cv	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	51;"	n
+cv	ximgproc/include/opencv2/ximgproc/fast_line_detector.hpp	10;"	n
+cv	ximgproc/include/opencv2/ximgproc/find_ellipses.hpp	10;"	n
+cv	ximgproc/include/opencv2/ximgproc/fourier_descriptors.hpp	10;"	n
+cv	ximgproc/include/opencv2/ximgproc/lsc.hpp	52;"	n
+cv	ximgproc/include/opencv2/ximgproc/paillou_filter.hpp	43;"	n
+cv	ximgproc/include/opencv2/ximgproc/peilin.hpp	10;"	n
+cv	ximgproc/include/opencv2/ximgproc/radon_transform.hpp	11;"	n
+cv	ximgproc/include/opencv2/ximgproc/ridgefilter.hpp	16;"	n
+cv	ximgproc/include/opencv2/ximgproc/run_length_morphology.hpp	10;"	n
+cv	ximgproc/include/opencv2/ximgproc/scansegment.hpp	12;"	n
+cv	ximgproc/include/opencv2/ximgproc/seeds.hpp	48;"	n
+cv	ximgproc/include/opencv2/ximgproc/segmentation.hpp	37;"	n
+cv	ximgproc/include/opencv2/ximgproc/slic.hpp	56;"	n
+cv	ximgproc/include/opencv2/ximgproc/sparse_match_interpolator.hpp	43;"	n
+cv	ximgproc/include/opencv2/ximgproc/structured_edge_detection.hpp	54;"	n
+cv	ximgproc/include/opencv2/ximgproc/weighted_median_filter.hpp	56;"	n
+cv	ximgproc/src/edge_drawing.cpp	11;"	n	file:
+cv	ximgproc/src/find_ellipses.cpp	10;"	n	file:
+cwd	.vscode/launch.json	16;"	s	object:configurations.0
+dH	ximgproc/src/edge_drawing.cpp	134;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:double *	file:
+default_target	build/Makefile	5;"	t
+depend	build/Makefile	115;"	t
+deriche1987	ximgproc/doc/ximgproc.bib	86;"	a
+description	.vscode/launch.json	22;"	s	object:configurations.0.setupCommands.0
+detect	ximgproc/src/find_ellipses.cpp	1476;"	f	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:void
+detectEdges	ximgproc/src/edge_drawing.cpp	353;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+detectEdges13	ximgproc/src/find_ellipses.cpp	723;"	f	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:void
+detectEdges24	ximgproc/src/find_ellipses.cpp	771;"	f	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:void
+detectEllipses	ximgproc/src/edge_drawing.cpp	2432;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+detectLines	ximgproc/src/edge_drawing.cpp	1281;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+dir	ximgproc/src/edge_drawing_common.hpp	149;"	m	struct:StackNode	typeref:typename:int
+dir	ximgproc/src/edge_drawing_common.hpp	155;"	m	struct:Chain	typeref:typename:int
+dirImage	ximgproc/src/edge_drawing.cpp	153;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:Mat	file:
+dirImage	ximgproc/src/edge_drawing.cpp	22;"	m	struct:cv::ximgproc::ComputeGradientBody	typeref:typename:Mat_<uchar>	file:
+dirImg	ximgproc/src/edge_drawing.cpp	154;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:uchar *	file:
+directory	build/compile_commands.json	15;"	s	object:2
+directory	build/compile_commands.json	3;"	s	object:0
+directory	build/compile_commands.json	9;"	s	object:1
+dist	ximgproc/src/edge_drawing.cpp	3568;"	m	struct:cv::ximgproc::EdgeDrawingImpl::JoinArcs1::CandidateArc	typeref:typename:double	file:
+dist	ximgproc/src/edge_drawing.cpp	3841;"	m	struct:cv::ximgproc::EdgeDrawingImpl::JoinArcs2::CandidateArc	typeref:typename:double	file:
+dist	ximgproc/src/edge_drawing.cpp	4102;"	m	struct:cv::ximgproc::EdgeDrawingImpl::JoinArcs3::CandidateArc	typeref:typename:double	file:
+divForTestSegment	ximgproc/src/edge_drawing.cpp	133;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:double	file:
+eTheta	ximgproc/src/edge_drawing_common.hpp	259;"	m	struct:MyArc	typeref:typename:double
+eTheta	ximgproc/src/edge_drawing_common.hpp	291;"	m	struct:AngleSetArc	typeref:typename:double
+edarcs1	ximgproc/src/edge_drawing.cpp	202;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:EDArcs *	file:
+edarcs2	ximgproc/src/edge_drawing.cpp	203;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:EDArcs *	file:
+edarcs3	ximgproc/src/edge_drawing.cpp	204;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:EDArcs *	file:
+edarcs4	ximgproc/src/edge_drawing.cpp	205;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:EDArcs *	file:
+edgeImage	ximgproc/src/edge_drawing.cpp	151;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:Mat	file:
+edgeImg	ximgproc/src/edge_drawing.cpp	128;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:uchar *	file:
+edgePoints	ximgproc/src/edge_drawing.cpp	149;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:vector<Point>	file:
+edit_cache	build/Makefile	69;"	t
+edit_cache/fast	build/Makefile	75;"	t
+ellipseFitError	ximgproc/src/edge_drawing_common.hpp	248;"	m	struct:Circle	typeref:typename:double
+ellipseFitError	ximgproc/src/edge_drawing_common.hpp	274;"	m	struct:MyArc	typeref:typename:double
+end	ximgproc/src/edge_drawing_common.hpp	166;"	m	struct:LS	typeref:typename:Point2d
+environment	.vscode/launch.json	17;"	a	object:configurations.0
+eq	ximgproc/src/edge_drawing_common.hpp	247;"	m	struct:Circle	typeref:typename:EllipseEquation
+eq	ximgproc/src/edge_drawing_common.hpp	273;"	m	struct:MyArc	typeref:typename:EllipseEquation
+ex	ximgproc/src/edge_drawing_common.hpp	182;"	m	struct:EDLineSegment	typeref:typename:double
+ex	ximgproc/src/edge_drawing_common.hpp	267;"	m	struct:MyArc	typeref:typename:int
+externalConsole	.vscode/launch.json	18;"	b	object:configurations.0
+ey	ximgproc/src/edge_drawing_common.hpp	182;"	m	struct:EDLineSegment	typeref:typename:double
+ey	ximgproc/src/edge_drawing_common.hpp	267;"	m	struct:MyArc	typeref:typename:int
+fdSize	ximgproc/include/opencv2/ximgproc/fourier_descriptors.hpp	23;"	m	class:cv::ximgproc::ContourFitting	typeref:typename:int
+file	build/compile_commands.json	11;"	s	object:1
+file	build/compile_commands.json	17;"	s	object:2
+file	build/compile_commands.json	5;"	s	object:0
+findEllipses	ximgproc/src/find_ellipses.cpp	1522;"	f	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:void
+findEllipses	ximgproc/src/find_ellipses.cpp	1941;"	f	namespace:cv::ximgproc	typeref:typename:void
+find_ball	main.cpp	36;"	f	class:FindBallServer	typeref:typename:cv::Vec3d	file:
+firstPixelIndex	ximgproc/src/edge_drawing_common.hpp	185;"	m	struct:EDLineSegment	typeref:typename:int
+flag	main.cpp	268;"	m	class:FindBallServer	typeref:typename:int	file:
+frame_number	main.cpp	271;"	m	class:FindBallServer	typeref:typename:int	file:
+frequence	ximgproc/include/opencv2/ximgproc/fourier_descriptors.hpp	26;"	m	class:cv::ximgproc::ContourFitting	typeref:typename:std::vector<double>
+generateKey	ximgproc/src/find_ellipses.cpp	303;"	f	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:uint
+getCenterCoordinates	ximgproc/src/find_ellipses.cpp	567;"	f	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:Point2f
+getCtrSize	ximgproc/include/opencv2/ximgproc/fourier_descriptors.hpp	70;"	f	class:cv::ximgproc::ContourFitting	typeref:typename:CV_WRAP int
+getDefaultName	ximgproc/src/edge_drawing.cpp	322;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:String
+getEdgeImage	ximgproc/src/edge_drawing.cpp	436;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+getFDSize	ximgproc/include/opencv2/ximgproc/fourier_descriptors.hpp	74;"	f	class:cv::ximgproc::ContourFitting	typeref:typename:CV_WRAP int
+getFastCenter	ximgproc/src/find_ellipses.cpp	350;"	f	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:void
+getGradientImage	ximgproc/src/edge_drawing.cpp	442;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+getMedianSlope	ximgproc/src/find_ellipses.cpp	307;"	f	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:float
+getMinAnglePI	ximgproc/src/find_ellipses.cpp	152;"	f	namespace:cv::ximgproc	typeref:typename:float	file:
+getSegmentIndicesOfLines	ximgproc/src/edge_drawing.cpp	453;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:std::vector<int>
+getSegments	ximgproc/src/edge_drawing.cpp	448;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:std::vector<std::vector<Point>>
+getTriplets124	ximgproc/src/find_ellipses.cpp	824;"	f	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:void
+getTriplets231	ximgproc/src/find_ellipses.cpp	920;"	f	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:void
+getTriplets342	ximgproc/src/find_ellipses.cpp	1022;"	f	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:void
+getTriplets413	ximgproc/src/find_ellipses.cpp	1125;"	f	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:void
+getX	ximgproc/src/edge_drawing_common.hpp	559;"	f	struct:BufferManager	typeref:typename:double *
+getY	ximgproc/src/edge_drawing_common.hpp	560;"	f	struct:BufferManager	typeref:typename:double *
+gradImage	ximgproc/src/edge_drawing.cpp	152;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:Mat	file:
+gradImage	ximgproc/src/edge_drawing.cpp	21;"	m	struct:cv::ximgproc::ComputeGradientBody	typeref:typename:Mat_<ushort>	file:
+gradImg	ximgproc/src/edge_drawing.cpp	155;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:ushort *	file:
+gradThresh	ximgproc/src/edge_drawing.cpp	158;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int	file:
+gradThresh	ximgproc/src/edge_drawing.cpp	23;"	m	struct:cv::ximgproc::ComputeGradientBody	typeref:typename:int	file:
+grads	ximgproc/src/edge_drawing.cpp	135;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int *	file:
+grads	ximgproc/src/edge_drawing.cpp	26;"	m	struct:cv::ximgproc::ComputeGradientBody	typeref:typename:int *	file:
+group	.vscode/tasks.json	10;"	s	object:tasks.0
+h	ximgproc/include/opencv2/ximgproc/edgeboxes.hpp	59;"	m	struct:cv::ximgproc::__anon82eb1e000108	typeref:typename:int
+h	ximgproc/src/edge_drawing_common.hpp	56;"	m	class:NFALUT	typeref:typename:int
+head	ximgproc/src/edge_drawing_common.hpp	297;"	m	struct:AngleSet	typeref:typename:int
+height	ximgproc/src/edge_drawing.cpp	123;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int	file:
+help	build/Makefile	205;"	t
+ignoreFailures	.vscode/launch.json	24;"	b	object:configurations.0.setupCommands.0
+index	ximgproc/src/edge_drawing_common.hpp	546;"	m	struct:BufferManager	typeref:typename:int
+info	ximgproc/src/edge_drawing.cpp	209;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:Info *	file:
+info_arch	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	797;"	v	typeref:typename:char const *
+info_arch	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	782;"	v	typeref:typename:char const *
+info_arch	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	797;"	v	typeref:typename:char const *
+info_arch	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	782;"	v	typeref:typename:char const *
+info_compiler	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	434;"	v	typeref:typename:char const *
+info_compiler	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	419;"	v	typeref:typename:char const *
+info_compiler	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	434;"	v	typeref:typename:char const *
+info_compiler	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	419;"	v	typeref:typename:char const *
+info_cray	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	444;"	v	typeref:typename:char const *
+info_cray	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	429;"	v	typeref:typename:char const *
+info_cray	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	444;"	v	typeref:typename:char const *
+info_cray	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	429;"	v	typeref:typename:char const *
+info_language_extensions_default	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	821;"	v	typeref:typename:const char *
+info_language_extensions_default	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	818;"	v	typeref:typename:const char *
+info_language_extensions_default	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	821;"	v	typeref:typename:const char *
+info_language_extensions_default	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	818;"	v	typeref:typename:const char *
+info_language_standard_default	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	818;"	v	typeref:typename:const char *
+info_language_standard_default	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	802;"	v	typeref:typename:const char *
+info_language_standard_default	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	818;"	v	typeref:typename:const char *
+info_language_standard_default	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	802;"	v	typeref:typename:const char *
+info_platform	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	796;"	v	typeref:typename:char const *
+info_platform	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	781;"	v	typeref:typename:char const *
+info_platform	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	796;"	v	typeref:typename:char const *
+info_platform	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	781;"	v	typeref:typename:char const *
+info_simulate	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	436;"	v	typeref:typename:char const *
+info_simulate	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	421;"	v	typeref:typename:char const *
+info_simulate	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	436;"	v	typeref:typename:char const *
+info_simulate	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	421;"	v	typeref:typename:char const *
+info_simulate_version	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	776;"	v	typeref:typename:char const[]
+info_simulate_version	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	761;"	v	typeref:typename:char const[]
+info_simulate_version	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	776;"	v	typeref:typename:char const[]
+info_simulate_version	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	761;"	v	typeref:typename:char const[]
+info_version	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	743;"	v	typeref:typename:char const *
+info_version	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	747;"	v	typeref:typename:char const[]
+info_version	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	728;"	v	typeref:typename:char const *
+info_version	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	732;"	v	typeref:typename:char const[]
+info_version	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	743;"	v	typeref:typename:char const *
+info_version	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	747;"	v	typeref:typename:char const[]
+info_version	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	728;"	v	typeref:typename:char const *
+info_version	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	732;"	v	typeref:typename:char const[]
+info_version_internal	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	765;"	v	typeref:typename:char const[]
+info_version_internal	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	771;"	v	typeref:typename:char const *
+info_version_internal	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	750;"	v	typeref:typename:char const[]
+info_version_internal	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	756;"	v	typeref:typename:char const *
+info_version_internal	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	765;"	v	typeref:typename:char const[]
+info_version_internal	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	771;"	v	typeref:typename:char const *
+info_version_internal	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	750;"	v	typeref:typename:char const[]
+info_version_internal	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	756;"	v	typeref:typename:char const *
+init	main.cpp	214;"	f	class:FindBallServer	typeref:typename:void	file:
+inverse	ximgproc/src/edge_drawing.cpp	5536;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int
+invert	ximgproc/src/edge_drawing_common.hpp	179;"	m	struct:EDLineSegment	typeref:typename:int
+isEllipse	ximgproc/src/edge_drawing_common.hpp	249;"	m	struct:Circle	typeref:typename:bool
+isEllipse	ximgproc/src/edge_drawing_common.hpp	272;"	m	struct:MyArc	typeref:typename:bool
+isValid	ximgproc/src/find_ellipses.cpp	177;"	m	struct:cv::ximgproc::EllipseData	typeref:typename:bool	file:
+jacobi	ximgproc/src/edge_drawing.cpp	5646;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+jia2017fast	ximgproc/doc/ximgproc.bib	393;"	a
+joinLastTwoArcs	ximgproc/src/edge_drawing.cpp	4910;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+label	.vscode/tasks.json	7;"	s	object:tasks.0
+labeling	ximgproc/src/find_ellipses.cpp	638;"	f	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:void
+len	ximgproc/src/edge_drawing_common.hpp	156;"	m	struct:Chain	typeref:typename:int
+len	ximgproc/src/edge_drawing_common.hpp	186;"	m	struct:EDLineSegment	typeref:typename:int
+lineCrossPoint	ximgproc/src/find_ellipses.cpp	76;"	f	namespace:cv::ximgproc	typeref:typename:Point2f	file:
+line_error	ximgproc/src/edge_drawing.cpp	164;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:double	file:
+lines	ximgproc/src/edge_drawing.cpp	161;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:std::vector<EDLineSegment>	file:
+linesNo	ximgproc/src/edge_drawing.cpp	162;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int	file:
+loke2021accelerated	ximgproc/doc/ximgproc.bib	384;"	a
+lower	main.cpp	248;"	m	class:FindBallServer	typeref:typename:std::vector<cv::Scalar>	file:
+lower	main.cpp	257;"	m	class:FindBallServer	typeref:typename:std::vector<cv::Scalar>	file:
+lower_blue	main.cpp	19;"	v	typeref:typename:cv::Scalar
+lower_purple	main.cpp	15;"	v	typeref:typename:cv::Scalar
+lower_red	main.cpp	17;"	v	typeref:typename:cv::Scalar
+lutEqual	main.cpp	261;"	m	class:FindBallServer	typeref:typename:std::vector<uint8_t>	file:
+lutRaisen	main.cpp	263;"	m	class:FindBallServer	typeref:typename:std::vector<uint8_t>	file:
+lutSRaisen	main.cpp	264;"	m	class:FindBallServer	typeref:typename:cv::Mat	file:
+lutZero	main.cpp	262;"	m	class:FindBallServer	typeref:typename:std::vector<uint8_t>	file:
+lut_init	main.cpp	224;"	f	class:FindBallServer	typeref:typename:void	file:
+mCircle	ximgproc/src/edge_drawing_common.hpp	204;"	s
+mCircle	ximgproc/src/edge_drawing_common.hpp	207;"	f	struct:mCircle
+mEllipse	ximgproc/src/edge_drawing_common.hpp	211;"	s
+mEllipse	ximgproc/src/edge_drawing_common.hpp	215;"	f	struct:mEllipse
+main	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	834;"	f	typeref:typename:void
+main	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	837;"	f
+main	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	830;"	f	typeref:typename:int
+main	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	834;"	f	typeref:typename:void
+main	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	837;"	f
+main	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	830;"	f	typeref:typename:int
+main	main.cpp	283;"	f	typeref:typename:int
+main	test.cpp	7;"	f	typeref:typename:int
+main.cpp.i	build/Makefile	144;"	t
+main.cpp.o	build/Makefile	136;"	t
+main.cpp.s	build/Makefile	152;"	t
+main.i	build/Makefile	140;"	t
+main.o	build/Makefile	132;"	t
+main.s	build/Makefile	148;"	t
+majorAxisLength	ximgproc/src/edge_drawing_common.hpp	250;"	m	struct:Circle	typeref:typename:double
+max_distance_between_two_lines	ximgproc/src/edge_drawing.cpp	165;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:double	file:
+max_error	ximgproc/src/edge_drawing.cpp	166;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:double	file:
+min_line_len	ximgproc/src/edge_drawing.cpp	163;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int	file:
+minorAxisLength	ximgproc/src/edge_drawing_common.hpp	251;"	m	struct:Circle	typeref:typename:double
+move	ximgproc/src/edge_drawing_common.hpp	561;"	f	struct:BufferManager	typeref:typename:void
+myAtan2	ximgproc/src/edge_drawing_common.hpp	111;"	f	class:NFALUT	typeref:typename:double
+name	.vscode/launch.json	9;"	s	object:configurations.0
+next	ximgproc/src/edge_drawing_common.hpp	292;"	m	struct:AngleSetArc	typeref:typename:int
+next	ximgproc/src/edge_drawing_common.hpp	298;"	m	struct:AngleSet	typeref:typename:int
+nfa	ximgproc/src/edge_drawing.cpp	168;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:NFALUT *	file:
+nfa	ximgproc/src/edge_drawing_common.hpp	135;"	f	class:NFALUT	typeref:typename:double
+noArcs	ximgproc/src/edge_drawing_common.hpp	531;"	m	struct:EDArcs	typeref:typename:int
+noCircles	ximgproc/src/edge_drawing.cpp	191;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int	file:
+noCircles1	ximgproc/src/edge_drawing.cpp	198;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int	file:
+noCircles2	ximgproc/src/edge_drawing.cpp	199;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int	file:
+noCircles3	ximgproc/src/edge_drawing.cpp	200;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int	file:
+noEllipses	ximgproc/src/edge_drawing.cpp	190;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int	file:
+noPixels	ximgproc/src/edge_drawing_common.hpp	244;"	m	struct:Circle	typeref:typename:int
+noPixels	ximgproc/src/edge_drawing_common.hpp	270;"	m	struct:MyArc	typeref:typename:int
+np	ximgproc/src/edge_drawing.cpp	136;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int	file:
+onTrackbar	main.cpp	278;"	f	typeref:typename:void
+op	ximgproc/src/edge_drawing.cpp	157;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int	file:
+op	ximgproc/src/edge_drawing.cpp	24;"	m	struct:cv::ximgproc::ComputeGradientBody	typeref:typename:int	file:
+operator () 	ximgproc/src/edge_drawing.cpp	30;"	f	class:cv::ximgproc::ComputeGradientBody	typeref:typename:void
+operator <	ximgproc/src/find_ellipses.cpp	51;"	f	struct:cv::ximgproc::Ellipse	typeref:typename:bool	file:
+output	build/compile_commands.json	12;"	s	object:1
+output	build/compile_commands.json	18;"	s	object:2
+output	build/compile_commands.json	6;"	s	object:0
+overlap	ximgproc/src/edge_drawing_common.hpp	448;"	f	class:AngleSet	typeref:typename:double
+overlapAmount	ximgproc/src/edge_drawing_common.hpp	299;"	m	struct:AngleSet	typeref:typename:double
+overlapRatio	ximgproc/src/edge_drawing_common.hpp	303;"	f	struct:AngleSet	typeref:typename:double
+paillou1997detecting	ximgproc/doc/ximgproc.bib	223;"	a
+params	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	113;"	m	class:cv::ximgproc::EdgeDrawing	typeref:typename:CV_WRAP Params
+parent	ximgproc/src/edge_drawing_common.hpp	148;"	m	struct:StackNode	typeref:typename:int
+parent	ximgproc/src/edge_drawing_common.hpp	157;"	m	struct:Chain	typeref:typename:int
+pixels	ximgproc/src/edge_drawing_common.hpp	159;"	m	struct:Chain	typeref:typename:Point *
+pointDistance2	ximgproc/src/find_ellipses.cpp	148;"	f	namespace:cv::ximgproc	typeref:typename:float	file:
+pointToMat	ximgproc/src/find_ellipses.cpp	111;"	f	namespace:cv::ximgproc	typeref:typename:void	file:
+preLaunchTask	.vscode/launch.json	8;"	s	object:configurations.0
+preProcessing	ximgproc/src/find_ellipses.cpp	1221;"	f	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:void
+precision	ximgproc/src/edge_drawing.cpp	167;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:double	file:
+preinstall	build/Makefile	105;"	t
+preinstall/fast	build/Makefile	110;"	t
+presentation	.vscode/tasks.json	11;"	o	object:tasks.0
+prob	ximgproc/src/edge_drawing_common.hpp	55;"	m	class:NFALUT	typeref:typename:double
+psi	ximgproc/include/opencv2/ximgproc/fourier_descriptors.hpp	27;"	m	class:cv::ximgproc::ContourFitting	typeref:typename:std::vector<double>
+put_text	main.cpp	243;"	f	class:FindBallServer	typeref:typename:void	file:
+qnxnto	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	440;"	v	typeref:typename:char const *
+qnxnto	CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	425;"	v	typeref:typename:char const *
+qnxnto	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	440;"	v	typeref:typename:char const *
+qnxnto	build/CMakeFiles/3.27.1/CompilerIdCXX/CMakeCXXCompilerId.cpp	425;"	v	typeref:typename:char const *
+r	ximgproc/src/edge_drawing_common.hpp	147;"	m	struct:StackNode	typeref:typename:int
+r	ximgproc/src/edge_drawing_common.hpp	206;"	m	struct:mCircle	typeref:typename:double
+r	ximgproc/src/edge_drawing_common.hpp	239;"	m	struct:Circle	typeref:typename:double
+r	ximgproc/src/edge_drawing_common.hpp	256;"	m	struct:MyArc	typeref:typename:double
+ra	ximgproc/src/find_ellipses.cpp	179;"	m	struct:cv::ximgproc::EllipseData	typeref:typename:float	file:
+radius	ximgproc/src/find_ellipses.cpp	22;"	m	struct:cv::ximgproc::Ellipse	typeref:typename:float	file:
+rb	ximgproc/src/find_ellipses.cpp	179;"	m	struct:cv::ximgproc::EllipseData	typeref:typename:float	file:
+read	ximgproc/src/edge_drawing.cpp	288;"	f	class:cv::ximgproc::EdgeDrawing::Params	typeref:typename:void
+read	ximgproc/src/edge_drawing.cpp	327;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+rebuild_cache	build/Makefile	79;"	t
+rebuild_cache/fast	build/Makefile	85;"	t
+request	.vscode/launch.json	11;"	s	object:configurations.0
+rho	ximgproc/include/opencv2/ximgproc/fourier_descriptors.hpp	27;"	m	class:cv::ximgproc::ContourFitting	typeref:typename:std::vector<double>
+rl	ximgproc/include/opencv2/ximgproc/run_length_morphology.hpp	12;"	n	namespace:cv::ximgproc
+sTheta	ximgproc/src/edge_drawing_common.hpp	259;"	m	struct:MyArc	typeref:typename:double
+sTheta	ximgproc/src/edge_drawing_common.hpp	290;"	m	struct:AngleSetArc	typeref:typename:double
+score	ximgproc/include/opencv2/ximgproc/edgeboxes.hpp	60;"	m	struct:cv::ximgproc::__anon82eb1e000108	typeref:typename:float
+score	ximgproc/src/find_ellipses.cpp	23;"	m	struct:cv::ximgproc::Ellipse	typeref:typename:float	file:
+segmentIndicesOfLines	ximgproc/src/edge_drawing.cpp	126;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:vector<int>	file:
+segmentNo	ximgproc/src/edge_drawing_common.hpp	184;"	m	struct:EDLineSegment	typeref:typename:int
+segmentNo	ximgproc/src/edge_drawing_common.hpp	264;"	m	struct:MyArc	typeref:typename:int
+segmentNos	ximgproc/src/edge_drawing.cpp	130;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int	file:
+segmentPoints	ximgproc/src/edge_drawing.cpp	125;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:vector<vector<Point>>	file:
+segmentStartLines	ximgproc/src/edge_drawing.cpp	207;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int *	file:
+segmentation	ximgproc/include/opencv2/ximgproc/segmentation.hpp	39;"	n	namespace:cv::ximgproc
+set	ximgproc/src/edge_drawing_common.hpp	400;"	f	class:AngleSet	typeref:typename:void
+setParameters	ximgproc/src/find_ellipses.cpp	294;"	f	class:cv::ximgproc::EllipseDetectorImpl	typeref:typename:void
+setParams	ximgproc/src/edge_drawing.cpp	283;"	f	class:cv::ximgproc::EdgeDrawing	typeref:typename:void
+setupCommands	.vscode/launch.json	20;"	a	object:configurations.0
+sign	ximgproc/src/edge_drawing_common.hpp	565;"	m	struct:Info	typeref:typename:int
+signal	ximgproc/src/find_ellipses.cpp	65;"	f	namespace:cv::ximgproc	typeref:typename:int	file:
+smoothImage	ximgproc/src/edge_drawing.cpp	127;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:Mat	file:
+smoothImg	ximgproc/src/edge_drawing.cpp	129;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:uchar *	file:
+sortAnchorsByGradValue1	ximgproc/src/edge_drawing.cpp	1191;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int *
+sortArc	ximgproc/src/edge_drawing.cpp	5207;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+sortCircles	ximgproc/src/edge_drawing.cpp	4408;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+sortPoint	ximgproc/src/find_ellipses.cpp	69;"	f	namespace:cv::ximgproc	typeref:typename:bool	file:
+src	ximgproc/src/edge_drawing.cpp	20;"	m	struct:cv::ximgproc::ComputeGradientBody	typeref:typename:Mat_<uchar>	file:
+srcImage	ximgproc/src/edge_drawing.cpp	131;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:Mat	file:
+srcImg	ximgproc/src/edge_drawing.cpp	124;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:uchar *	file:
+start	ximgproc/src/edge_drawing_common.hpp	165;"	m	struct:LS	typeref:typename:Point2d
+sx	ximgproc/src/edge_drawing_common.hpp	181;"	m	struct:EDLineSegment	typeref:typename:double
+sx	ximgproc/src/edge_drawing_common.hpp	266;"	m	struct:MyArc	typeref:typename:int
+sy	ximgproc/src/edge_drawing_common.hpp	181;"	m	struct:EDLineSegment	typeref:typename:double
+sy	ximgproc/src/edge_drawing_common.hpp	266;"	m	struct:MyArc	typeref:typename:int
+ta	ximgproc/src/find_ellipses.cpp	178;"	m	struct:cv::ximgproc::EllipseData	typeref:typename:float	file:
+taken	ximgproc/src/edge_drawing_common.hpp	567;"	m	struct:Info	typeref:typename:bool
+tasks	.vscode/tasks.json	5;"	a
+tb	ximgproc/src/find_ellipses.cpp	178;"	m	struct:cv::ximgproc::EllipseData	typeref:typename:float	file:
+text	.vscode/launch.json	23;"	s	object:configurations.0.setupCommands.0
+theta	ximgproc/src/edge_drawing_common.hpp	214;"	m	struct:mEllipse	typeref:typename:double
+topal2012edge	ximgproc/doc/ximgproc.bib	340;"	a
+turn	ximgproc/src/edge_drawing_common.hpp	262;"	m	struct:MyArc	typeref:typename:int
+type	.vscode/launch.json	10;"	s	object:configurations.0
+type	.vscode/tasks.json	8;"	s	object:tasks.0
+uijlings2013selective	ximgproc/doc/ximgproc.bib	97;"	a
+uint	ximgproc/src/find_ellipses.cpp	16;"	t	namespace:cv::ximgproc	typeref:typename:unsigned int	file:
+upper	main.cpp	249;"	m	class:FindBallServer	typeref:typename:std::vector<cv::Scalar>	file:
+upper	main.cpp	258;"	m	class:FindBallServer	typeref:typename:std::vector<cv::Scalar>	file:
+upper_blue	main.cpp	20;"	v	typeref:typename:cv::Scalar
+upper_purple	main.cpp	16;"	v	typeref:typename:cv::Scalar
+upper_red	main.cpp	18;"	v	typeref:typename:cv::Scalar
+usbcamera_getImage	main.cpp	203;"	f	class:FindBallServer	typeref:typename:cv::Mat	file:
+usbcamera_init	main.cpp	193;"	f	class:FindBallServer	typeref:typename:bool	file:
+valueOfPoints	ximgproc/src/find_ellipses.cpp	118;"	f	namespace:cv::ximgproc	typeref:typename:float	file:
+volatile	CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	11;"	d	file:
+volatile	build/CMakeFiles/3.27.1/CompilerIdC/CMakeCCompilerId.c	11;"	d	file:
+w	ximgproc/include/opencv2/ximgproc/edgeboxes.hpp	59;"	m	struct:cv::ximgproc::__anon82eb1e000108	typeref:typename:int
+w	ximgproc/src/edge_drawing_common.hpp	56;"	m	class:NFALUT	typeref:typename:int
+which	ximgproc/src/edge_drawing.cpp	3567;"	m	struct:cv::ximgproc::EdgeDrawingImpl::JoinArcs1::CandidateArc	typeref:typename:int	file:
+which	ximgproc/src/edge_drawing.cpp	3840;"	m	struct:cv::ximgproc::EdgeDrawingImpl::JoinArcs2::CandidateArc	typeref:typename:int	file:
+which	ximgproc/src/edge_drawing.cpp	4101;"	m	struct:cv::ximgproc::EdgeDrawingImpl::JoinArcs3::CandidateArc	typeref:typename:int	file:
+width	ximgproc/src/edge_drawing.cpp	122;"	m	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:int	file:
+write	ximgproc/src/edge_drawing.cpp	305;"	f	class:cv::ximgproc::EdgeDrawing::Params	typeref:typename:void
+write	ximgproc/src/edge_drawing.cpp	332;"	f	class:cv::ximgproc::EdgeDrawingImpl	typeref:typename:void
+x	ximgproc/include/opencv2/ximgproc/edgeboxes.hpp	59;"	m	struct:cv::ximgproc::__anon82eb1e000108	typeref:typename:int
+x	ximgproc/src/edge_drawing_common.hpp	243;"	m	struct:Circle	typeref:typename:double *
+x	ximgproc/src/edge_drawing_common.hpp	269;"	m	struct:MyArc	typeref:typename:double *
+x	ximgproc/src/edge_drawing_common.hpp	545;"	m	struct:BufferManager	typeref:typename:double *
+xc	ximgproc/src/edge_drawing_common.hpp	239;"	m	struct:Circle	typeref:typename:double
+xc	ximgproc/src/edge_drawing_common.hpp	256;"	m	struct:MyArc	typeref:typename:double
+ximgproc	ximgproc/include/opencv2/ximgproc.hpp	124;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/brightedges.hpp	47;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/color_match.hpp	11;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/deriche_filter.hpp	44;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/disparity_filter.hpp	45;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	12;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/edge_filter.hpp	45;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/edgeboxes.hpp	50;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/edgepreserving_filter.hpp	10;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/estimated_covariance.hpp	59;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/fast_hough_transform.hpp	51;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/fast_line_detector.hpp	12;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/find_ellipses.hpp	11;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/fourier_descriptors.hpp	11;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/lsc.hpp	54;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/paillou_filter.hpp	44;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/peilin.hpp	10;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/radon_transform.hpp	11;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/ridgefilter.hpp	16;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/run_length_morphology.hpp	11;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/scansegment.hpp	12;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/seeds.hpp	50;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/segmentation.hpp	38;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/slic.hpp	58;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/sparse_match_interpolator.hpp	44;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/structured_edge_detection.hpp	56;"	n	namespace:cv
+ximgproc	ximgproc/include/opencv2/ximgproc/weighted_median_filter.hpp	58;"	n	namespace:cv
+ximgproc	ximgproc/src/edge_drawing.cpp	13;"	n	namespace:cv	file:
+ximgproc	ximgproc/src/find_ellipses.cpp	11;"	n	namespace:cv	file:
+ximgproc/src/edge_drawing.cpp.i	build/Makefile	168;"	t
+ximgproc/src/edge_drawing.cpp.o	build/Makefile	160;"	t
+ximgproc/src/edge_drawing.cpp.s	build/Makefile	176;"	t
+ximgproc/src/edge_drawing.i	build/Makefile	164;"	t
+ximgproc/src/edge_drawing.o	build/Makefile	156;"	t
+ximgproc/src/edge_drawing.s	build/Makefile	172;"	t
+ximgproc/src/find_ellipses.cpp.i	build/Makefile	192;"	t
+ximgproc/src/find_ellipses.cpp.o	build/Makefile	184;"	t
+ximgproc/src/find_ellipses.cpp.s	build/Makefile	200;"	t
+ximgproc/src/find_ellipses.i	build/Makefile	188;"	t
+ximgproc/src/find_ellipses.o	build/Makefile	180;"	t
+ximgproc/src/find_ellipses.s	build/Makefile	196;"	t
+xu2011image	ximgproc/doc/ximgproc.bib	131;"	j
+y	ximgproc/include/opencv2/ximgproc/edgeboxes.hpp	59;"	m	struct:cv::ximgproc::__anon82eb1e000108	typeref:typename:int
+y	ximgproc/src/edge_drawing_common.hpp	243;"	m	struct:Circle	typeref:typename:double *
+y	ximgproc/src/edge_drawing_common.hpp	269;"	m	struct:MyArc	typeref:typename:double *
+y	ximgproc/src/edge_drawing_common.hpp	545;"	m	struct:BufferManager	typeref:typename:double *
+yc	ximgproc/src/edge_drawing_common.hpp	239;"	m	struct:Circle	typeref:typename:double
+yc	ximgproc/src/edge_drawing_common.hpp	256;"	m	struct:MyArc	typeref:typename:double
+zhang2014100+	ximgproc/doc/ximgproc.bib	214;"	j
+zhang2014rolling	ximgproc/doc/ximgproc.bib	205;"	I
+~BufferManager	ximgproc/src/edge_drawing_common.hpp	554;"	f	struct:BufferManager
+~EDArcs	ximgproc/src/edge_drawing_common.hpp	539;"	f	struct:EDArcs
+~EdgeDrawing	ximgproc/include/opencv2/ximgproc/edge_drawing.hpp	121;"	f	class:cv::ximgproc::EdgeDrawing
+~EdgeDrawingImpl	ximgproc/src/edge_drawing.cpp	346;"	f	class:cv::ximgproc::EdgeDrawingImpl
+~FastLineDetector	ximgproc/include/opencv2/ximgproc/fast_line_detector.hpp	57;"	f	class:cv::ximgproc::FastLineDetector
+~NFALUT	ximgproc/src/edge_drawing_common.hpp	98;"	f	class:NFALUT
+~SuperpixelSEEDS	ximgproc/include/opencv2/ximgproc/seeds.hpp	141;"	f	class:cv::ximgproc::SuperpixelSEEDS
