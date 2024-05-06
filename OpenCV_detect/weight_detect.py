@@ -17,8 +17,8 @@ lutRaisen = np.array([int(102+0.6*i) for i in range(256)]).astype("uint8")
 # 一个三通道的查找表，其中蓝色通道和红色通道采用了 lutEqual，而绿色通道采用了 lutRaisen。这样就实现了对图像的饱和度进行调节，同时保持了图像的亮度和色调。
 lutSRaisen = np.dstack((lutEqual, lutRaisen, lutEqual))  # Saturation raisen
 # 2. 掩膜阈值定义
-lower_weight = np.array([0, 85, 29])
-upper_weight = np.array([179, 150, 97])
+lower_weight = np.array([0, 82, 22])
+upper_weight = np.array([179, 154, 96])
 # 3. 结构元素定义
 kernel = np.ones((7, 7), np.uint8)
 # 4. Serial Port Definition
@@ -75,7 +75,7 @@ while cap.isOpened():
         # cv2.imshow('result', weight_thre)
         weight_thre = cv2.morphologyEx(weight_thre, cv2.MORPH_OPEN, kernel)
         weight_thre = cv2.morphologyEx(weight_thre, cv2.MORPH_CLOSE, kernel)
-        # cv2.imshow('result_thre', weight_thre)
+        cv2.imshow('result_thre', weight_thre)
         """
             5.闭运算
         """
