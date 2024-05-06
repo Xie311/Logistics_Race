@@ -23,7 +23,7 @@ void StartDefaultTask(void const *argument)
     Chassis_Perception_Init();   // 码盘初始化
 
     //================启动线程==================
-    //OPS_Decode_TaskStart();
+    osDelay(15000); // 等待外设初始化结束
     Chassis_StateMachine_TaskStart(); // 状态机进程启动
     Chassis_Servo_TaskStart();        // 底盘伺服进程启动
     OPS_Debug_TaskStart();            // 码盘调试线程

@@ -2,7 +2,7 @@
  * @Author: Chen Yitong 3083697520@qq.com
  * @Date: 2023-09-23 11:33:41
  * @LastEditors: x311 
- * @LastEditTime: 2024-05-05 22:38:54
+ * @LastEditTime: 2024-05-06 23:31:43
  * @FilePath: \Chassis_02\UserCode\Chassis\StateMachine\Chassis_StateMachine.c
  * @brief 底盘状态机
  *
@@ -22,7 +22,7 @@ void Chassis_StateMachine_Task(void const *argument)
     // 测试代码
     mavlink_chassis_t Tar_Data_tmp = Tar_Data;
     Tar_Data_tmp.pos_x = 0;
-    Tar_Data_tmp.pos_y = -60;
+    Tar_Data_tmp.pos_y = -3000;
     Tar_Data_tmp.state = 3;
     for (;;) {
         vPortEnterCritical(); // 进入临界区，防止多个任务同时访问 RemoteCtl_RawData
@@ -46,7 +46,7 @@ void Chassis_StateMachine_Task(void const *argument)
                 //DeadBandOneDimensional(Tar_Data.vw, &(ChassisControl.position.w), 0.05);
                 // 释放底盘控制的互斥锁
                 xSemaphoreGiveRecursive(ChassisControl.xMutex_control);
-                //printf("%d,%d,%f,%f\r\n", (int)(OPS_Data.pos_x), (int)(OPS_Data.pos_y), ChassisControl.velocity.x, ChassisControl.velocity.y);
+                printf("%d,%d,%f,%f\r\n", (int)(OPS_Data.pos_x), (int)(OPS_Data.pos_y), hDJI[0].speedPID.fdb, hDJI[0].speedPID.ref);
                 break;
             case Correcting:
 
