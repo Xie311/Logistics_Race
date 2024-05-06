@@ -38,6 +38,9 @@ void Chassis_Servo_Task(void const *argument)
         // 通过码盘反馈的当前位置与上位机传来的期望位置PID计算得到期望vx、vy，储存到ChassisControl_tmp中
         OPS_Servo(&(ChassisControl_tmp), &(OPS_Data));
 
+        //测试
+        OPS_Servo(&(ChassisControl), &(OPS_Data));
+
         // 创建一个数组存储四个电机的速度
         double motor_velocity[4] = {0};
 
