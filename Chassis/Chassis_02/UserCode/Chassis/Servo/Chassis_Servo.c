@@ -27,7 +27,7 @@ void Chassis_Servo_Init()
  */
 void Chassis_Servo_Task(void const *argument)
 {
-    // 延时1秒，等待系统稳定（？）
+    // 延时1秒，等待系统稳定
     osDelay(1000);
     for (;;) {
         xSemaphoreTakeRecursive(ChassisControl.xMutex_control, portMAX_DELAY);
@@ -110,8 +110,8 @@ void Chassis_Servo_DjiMotorInit()
     for (uint16_t i = 0; i < 4; i++)
     {
         hDJI[i].speedPID.KP        = 2;//5
-        hDJI[i].speedPID.KI        = 0.2;//0.2
-        hDJI[i].speedPID.KD        = 0.8;//0.8
+        hDJI[i].speedPID.KI        = 0.3;//0.2
+        hDJI[i].speedPID.KD        = 0.6;//0.8
         hDJI[i].speedPID.outputMax = 8000;
 
     }
