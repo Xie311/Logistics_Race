@@ -4,8 +4,8 @@
 import cv2
 import numpy as np
 import time
-# import struct
-
+import struct
+# import serial
 '''
 # 全局定义段
 '''
@@ -17,8 +17,8 @@ lutRaisen = np.array([int(102+0.6*i) for i in range(256)]).astype("uint8")
 # 一个三通道的查找表，其中蓝色通道和红色通道采用了 lutEqual，而绿色通道采用了 lutRaisen。这样就实现了对图像的饱和度进行调节，同时保持了图像的亮度和色调。
 lutSRaisen = np.dstack((lutEqual, lutRaisen, lutEqual))  # Saturation raisen
 # 2. 掩膜阈值定义
-lower_weight = np.array([0, 68, 11])
-upper_weight = np.array([179, 164, 110])
+lower_weight = np.array([0, 83, 23])
+upper_weight = np.array([179, 131, 115])
 # 3. 结构元素定义
 kernel = np.ones((7, 7), np.uint8)
 # 4. Serial Port Definition
@@ -31,6 +31,16 @@ cap.set(10, -2)
 weight_x = 0.0
 weight_y = 0.0
 weight_r = 0.0
+# # 7.滑动条定义cv2.namedWindow('image')
+# cv2.namedWindow("image")
+
+
+# def trackbar_callback():
+#     pass
+
+
+# cv2.createTrackbar("minVal", "image", 0, 255, trackbar_callback)
+# cv2.createTrackbar("maxVal", "image", 0, 255, trackbar_callback)
 
 """
 # 运行段
@@ -64,27 +74,63 @@ while cap.isOpened():
         """
         weight_img = cv2.GaussianBlur(weight_img, (3, 3), 0)
         weight_img = cv2.medianBlur(weight_img, 5)
+        # """
+        #     傅里叶滤波
+        # """
+        # # 进行傅里叶变换
+        # f = np.fft.fft2(weight_img)
+        # fshift = np.fft.fftshift(f)
+
+        # # 创建低通滤波器，例如一个圆形掩模
+        # rows, cols, _ = color_image.shape
+        # crow, ccol = rows // 2, cols // 2
+        # radius = 30  # 滤波器半径
+        # mask = np.zeros((rows, cols), np.uint8)
+        # cv2.circle(mask, (ccol, crow), radius, 0, 1)
+
+        # # 将 mask 扩展为具有与 fshift 相同的通道数
+        # mask = np.expand_dims(mask, axis=-1)  # 在最后一个维度上添加一个通道
+        # mask = np.repeat(mask, 3, axis=-1)  # 重复扩展后的通道，使其与 fshift 具有相同的通道数
+        # # 将低通滤波器应用到频率域图像上
+        # fshift = fshift * mask
+
+        # # 进行逆傅里叶变换
+        # f_ishift = np.fft.ifftshift(fshift)
+        # img_back = np.fft.ifft2(f_ishift)
+        # img_back = np.abs(img_back)
+
+        # # 显示原始图像和滤波后的图像
+        # cv2.imshow("Original Image", weight_img)
+        # cv2.imshow("Filtered Image", img_back.astype(np.uint8))
         """
             4. 二值化
         """
         weight_gray = cv2.cvtColor(weight_img, cv2.COLOR_BGR2GRAY)
         weight_gray = cv2.GaussianBlur(weight_gray, (3, 3), 0)
         weight_thre = cv2.adaptiveThreshold(weight_gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 5, -10)
+        # res, weight_thre1 = cv2.threshold(
+        #     weight_gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_TRIANGLE)
+        # cv2.imshow('result1', weight_thre1)
         res, weight_thre = cv2.threshold(
-            weight_gray, 0, 255, cv2.THRESH_BINARY)
-        # cv2.imshow('result', weight_thre)
+            weight_gray, 0, 255, cv2.THRESH_BINARY)  # 大津法 寄
+        # cv2.imshow('result2', weight_thre)
         """
             5.开闭运算
         """
         weight_thre = cv2.morphologyEx(weight_thre, cv2.MORPH_OPEN, kernel)
         weight_thre = cv2.morphologyEx(weight_thre, cv2.MORPH_CLOSE, kernel)
         cv2.imshow("result_thre_01", weight_thre)
+        # weight_thre = cv2.morphologyEx(weight_thre, cv2.MORPH_CLOSE, kernel)
+        # cv2.imshow("result_thre_02", weight_thre)
+        # """
+        #     6.canny边缘检测
+        # """
+        # minVal = cv2.getTrackbarPos('minVal','image')
+        # maxVal = cv2.getTrackbarPos('maxVal','image')
+        # weight_thre = cv2.Canny(weight_thre,float(minVal),float(maxVal))
+        # cv2.imshow("result_thre_02", weight_thre)
         """
-            6.canny边缘检测
-        """
-
-        """
-        #   7. 砝码检测
+        #   final.砝码检测
         """
         # 先进行霍夫圆变换
         weight_circles = cv2.HoughCircles(weight_thre, cv2.HOUGH_GRADIENT_ALT,
@@ -119,7 +165,7 @@ while cap.isOpened():
                     weight_thre, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
                 # 在图像上绘制所有轮廓
                 cv2.drawContours(
-                    color_image, contours_weight, -1, (0, 255, 255), 1)  # 线条颜色为黄色
+                    color_image, contours_weight, -1, (255, 255, 200), 1)  # 线条颜色为黄色
                 if not contours_weight:
                     pass
                 else:
@@ -150,12 +196,11 @@ while cap.isOpened():
                             # 在图像上绘制拟合出的圆
                             cv2.circle(color_image, center_weight,
                                        radius_weight, (0, 0, 255), 3)  # 线条颜色为红色
-
         # 显示结果图像
         cv2.imshow('result', color_image)
         print(weight_x, weight_y, weight_r)  # 输出检测到的球体位置信息
         weight_data = [weight_x, weight_y, weight_r]
-        # pack_data = struct.pack('<BfffB', 0xFF, weight_data[0], weight_data[1], weight_data[2], 0xEE)
+        # pack_data = struct.pack('<BBfffBB', 0xFF,0xFE, weight_data[0], weight_data[1], weight_data[2], 0xFE,0xFF)
         # serial_port.write(pack_data)  # 将数据打包发送到串口
 
         key = cv2.waitKey(1)
@@ -165,6 +210,6 @@ while cap.isOpened():
         time.sleep(0.05)
     else:
         break
-    
+
 cv2.destroyAllWindows()
 cap.release()
