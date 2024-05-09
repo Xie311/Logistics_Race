@@ -4,34 +4,46 @@
 import cv2
 import numpy as np
 import time
+# import serial
 # import struct
 
 '''
 # 全局定义段
 '''
-# 1. 饱和度增强定义
+# 1. Capture Definition
+cap = cv2.VideoCapture(1)
+cap.set(10, -2)
+# 2. 饱和度增强定义
 # 调节通道强度
 lutEqual = np.array([i for i in range(256)]).astype("uint8")
 lutRaisen = np.array([int(102+0.6*i) for i in range(256)]).astype("uint8")
 # 调节饱和度
 # 一个三通道的查找表，其中蓝色通道和红色通道采用了 lutEqual，而绿色通道采用了 lutRaisen。这样就实现了对图像的饱和度进行调节，同时保持了图像的亮度和色调。
 lutSRaisen = np.dstack((lutEqual, lutRaisen, lutEqual))  # Saturation raisen
-# 2. 掩膜阈值定义
-lower_weight = np.array([0, 82, 22])
-upper_weight = np.array([179, 154, 96])
 # 3. 结构元素定义
 kernel = np.ones((7, 7), np.uint8)
 # 4. Serial Port Definition
 # serial_port = serial.Serial("/dev/ttyACM0", 115200, timeout=0.5)
 # serial_port_state = serial_port.is_open
-# 5. Capture Definition
-cap = cv2.VideoCapture(1)
-cap.set(10, -2)
-# 6. Weight Definition
+# 5. Weight Definition
 weight_x = 0.0
 weight_y = 0.0
 weight_r = 0.0
+# 6. 滑动条获取阈值
+cv2.namedWindow("TrackBars")
 
+
+def empty(a):
+    pass
+
+
+cv2.resizeWindow("TrackBars", 640, 240)
+cv2.createTrackbar("Hue Min", "TrackBars", 0, 179, empty)
+cv2.createTrackbar("Hue Max", "TrackBars", 0, 179, empty)
+cv2.createTrackbar("Sat Min", "TrackBars", 0, 255, empty)
+cv2.createTrackbar("Sat Max", "TrackBars", 0, 255, empty)
+cv2.createTrackbar("Val Min", "TrackBars", 0, 255, empty)
+cv2.createTrackbar("Val Max", "TrackBars", 0, 255, empty)
 """
 # 运行段
 """
@@ -45,13 +57,24 @@ while cap.isOpened():
         """
             图像处理段
         """
+        #  阈值获取
+        h_min = cv2.getTrackbarPos("Hue Min", "TrackBars")
+        h_max = cv2.getTrackbarPos("Hue Max", "TrackBars")
+        s_min = cv2.getTrackbarPos("Sat Min", "TrackBars")
+        s_max = cv2.getTrackbarPos("Sat Max", "TrackBars")
+        v_min = cv2.getTrackbarPos("Val Min", "TrackBars")
+        v_max = cv2.getTrackbarPos("Val Max", "TrackBars")
+        # 掩膜阈值定义
+        lower_weight = np.array([h_min, s_min, v_min])
+        upper_weight = np.array([h_max, s_max, v_max])
         # color_image = cv2.flip(color_image, 0)  # 将图像水平翻转
         """
             1. 饱和度增强
         """
         hsv = cv2.cvtColor(color_image, cv2.COLOR_RGB2HSV)  # 色彩空间转换, RGB->HSV
+        # cv2.imshow("hsv", hsv)
         blendSRaisen = cv2.LUT(hsv, lutSRaisen)             # 饱和度增大
-        # cv2.imshow("hsv1", hsv)
+        # cv2.imshow("blendSRaisen", blendSRaisen)
         # img_enhance_saturation = cv2.cvtColor(blendSRaisen, cv2.COLOR_HSV2RGB)
         # cv2.imshow('img_enhance_saturation', img_enhance_saturation)
         """
@@ -72,15 +95,12 @@ while cap.isOpened():
         weight_thre = cv2.adaptiveThreshold(weight_gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 5, -10)
         res, weight_thre = cv2.threshold(
             weight_gray, 0, 255, cv2.THRESH_BINARY)
-        # cv2.imshow('result', weight_thre)
+        cv2.imshow('result1', weight_thre)
+        """
+            5.开闭运算
+        """
         weight_thre = cv2.morphologyEx(weight_thre, cv2.MORPH_OPEN, kernel)
         weight_thre = cv2.morphologyEx(weight_thre, cv2.MORPH_CLOSE, kernel)
-        cv2.imshow('result_thre', weight_thre)
-        """
-            5.闭运算
-        """
-        weight_thre = cv2.morphologyEx(weight_thre, cv2.MORPH_CLOSE, kernel)
-        weight_thre = cv2.morphologyEx(weight_thre, cv2.MORPH_OPEN, kernel)
         # cv2.imshow("result_thre_01", weight_thre)
         """
         #   6. 砝码检测
@@ -128,8 +148,8 @@ while cap.isOpened():
                         areas_weight.append(cv2.contourArea(contours_weight[c]))
 
                     max_id_weight = areas_weight.index(max(areas_weight))
-                    # 圆拟合
-                    if contours_weight[max_id_weight].size < 10:
+                    # 椭圆拟合
+                    if contours_weight[max_id_weight].size < 20:
                         pass
                     else:
                         (x_weight, y_weight), radius_weight = cv2.minEnclosingCircle(
@@ -145,7 +165,7 @@ while cap.isOpened():
                                        radius_weight, (0, 0, 255), 3)  # 线条颜色为红色
 
         # 显示结果图像
-        cv2.imshow('result', color_image)
+        cv2.imshow('result2', color_image)
         print(weight_x, weight_y, weight_r)  # 输出检测到的球体位置信息
         weight_data = [weight_x, weight_y, weight_r]
         # pack_data = struct.pack('<BfffB', 0xFF, weight_data[0], weight_data[1], weight_data[2], 0xEE)
