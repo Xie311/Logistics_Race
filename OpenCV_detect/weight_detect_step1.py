@@ -149,20 +149,31 @@ while cap.isOpened():
 
                     max_id_weight = areas_weight.index(max(areas_weight))
                     # 椭圆拟合
-                    if contours_weight[max_id_weight].size < 20:
+                    if contours_weight[max_id_weight].size < 10:
                         pass
                     else:
-                        (x_weight, y_weight), radius_weight = cv2.minEnclosingCircle(
-                            contours_weight[max_id_weight])
-                        if radius_weight > 28:
+                        # (x_weight, y_weight), radius_weight = cv2.fitEllipse(
+                        #     contours_weight[max_id_weight])
+                        ellipse = cv2.fitEllipse(contours_weight[max_id_weight])
+                        center = ellipse[0]
+                        x_weight = center[0]
+                        y_weight = center[1]
+                        axes = ellipse[1]
+                        radius_weight = axes[0] / 2 + axes[1] / 2
+                        if radius_weight > 22:
                             center_weight = (int(x_weight), int(y_weight))
                             radius_weight = int(radius_weight)
                             weight_x = x_weight
                             weight_y = y_weight
                             weight_r = radius_weight
                             # 在图像上绘制拟合出的圆
-                            cv2.circle(color_image, center_weight,
-                                       radius_weight, (0, 0, 255), 3)  # 线条颜色为红色
+                            cv2.circle(
+                                color_image,
+                                center_weight,
+                                radius_weight,
+                                (0, 0, 255),
+                                3,
+                            )  # 线条颜色为红色
 
         # 显示结果图像
         cv2.imshow('result2', color_image)

@@ -17,8 +17,8 @@ lutRaisen = np.array([int(102+0.6*i) for i in range(256)]).astype("uint8")
 # 一个三通道的查找表，其中蓝色通道和红色通道采用了 lutEqual，而绿色通道采用了 lutRaisen。这样就实现了对图像的饱和度进行调节，同时保持了图像的亮度和色调。
 lutSRaisen = np.dstack((lutEqual, lutRaisen, lutEqual))  # Saturation raisen
 # 2. 掩膜阈值定义
-lower_weight = np.array([0, 85, 29])
-upper_weight = np.array([179, 150, 86])
+lower_weight = np.array([0, 68, 11])
+upper_weight = np.array([179, 164, 110])
 # 3. 结构元素定义
 kernel = np.ones((7, 7), np.uint8)
 # 4. Serial Port Definition
@@ -78,11 +78,11 @@ while cap.isOpened():
         """
         weight_thre = cv2.morphologyEx(weight_thre, cv2.MORPH_OPEN, kernel)
         weight_thre = cv2.morphologyEx(weight_thre, cv2.MORPH_CLOSE, kernel)
-        # cv2.imshow("result_thre_01", weight_thre)
+        cv2.imshow("result_thre_01", weight_thre)
         """
             6.canny边缘检测
         """
-        
+
         """
         #   7. 砝码检测
         """
@@ -129,12 +129,18 @@ while cap.isOpened():
                         areas_weight.append(cv2.contourArea(contours_weight[c]))
 
                     max_id_weight = areas_weight.index(max(areas_weight))
-                    # 圆拟合
+                    # 椭圆拟合
                     if contours_weight[max_id_weight].size < 10:
                         pass
                     else:
-                        (x_weight, y_weight), radius_weight = cv2.minEnclosingCircle(
-                            contours_weight[max_id_weight])
+                        # (x_weight, y_weight), radius_weight = cv2.fitEllipse(
+                        #     contours_weight[max_id_weight])
+                        ellipse = cv2.fitEllipse(contours_weight[max_id_weight])
+                        center = ellipse[0]
+                        x_weight = center[0]
+                        y_weight = center[1]
+                        axes = ellipse[1]
+                        radius_weight = axes[0] / 2 + axes[1] / 2
                         if radius_weight > 22:
                             center_weight = (int(x_weight), int(y_weight))
                             radius_weight = int(radius_weight)
@@ -154,10 +160,11 @@ while cap.isOpened():
 
         key = cv2.waitKey(1)
         if key == 27:
-            break
+            break   
 
         time.sleep(0.05)
     else:
         break
+    
 cv2.destroyAllWindows()
 cap.release()
