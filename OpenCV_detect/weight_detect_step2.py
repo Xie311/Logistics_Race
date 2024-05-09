@@ -73,17 +73,18 @@ while cap.isOpened():
         res, weight_thre = cv2.threshold(
             weight_gray, 0, 255, cv2.THRESH_BINARY)
         # cv2.imshow('result', weight_thre)
+        """
+            5.开闭运算
+        """
         weight_thre = cv2.morphologyEx(weight_thre, cv2.MORPH_OPEN, kernel)
         weight_thre = cv2.morphologyEx(weight_thre, cv2.MORPH_CLOSE, kernel)
-        # cv2.imshow('result_thre', weight_thre)
-        """
-            5.闭运算
-        """
-        weight_thre = cv2.morphologyEx(weight_thre, cv2.MORPH_CLOSE, kernel)
-        weight_thre = cv2.morphologyEx(weight_thre, cv2.MORPH_OPEN, kernel)
         # cv2.imshow("result_thre_01", weight_thre)
         """
-        #   6. 砝码检测
+            6.canny边缘检测
+        """
+        
+        """
+        #   7. 砝码检测
         """
         # 先进行霍夫圆变换
         weight_circles = cv2.HoughCircles(weight_thre, cv2.HOUGH_GRADIENT_ALT,
