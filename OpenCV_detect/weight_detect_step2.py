@@ -64,6 +64,7 @@ while cap.isOpened():
         # cv2.imshow("hsv1", hsv)
         # img_enhance_saturation = cv2.cvtColor(blendSRaisen, cv2.COLOR_HSV2RGB)
         # cv2.imshow('img_enhance_saturation', img_enhance_saturation)
+        # blendSRaisen = hsv
         """
             2. 掩膜创建
         """
