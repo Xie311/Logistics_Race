@@ -1,10 +1,10 @@
 /*
  * @Author: szf
  * @Date: 2023-02-22 12:04:21
- * @LastEditTime: 2024-04-29 23:20:01
+ * @LastEditTime: 2024-05-11 00:58:54
  * @LastEditors: x311 
  * @brief 运动学逆解算及PID计算函数
- * @FilePath: \WTR_Omni_Auto_Chassis\UserCode\Lib\Calculate\wtr_calculate.c
+ * @FilePath: \Chassis_02\UserCode\Lib\Calculate\wtr_calculate.c
  */
 
 #include "wtr_calculate.h"
@@ -244,4 +244,25 @@ void DeadBandOneDimensional(double x, double *new_x, double threshould)
     // 计算缩放因子k，用于对输入值进行缩放
     double k = difference_x / fabs(x);
     *new_x   = k * x;
+}
+
+/**
+ * @brief: 单轴位置死区控制
+ * @auther: X311
+ * @param {double} x
+ * @param {double} *new_x
+ * @param {double} threshould
+ * @return {*}
+ * @note   对输入值进行死区处理，防止过小的输入值对系统产生影响
+ */
+void Position_DeadBandOneDimensional(double x, double *new_x, double threshould)
+{
+    double cur_difference = x - *new_x;
+    // 计算输入值的绝对值与死区阈值的差值
+    double difference_x = fabs(cur_difference) - threshould;
+    // 如果差值小于0，即输入值在死区范围内
+    if (difference_x < 0) {
+        *new_x = x;
+        return;
+    }
 }
