@@ -5,7 +5,7 @@ import cv2
 import numpy as np
 import time
 import struct
-# import serial
+import serial
 '''
 # 全局定义段
 '''
@@ -22,8 +22,8 @@ upper_weight = np.array([179, 131, 115])
 # 3. 结构元素定义
 kernel = np.ones((7, 7), np.uint8)
 # 4. Serial Port Definition
-# serial_port = serial.Serial("/dev/ttyACM0", 115200, timeout=0.5)
-# serial_port_state = serial_port.is_open
+serial_port = serial.Serial("/dev/ttyACM0", 115200, timeout=0.5)
+serial_port_state = serial_port.is_open
 # 5. Capture Definition
 cap = cv2.VideoCapture(1)
 cap.set(10, -2)
@@ -201,8 +201,8 @@ while cap.isOpened():
         cv2.imshow('result', color_image)
         print(weight_x, weight_y, weight_r)  # 输出检测到的球体位置信息
         weight_data = [weight_x, weight_y, weight_r]
-        # pack_data = struct.pack('<BBfffBB', 0xFF,0xFE, weight_data[0], weight_data[1], weight_data[2], 0xFE,0xFF)
-        # serial_port.write(pack_data)  # 将数据打包发送到串口
+        pack_data = struct.pack('<BBfffBB', 0xFF,0xFE, weight_data[0], weight_data[1], weight_data[2], 0xFE,0xFF)
+        serial_port.write(pack_data)  # 将数据打包发送到串口
 
         key = cv2.waitKey(1)
         if key == 27:
