@@ -31,7 +31,6 @@ uint8_t OPS_Decode(void)
         OPS_Data.pos_y   = posture.ActVal[4];
         OPS_Data.w_z     = posture.ActVal[5];
     }
-
     return 0; // 返回成功代码
 }
 

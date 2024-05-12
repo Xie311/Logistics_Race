@@ -20,7 +20,7 @@ CHASSIS_MOVING_STATE ChassisState;
 void Chassis_StateMachine_Task(void const *argument)
 {
     // 测试代码
-    mavlink_chassis_t Tar_Data_tmp = Tar_Data;
+    Tar_t Tar_Data_tmp = Tar_Data;
     Tar_Data_tmp.pos_x = 0;
     Tar_Data_tmp.pos_y = -2000;
     Tar_Data_tmp.state = 3;

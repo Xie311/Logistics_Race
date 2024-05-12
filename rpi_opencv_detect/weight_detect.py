@@ -203,7 +203,7 @@ while cap.isOpened():
         # cv2.imshow('result', color_image)
         # print(weight_x, weight_y, weight_r)  # 输出检测到的球体位置信息
         weight_data = [weight_x, weight_y, weight_r]
-        pack_data = struct.pack('<BBfffBB', 0xFF,0xFE, weight_data[0], weight_data[1], weight_data[2], 0xFE,0xFF)
+        pack_data = struct.pack('<BBfffBB', 0xFF,0xFE, weight_data[0], weight_data[1], weight_data[2], 0xFE,0xFF) 
         serial_port.write(pack_data)  # 将数据打包发送到串口
 
         key = cv2.waitKey(1)

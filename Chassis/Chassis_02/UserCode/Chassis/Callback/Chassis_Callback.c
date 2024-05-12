@@ -29,8 +29,9 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 
     if (huart->Instance == Tar_UART) 
     {
-        //接收上位机数据
-        wtrMavlink_UARTRxCpltCallback(huart, MAVLINK_COMM_0);
+        //接收上位机数据并解码
+        Chassis_Target_Decode();
+        HAL_UART_Receive_IT(&huart6, (uint8_t *)receive_buffer, sizeof(receive_buffer));
     }
 }
 
