@@ -1,14 +1,12 @@
 
-
 #include "UpperServo.h"
 
-Upper_COMPONENT Upper[2]; // 两个分区的龙门的数据
+Upper_COMPONENT Upper[2]; // 龙门蝴蝶结两侧的数据
 
 /********线程相关部分*************/
-
 void Upper_Servo_Task(void *argument)
 {
-    osDelay(100);
+    osDelay(1000);
     for (;;) {
         /*TestCode*/
 

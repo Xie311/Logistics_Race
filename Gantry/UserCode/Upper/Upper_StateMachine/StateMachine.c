@@ -12,50 +12,77 @@ void Upper_State_Task(void *argument)
     osDelay(100);
 
     for (;;) {
-        /*
-        待加入：路径规划状态机
-
-        电磁阀控制
-        */
-        if (MatchingState == 0) {
-            do {
-                /*if flag=0 在外圈*/
-                // 此处TargetState[i].position.x/y 为预期的与雷达的距离  考虑分开给还是一起给  不过应该没有办法一起给 因为要做不同的路径
-                Upper[0].gantry_t.position.x = 875.0;
-                Upper[0].gantry_t.position.y = 350.48;
-                /*if flag=1 在里圈*/
-                Upper[0].gantry_t.position.x = 1062.5;
-                Upper[0].gantry_t.position.y = 675.24;
-
-            } while (fabs(Upper[0].gantry_t.position.x - distance_aver[0]) > 1 || fabs(Upper[0].gantry_t.position.y - distance_aver[1]) > 1);
-            MatchingState = 1;
-        } else if (MatchingState == 1) /*前往木桩*/
+        /************************砝码在内圈************************/
+        if (weight_placement[3] != 0)
         {
+            /***前往砝码***/
+            /*全速段*/
+            do{
+                Upper[0].gantry_t.position.x = 100;
+                Upper[0].gantry_t.position.y = 0;
+            } while ((distance_aver[0] - Upper[0].gantry_t.position.x) < 30); // 距离砝码3cm时电磁铁上电
+
+            /*减速段*/
+            // 待加入
+
+            /***抓取砝码***/
+            // HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin,GPIO_PIN_SET);
+            HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_SET);  //砝码上电
             do {
-                Upper[0].gantry_t.position.x = 245;
-                Upper[0].gantry_t.position.y = 245;
-            } while (fabs(Upper[0].gantry_t.position.x - distance_aver[0]) > 1 || fabs(Upper[0].gantry_t.position.y - distance_aver[1]) > 1);
+                Upper[0].gantry_t.position.x = 100;
+                Upper[0].gantry_t.position.y = 0;
+            } while ((distance_aver[0] - Upper[0].gantry_t.position.x) < 1);
+
+            osDelay(500);
+            HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET);  // 爪子抬升
+
+            /***前往木桩***/
+            do
+            {
+                Upper[0].gantry_t.position.x = 100;  // 到达蝴蝶结末端
+                Upper[0].gantry_t.position.y = 627.5;
+            } while (((distance_aver[0] - Upper[0].gantry_t.position.x) < 1) || (fabs(distance_aver[1] - Upper[0].gantry_t.position.y)) < 1);
+
+            /***放置砝码***/
+            HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET);  //爪子放下
+            osDelay(1000);
+            HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_RESET);  // 电磁铁下电
         }
+        /************************砝码在外圈************************/
+        else{
+            /***前往砝码***/
+            /*全速段*/
+            do {
+                Upper[0].gantry_t.position.x = 100;
+                Upper[0].gantry_t.position.y = 0;
+            } while ((distance_aver[0] - Upper[0].gantry_t.position.x) < 30); // 距离砝码3cm时电磁铁上电
 
+            /*减速段*/
+            // 待加入
+
+            /***抓取砝码***/
+            // HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin,GPIO_PIN_SET);
+            HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_SET); // 砝码上电
+            do {
+                Upper[0].gantry_t.position.x = 100;
+                Upper[0].gantry_t.position.y = 0;
+            } while ((distance_aver[0] - Upper[0].gantry_t.position.x) < 1);
+
+            osDelay(500);
+            HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET); // 爪子抬升
+
+            /***前往木桩***/
+            do {
+                Upper[0].gantry_t.position.x = 100; // 到达蝴蝶结末端
+                Upper[0].gantry_t.position.y = 627.5;
+            } while (((distance_aver[0] - Upper[0].gantry_t.position.x) < 1) || (fabs(distance_aver[1] - Upper[0].gantry_t.position.y)) < 1);
+
+            /***放置砝码***/
+            HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET); // 爪子放下
+            osDelay(1000);
+            HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_RESET); // 电磁铁下电
+        }
         osDelay(10);
-
-        //     xSemaphoreTakeRecursive(TargetState[0].xMutex_control, portMAX_DELAY);
-        //     xSemaphoreTakeRecursive(TargetState[1].xMutex_control, portMAX_DELAY);
-        //     xSemaphoreTakeRecursive(Upper[0].gantry_t.xMutex_control, portMAX_DELAY);
-        //     xSemaphoreTakeRecursive(Upper[1].gantry_t.xMutex_control, portMAX_DELAY);
-        //     // 同时进行死区处理
-        //     DeadBandOneDimensional(TargetState[0].position.x - Upper[0].gantry_t.position.x, &(TargetState[0].velocity.x), 0.5);
-        //     DeadBandOneDimensional(TargetState[0].position.y - Upper[0].gantry_t.position.y, &(TargetState[0].velocity.y), 0.5);
-        //     DeadBandOneDimensional(TargetState[1].position.x - Upper[1].gantry_t.position.x, &(TargetState[1].velocity.x), 0.5);
-        //     DeadBandOneDimensional(TargetState[1].position.y - Upper[1].gantry_t.position.y, &(TargetState[1].velocity.y), 0.5);
-
-        //     //  释放底盘控制的互斥锁
-        //     xSemaphoreGiveRecursive(TargetState[0].xMutex_control);
-        //     xSemaphoreGiveRecursive(TargetState[1].xMutex_control);
-        //     xSemaphoreGiveRecursive(Upper[0].gantry_t.xMutex_control);
-        //     xSemaphoreGiveRecursive(Upper[1].gantry_t.xMutex_control);
-        //     osDelay(10);
-        //
     }
 }
 

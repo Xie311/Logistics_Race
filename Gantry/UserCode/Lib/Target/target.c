@@ -3,7 +3,7 @@
  * @author X311
  * @brief 接受上位机数据
  * @version 0.0
- * @date 2024-04-28
+ * @date 2024-05-12
  * @eitor
  * @copyright Copyright (c) 2024
  *
@@ -12,7 +12,7 @@
 
 uint8_t receive_buffer[24];
 Tar_t Tar_Data = {0};
-float weight_placement[5];
+float weight_placement[5] = {0};
 /**
  * @brief 上位机数据接收
  *

@@ -16,8 +16,8 @@ typedef __IO struct
     } velocity; // 速度结构体//不知道需不需要来着
 
     __IO struct {
-        double x;
-        double y;
+        double x;  // slash
+        double y;  // straight line
         double z;
     } position;
     SemaphoreHandle_t xMutex_control; // 互斥锁
