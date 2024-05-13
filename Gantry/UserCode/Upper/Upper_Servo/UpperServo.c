@@ -6,7 +6,7 @@ Upper_COMPONENT Upper[2]; // 龙门蝴蝶结两侧的数据
 /********线程相关部分*************/
 void Upper_Servo_Task(void *argument)
 {
-    osDelay(1000);
+    osDelay(100);
     for (;;) {
         /*TestCode*/
 
@@ -30,7 +30,7 @@ void Upper_Servo_Task(void *argument)
     }
 }
 
-void Upper_Servo_Start(void)
+void Upper_Servo_TaskStart(void)
 {
     osThreadId_t Upper_ServoHandle;
     const osThreadAttr_t Upper_Servo_attributes = {

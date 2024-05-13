@@ -1,24 +1,29 @@
+
 #include "StateMachine.h"
 
-// UpperState TargetState[2];
-// 两个分区的龙门的目标状态,来自上位机的视觉确认和固定的路径规划--->一个巨大的状态机
-// 其中的Velocity用来放speedpid的REF，非定量，可以给系数
-/*备注：当前状态在全局变量Upper[2]中*/
-uint16_t MatchingState;
+#define Inner_ring_weights 100
+#define Outer_ring_weights 200
+#define Slash_Length 200
+#define Stake_location  627.5
 /****************线程相关函数********************/
 
+/**
+ * @brief 状态机线程
+ * 
+ * @param argument 
+ */
 void Upper_State_Task(void *argument)
 {
     osDelay(100);
 
     for (;;) {
         /************************砝码在内圈************************/
-        if (weight_placement[3] != 0)
+        if (weight_placement[3] != 0)  //两个爪子怎么处理使之同时运动，排列组合四种情况？
         {
             /***前往砝码***/
             /*全速段*/
             do{
-                Upper[0].gantry_t.position.x = 100;
+                Upper[0].gantry_t.position.x = Inner_ring_weights;
                 Upper[0].gantry_t.position.y = 0;
             } while ((distance_aver[0] - Upper[0].gantry_t.position.x) < 30); // 距离砝码3cm时电磁铁上电
 
@@ -29,7 +34,7 @@ void Upper_State_Task(void *argument)
             // HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin,GPIO_PIN_SET);
             HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_SET);  //砝码上电
             do {
-                Upper[0].gantry_t.position.x = 100;
+                Upper[0].gantry_t.position.x = Inner_ring_weights;
                 Upper[0].gantry_t.position.y = 0;
             } while ((distance_aver[0] - Upper[0].gantry_t.position.x) < 1);
 
@@ -39,12 +44,13 @@ void Upper_State_Task(void *argument)
             /***前往木桩***/
             do
             {
-                Upper[0].gantry_t.position.x = 100;  // 到达蝴蝶结末端
-                Upper[0].gantry_t.position.y = 627.5;
+                Upper[0].gantry_t.position.x = Slash_Length; // 到达蝴蝶结末端
+                Upper[0].gantry_t.position.y = Stake_location;
             } while (((distance_aver[0] - Upper[0].gantry_t.position.x) < 1) || (fabs(distance_aver[1] - Upper[0].gantry_t.position.y)) < 1);
 
             /***放置砝码***/
-            HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET);  //爪子放下
+            osDelay(200);
+            HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET); // 爪子放下
             osDelay(1000);
             HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_RESET);  // 电磁铁下电
         }
@@ -53,7 +59,7 @@ void Upper_State_Task(void *argument)
             /***前往砝码***/
             /*全速段*/
             do {
-                Upper[0].gantry_t.position.x = 100;
+                Upper[0].gantry_t.position.x = Outer_ring_weights;
                 Upper[0].gantry_t.position.y = 0;
             } while ((distance_aver[0] - Upper[0].gantry_t.position.x) < 30); // 距离砝码3cm时电磁铁上电
 
@@ -64,38 +70,37 @@ void Upper_State_Task(void *argument)
             // HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin,GPIO_PIN_SET);
             HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_SET); // 砝码上电
             do {
-                Upper[0].gantry_t.position.x = 100;
+                Upper[0].gantry_t.position.x = Outer_ring_weights;
                 Upper[0].gantry_t.position.y = 0;
-            } while ((distance_aver[0] - Upper[0].gantry_t.position.x) < 1);
+            } while ((distance_aver[0] - Upper[0].gantry_t.position.x) < 1);  // 爪子前行，吸砝码
 
             osDelay(500);
             HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET); // 爪子抬升
 
             /***前往木桩***/
             do {
-                Upper[0].gantry_t.position.x = 100; // 到达蝴蝶结末端
-                Upper[0].gantry_t.position.y = 627.5;
+                Upper[0].gantry_t.position.x = Slash_Length; // 到达蝴蝶结末端
+                Upper[0].gantry_t.position.y = Stake_location;
             } while (((distance_aver[0] - Upper[0].gantry_t.position.x) < 1) || (fabs(distance_aver[1] - Upper[0].gantry_t.position.y)) < 1);
 
             /***放置砝码***/
+            osDelay(200);
             HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET); // 爪子放下
-            osDelay(1000);
+            osDelay(500);
             HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_RESET); // 电磁铁下电
         }
         osDelay(10);
     }
 }
 
-void Upper_StateMachine_Start(void)
+void Upper_StateMachine_TaskStart(void)
 {
-    osThreadId_t Upper_StateHandle;
-    const osThreadAttr_t Upper_State_attributes = {
+    osThreadAttr_t Upper_State_attributes = {
         .name       = "Upper_State",
         .stack_size = 128 * 10,
         .priority   = (osPriority_t)osPriorityAboveNormal,
     };
-
-    Upper_StateHandle = osThreadNew(Upper_State_Task, NULL, &Upper_State_attributes);
+    osThreadNew(Upper_State_Task, NULL, &Upper_State_attributes);
 }
 
 /*******封装函数***********/

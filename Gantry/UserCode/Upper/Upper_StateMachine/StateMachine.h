@@ -3,7 +3,7 @@
 
 #include "UpperStart.h"
 
-void Upper_StateMachine_Start(void);
+void Upper_StateMachine_TaskStart(void);
 void Upper_StateMachine_Init();
 
 extern Upper_COMPONENT Upper[2];
