@@ -4,7 +4,7 @@
 #include "UpperStart.h"
 void Upper_Servo_Start(void);
 
-void Core_xy_Motor_init();
+void Upper_Motor_init();
 
 
 

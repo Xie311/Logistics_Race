@@ -2,9 +2,7 @@
 
 #include "UpperServo.h"
 
-
-CoreXY_COMPONENT Core_xy[2];    //两个分区的龙门的数据
-
+Upper_COMPONENT Upper[2]; // 两个分区的龙门的数据
 
 /********线程相关部分*************/
 
@@ -13,27 +11,25 @@ void Upper_Servo_Task(void *argument)
     osDelay(100);
     for (;;) {
         /*TestCode*/
-       
-        //float Target_tmp[4] = {100,100,100,100};//单位：mm
-        TargetState[0].velocity.x  = TargetState[0].position.x - distance_aver[0];
-        TargetState[0].velocity.y  = TargetState[0].position.y - distance_aver[1];
-        TargetState[1].velocity.x  = TargetState[1].position.x - distance_aver[2];
-        TargetState[1].velocity.y  = TargetState[1].position.y - distance_aver[3];
 
-        speedServo(TargetState[0].velocity.x, Core_xy[0].Motor_X);
-        speedServo(TargetState[0].velocity.y, Core_xy[0].Motor_Y);
-        speedServo(TargetState[1].velocity.x, Core_xy[1].Motor_X);
-        speedServo(TargetState[1].velocity.y, Core_xy[1].Motor_Y);
+        // float Target_tmp[4] = {100,100,100,100};//单位：mm
+        Upper[0].gantry_t.velocity.x = Upper[0].gantry_t.position.x - distance_aver[0];
+        Upper[0].gantry_t.velocity.y = Upper[0].gantry_t.position.y - distance_aver[1];
+        Upper[1].gantry_t.velocity.x = Upper[1].gantry_t.position.x - distance_aver[2];
+        Upper[1].gantry_t.velocity.y = Upper[1].gantry_t.position.y - distance_aver[3];
+
+        speedServo(Upper[0].gantry_t.velocity.x, Upper[0].Motor_X);
+        speedServo(Upper[0].gantry_t.velocity.y, Upper[0].Motor_Y);
+        speedServo(Upper[1].gantry_t.velocity.x, Upper[1].Motor_X);
+        speedServo(Upper[1].gantry_t.velocity.y, Upper[1].Motor_Y);
 
         CanTransmit_DJI_1234(&hcan1,
-                             Core_xy[0].Motor_X->speedPID.output,
-                             Core_xy[0].Motor_Y->speedPID.output,
-                             Core_xy[1].Motor_X->speedPID.output,
-                             Core_xy[1].Motor_Y->speedPID.output);
+                             Upper[0].Motor_X->speedPID.output,
+                             Upper[0].Motor_Y->speedPID.output,
+                             Upper[1].Motor_X->speedPID.output,
+                             Upper[1].Motor_Y->speedPID.output);
         osDelay(10);
-
     }
-    
 }
 
 void Upper_Servo_Start(void)
@@ -48,15 +44,15 @@ void Upper_Servo_Start(void)
 }
 
 /*******封装函数部分********/
-void Core_xy_Motor_init()               //电机初始化
+void Upper_Motor_init() // 电机初始化
 {
-    
-    Core_xy[0].Motor_X = &hDJI[0];
-    Core_xy[0].Motor_Y = &hDJI[1];
-    Core_xy[1].Motor_X = &hDJI[2];
-    Core_xy[1].Motor_Y = &hDJI[3];
-    hDJI[0].motorType = M2006;      
-    hDJI[1].motorType = M2006;
+
+    Upper[0].Motor_X = &hDJI[0];
+    Upper[0].Motor_Y = &hDJI[1];
+    Upper[1].Motor_X = &hDJI[2];
+    Upper[1].Motor_Y = &hDJI[3];
+    hDJI[0].motorType  = M2006;
+    hDJI[1].motorType  = M2006;
     hDJI[2].motorType  = M2006;
     hDJI[3].motorType  = M2006;
     DJI_Init();
@@ -73,9 +69,6 @@ void Core_xy_Motor_init()               //电机初始化
     }
     CANFilterInit(&hcan1);
 }
-
-
-
 
 /**
  * @brief T型速度规划函数
@@ -130,8 +123,6 @@ void VelocityPlanning(float initialAngle, float maxAngularVelocity, float Angula
         } else {
             // 达到目标位置
             *currentAngle = targetAngle;
-           
         }
     }
 }
-
