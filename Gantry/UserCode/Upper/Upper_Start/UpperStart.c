@@ -8,11 +8,13 @@
 void StartDefaultTask(void *argument)
 {
     /*初始化函数*/
-    Upper_StateMachine_Init();
+    Upper_StateMachine_Init_01();
+    Upper_StateMachine_Init_02();
     Upper_Motor_init();
 
     /*开启线程*/
-    Upper_StateMachine_TaskStart();
+    Upper_StateMachine_TaskStart_01(3);
+    Upper_StateMachine_TaskStart_02(4);
     Upper_Servo_TaskStart();
 
     /*串口使能*/

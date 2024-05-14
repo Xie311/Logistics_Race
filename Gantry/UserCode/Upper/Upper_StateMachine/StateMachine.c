@@ -1,4 +1,13 @@
-
+/**
+ * @file StateMachine.c
+ * @author X311
+ * @brief 
+ * @version 0.1
+ * @date 2024-05-14
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #include "StateMachine.h"
 
 #define Inner_ring_weights 100
@@ -15,10 +24,10 @@
 void Upper_State_Task(void *argument)
 {
     osDelay(100);
-
+    int index = *((int *)argument);
     for (;;) {
         /************************砝码在内圈************************/
-        if (weight_placement[3] != 0)  //两个爪子怎么处理使之同时运动，排列组合四种情况？
+        if (weight_placement[index] != 0)  //两个爪子怎么处理使之同时运动，排列组合四种情况？
         {
             /***前往砝码***/
             /*全速段*/
@@ -93,18 +102,40 @@ void Upper_State_Task(void *argument)
     }
 }
 
-void Upper_StateMachine_TaskStart(void)
+/********************* 区域1 *********************/
+void Upper_StateMachine_TaskStart_01(int index)
 {
+    int *parameter = malloc(sizeof(int));
+    *parameter = 3;
+
     osThreadAttr_t Upper_State_attributes = {
         .name       = "Upper_State",
         .stack_size = 128 * 10,
         .priority   = (osPriority_t)osPriorityAboveNormal,
     };
-    osThreadNew(Upper_State_Task, NULL, &Upper_State_attributes);
+    osThreadNew(Upper_State_Task, parameter, &Upper_State_attributes);
 }
 
-/*******封装函数***********/
-void Upper_StateMachine_Init()
+void Upper_StateMachine_Init_01()
+{
+    Upper[0].gantry_t.xMutex_control = xSemaphoreCreateRecursiveMutex();
+    Upper[1].gantry_t.xMutex_control = xSemaphoreCreateRecursiveMutex();
+}
+
+/********************* 区域2 *********************/
+void Upper_StateMachine_TaskStart_02(int index)
+{
+    int *parameter  = malloc(sizeof(int));
+    *parameter      = 4;
+    osThreadAttr_t Upper_State_attributes = {
+        .name       = "Upper_State",
+        .stack_size = 128 * 10,
+        .priority   = (osPriority_t)osPriorityAboveNormal,
+    };
+    osThreadNew(Upper_State_Task, parameter, &Upper_State_attributes);
+}
+
+void Upper_StateMachine_Init_02()
 {
     Upper[0].gantry_t.xMutex_control = xSemaphoreCreateRecursiveMutex();
     Upper[1].gantry_t.xMutex_control = xSemaphoreCreateRecursiveMutex();
