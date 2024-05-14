@@ -5,7 +5,7 @@ import cv2
 import numpy as np
 import time
 import struct
-import serial
+# import serial
 '''
 # 全局定义段
 '''
@@ -22,8 +22,8 @@ upper_weight = np.array([179, 131, 115])
 # 3. 结构元素定义
 kernel = np.ones((7, 7), np.uint8)
 # 4. Serial Port Definition
-serial_port = serial.Serial("/dev/ttyACM0", 115200, timeout=0.5)
-serial_port_state = serial_port.is_open
+# serial_port = serial.Serial("/dev/ttyACM0", 115200, timeout=0.5)
+# serial_port_state = serial_port.is_open
 # 5. Capture Definition
 cap = cv2.VideoCapture(1)
 cap.set(10, -2)
@@ -142,7 +142,7 @@ while cap.isOpened():
             filter_circle = []
             weight_circles = np.uint16(np.around(weight_circles))  # 将检测到的圆的坐标和半径转换为整数类型，并四舍五入（OpenCV要求）
             for cir_ in weight_circles:
-                cir = cir_[0]
+                cir = cir_[0]    ######################################################################################## 改为二维数组
                 x = cir[0]
                 y = cir[1]
                 r = cir[2]
@@ -170,7 +170,7 @@ while cap.isOpened():
                 if not contours_weight:
                     pass
                 else:
-                    # 寻找最大面积的轮廓
+                    # 寻找最大面积的轮廓 ######################################################################################## 最大面积的六个轮廓/所有轮廓
                     areas_weight = []
                     for c in range(len(contours_weight)):
                         areas_weight.append(cv2.contourArea(contours_weight[c]))
@@ -199,10 +199,12 @@ while cap.isOpened():
                                        radius_weight, (0, 0, 255), 3)  # 线条颜色为红色
         # 显示结果图像
         cv2.imshow('result', color_image)
-        print(weight_x, weight_y, weight_r)  # 输出检测到的球体位置信息
+        print(
+            weight_x, weight_y, weight_r
+        )  # 输出检测到的球体位置信息   ######################################################################################## 打印所有
         weight_data = [weight_x, weight_y, weight_r]
         pack_data = struct.pack('<BBfffBB', 0xFF,0xFE, weight_data[0], weight_data[1], weight_data[2], 0xFE,0xFF)
-        serial_port.write(pack_data)  # 将数据打包发送到串口
+        # serial_port.write(pack_data)  # 将数据打包发送到串口
 
         key = cv2.waitKey(1)
         if key == 27:
