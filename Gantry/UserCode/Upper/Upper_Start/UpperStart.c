@@ -9,7 +9,7 @@ void StartDefaultTask(void *argument)
 {
     /*初始化函数*/
     Upper_StateMachine_Init_01();
-    Upper_StateMachine_Init_02();
+   //Upper_StateMachine_Init_02();
     Upper_Motor_init();
 
     /*串口使能*/
@@ -17,13 +17,14 @@ void StartDefaultTask(void *argument)
 
     /*开启线程*/
     Upper_StateMachine_TaskStart_01(3);
-    Upper_StateMachine_TaskStart_02(4);
+    // Upper_StateMachine_TaskStart_01(3);
+    // Upper_StateMachine_TaskStart_02(4);
     Upper_Servo_TaskStart();
 
 
     for (;;)
     {
-        HAL_GPIO_TogglePin(LED3_GPIO_Port, LED3_Pin);
-        osDelay(500);
+        //HAL_GPIO_TogglePin(LED3_GPIO_Port, LED3_Pin);
+        osDelay(50);
     }
 }

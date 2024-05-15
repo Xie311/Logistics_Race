@@ -23,25 +23,25 @@ void Upper_Servo_Task(void *argument)
         speedServo(Upper[1].gantry_t.velocity.x, Upper[1].Motor_X);
         speedServo(Upper[1].gantry_t.velocity.y, Upper[1].Motor_Y);
 
-        // CanTransmit_DJI_1234(&hcan1,
-        //                      Upper[0].Motor_X->speedPID.output,
-        //                      Upper[0].Motor_Y->speedPID.output,
-        //                      Upper[1].Motor_X->speedPID.output,
-        //                      Upper[1].Motor_Y->speedPID.output);
-        CanTransmit_DJI_1234(&hcan1,100,100,100,100);
+        CanTransmit_DJI_1234(&hcan1,
+                             Upper[0].Motor_X->speedPID.output,
+                             Upper[0].Motor_Y->speedPID.output,
+                             Upper[1].Motor_X->speedPID.output,
+                             Upper[1].Motor_Y->speedPID.output);
+        printf("%d\n", (int)Upper[0].Motor_X->speedPID.output);
+        //CanTransmit_DJI_1234(&hcan1, 200, 200, 200, 200);
         osDelay(10);
     }
 }
 
 void Upper_Servo_TaskStart(void)
 {
-    osThreadId_t Upper_ServoHandle;
     const osThreadAttr_t Upper_Servo_attributes = {
         .name       = "Upper_Servo",
         .stack_size = 128 * 10,
-        .priority   = (osPriority_t)osPriorityAboveNormal,
+        .priority   = (osPriority_t)osPriorityHigh,
     };
-    Upper_ServoHandle = osThreadNew(Upper_Servo_Task, NULL, &Upper_Servo_attributes);
+     osThreadNew(Upper_Servo_Task, NULL, &Upper_Servo_attributes);
 }
 
 /*******封装函数部分********/

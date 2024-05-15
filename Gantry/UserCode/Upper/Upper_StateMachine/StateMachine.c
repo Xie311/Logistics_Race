@@ -1,3 +1,13 @@
+/*
+ * @Author: X311
+ * @Date: 2024-05-13 09:00:14
+ * @LastEditors: X311 
+ * @LastEditTime: 2024-05-16 02:20:51
+ * @FilePath: \Gantry\UserCode\Upper\Upper_StateMachine\StateMachine.c
+ * @Brief: 
+ * 
+ * Copyright (c) 2024 by ChenYiTong, All Rights Reserved. 
+ */
 /**
  * @file StateMachine.c
  * @author X311
@@ -116,27 +126,27 @@ void Upper_StateMachine_TaskStart_01(int index)
     osThreadNew(Upper_State_Task, parameter, &Upper_State_attributes);
 }
 
-void Upper_StateMachine_Init_01()
+void Upper_StateMachine_Init_01(void)
 {
     Upper[0].gantry_t.xMutex_control = xSemaphoreCreateRecursiveMutex();
     Upper[1].gantry_t.xMutex_control = xSemaphoreCreateRecursiveMutex();
 }
 
 /********************* 区域2 *********************/
-void Upper_StateMachine_TaskStart_02(int index)
-{
-    int *parameter  = malloc(sizeof(int));
-    *parameter      = 4;
-    osThreadAttr_t Upper_State_attributes = {
-        .name       = "Upper_State",
-        .stack_size = 128 * 10,
-        .priority   = (osPriority_t)osPriorityAboveNormal,
-    };
-    osThreadNew(Upper_State_Task, parameter, &Upper_State_attributes);
-}
+// void Upper_StateMachine_TaskStart_02(int index)
+// {
+//     int *parameter  = malloc(sizeof(int));
+//     *parameter      = 4;
+//     osThreadAttr_t Upper_State_attributes = {
+//         .name       = "Upper_State",
+//         .stack_size = 128 * 10,
+//         .priority   = (osPriority_t)osPriorityAboveNormal,
+//     };
+//     osThreadNew(Upper_State_Task, parameter, &Upper_State_attributes);
+// }
 
-void Upper_StateMachine_Init_02()
-{
-    Upper[0].gantry_t.xMutex_control = xSemaphoreCreateRecursiveMutex();
-    Upper[1].gantry_t.xMutex_control = xSemaphoreCreateRecursiveMutex();
-}
+// void Upper_StateMachine_Init_02()
+// {
+//     Upper[0].gantry_t.xMutex_control = xSemaphoreCreateRecursiveMutex();
+//     Upper[1].gantry_t.xMutex_control = xSemaphoreCreateRecursiveMutex();
+// }
