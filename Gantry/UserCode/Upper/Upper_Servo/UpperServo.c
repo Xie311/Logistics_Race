@@ -16,16 +16,19 @@ void Upper_Servo_Task(void *argument)
         Upper[1].gantry_t.velocity.x = Upper[1].gantry_t.position.x - distance_aver[2];
         Upper[1].gantry_t.velocity.y = Upper[1].gantry_t.position.y - distance_aver[3];
 
+        //printf("%d\n", LidarData[0][0].distance);
+
         speedServo(Upper[0].gantry_t.velocity.x, Upper[0].Motor_X);
         speedServo(Upper[0].gantry_t.velocity.y, Upper[0].Motor_Y);
         speedServo(Upper[1].gantry_t.velocity.x, Upper[1].Motor_X);
         speedServo(Upper[1].gantry_t.velocity.y, Upper[1].Motor_Y);
 
-        CanTransmit_DJI_1234(&hcan1,
-                             Upper[0].Motor_X->speedPID.output,
-                             Upper[0].Motor_Y->speedPID.output,
-                             Upper[1].Motor_X->speedPID.output,
-                             Upper[1].Motor_Y->speedPID.output);
+        // CanTransmit_DJI_1234(&hcan1,
+        //                      Upper[0].Motor_X->speedPID.output,
+        //                      Upper[0].Motor_Y->speedPID.output,
+        //                      Upper[1].Motor_X->speedPID.output,
+        //                      Upper[1].Motor_Y->speedPID.output);
+        CanTransmit_DJI_1234(&hcan1,100,100,100,100);
         osDelay(10);
     }
 }

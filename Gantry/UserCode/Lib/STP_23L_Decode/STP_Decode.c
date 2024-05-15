@@ -1,3 +1,13 @@
+/*
+ * @Author: X311
+ * @Date: 2024-05-13 09:00:14
+ * @LastEditors: X311 
+ * @LastEditTime: 2024-05-16 01:44:00
+ * @FilePath: \Gantry\UserCode\Lib\STP_23L_Decode\STP_Decode.c
+ * @Brief: 
+ * 
+ * Copyright (c) 2024 by ChenYiTong, All Rights Reserved. 
+ */
 
 
 #include "STP_Decode.h"
@@ -9,7 +19,7 @@ void STP_23L_Decode(uint16_t num)       //num:指明是第几个雷达，本代�
 {
     if((Rxbuffer[num][0]==Rxbuffer[num][1])&&(Rxbuffer[num][1]==Rxbuffer[num][2])&&(Rxbuffer[num][2]==Rxbuffer[num][3])&&(Rxbuffer[num][3]==0xAA))     //检测帧头
     {
-        if (Rxbuffer[5] == PACK_GET_DISTANCE)                                                                       //检测命令码
+        if (Rxbuffer[num][5] == PACK_GET_DISTANCE)                                                                       //检测命令码
          {   uint32_t CS_sum = 0;
             for (uint16_t i = 4; i < 194; i++) CS_sum += Rxbuffer[num][i];
             if (Rxbuffer[num][194] == CS_sum%256)                                                                        //检测校验码
