@@ -61,6 +61,8 @@ void Error_Handler(void);
 #define cylinder_03_GPIO_Port GPIOC
 #define electromagnet_03_Pin GPIO_PIN_1
 #define electromagnet_03_GPIO_Port GPIOC
+#define LED2_Pin GPIO_PIN_6
+#define LED2_GPIO_Port GPIOA
 #define cylinder_04_Pin GPIO_PIN_14
 #define cylinder_04_GPIO_Port GPIOD
 #define electromagnet_04_Pin GPIO_PIN_15

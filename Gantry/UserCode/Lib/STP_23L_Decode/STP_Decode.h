@@ -4,6 +4,7 @@
 
 #include "stm32f4xx_hal.h"
 #include "usart.h"
+#include "UpperStart.h"
 
 /*STP_23L数据包命令码宏定义*/
 #define PACK_GET_DISTANCE       0x02
@@ -35,5 +36,7 @@ extern LidarPointTypedef LidarData[4][12];
 
 
 void STP_23L_Decode(uint16_t num);
+void Upper_Decode_TaskStart(void);
+void Upper_Decode_Task(void);
 
 #endif // __STP_DECODE_H__

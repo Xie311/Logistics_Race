@@ -24,7 +24,9 @@
             "editor.insertSpaces": true,
             "editor.tabSize": 4,
             "editor.autoIndent": "advanced"
-        }
+        },
+        "editor.fontSize": 15,
+        "window.zoomLevel": 1
     },
     "extensions": {
         "recommendations": [

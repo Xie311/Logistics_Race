@@ -2,13 +2,12 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-05-16 01:44:00
+ * @LastEditTime: 2024-05-17 02:22:05
  * @FilePath: \Gantry\UserCode\Lib\STP_23L_Decode\STP_Decode.c
  * @Brief: 
  * 
  * Copyright (c) 2024 by ChenYiTong, All Rights Reserved. 
  */
-
 
 #include "STP_Decode.h"
 
@@ -17,10 +16,12 @@ LidarPointTypedef LidarData[4][12];
 float distance_aver[4];
 void STP_23L_Decode(uint16_t num)       //num:指明是第几个雷达，本代码框架中范围为0-3
 {
-    if((Rxbuffer[num][0]==Rxbuffer[num][1])&&(Rxbuffer[num][1]==Rxbuffer[num][2])&&(Rxbuffer[num][2]==Rxbuffer[num][3])&&(Rxbuffer[num][3]==0xAA))     //检测帧头
+    //printf("1\n");
+    if ((Rxbuffer[num][0] == Rxbuffer[num][1]) && (Rxbuffer[num][1] == Rxbuffer[num][2]) && (Rxbuffer[num][2] == Rxbuffer[num][3]) && (Rxbuffer[num][3] == 0xAA)) // 检测帧头
     {
         if (Rxbuffer[num][5] == PACK_GET_DISTANCE)                                                                       //检测命令码
-         {   uint32_t CS_sum = 0;
+        {   
+            uint32_t CS_sum = 0;
             for (uint16_t i = 4; i < 194; i++) CS_sum += Rxbuffer[num][i];
             if (Rxbuffer[num][194] == CS_sum%256)                                                                        //检测校验码
             {
@@ -42,5 +43,37 @@ void STP_23L_Decode(uint16_t num)       //num:指明是第几个雷达，本代�
                 distance_aver[num] = distance_sum / 12;
             }
          }
+    }
+}
+
+
+void Upper_Decode_TaskStart(void)
+{
+    osThreadAttr_t upper_decode_Task_attributes = {
+        .name       = "upper_decode_Task",
+        .stack_size = 128 * 10,
+        .priority   = (osPriority_t)osPriorityHigh,
+    };
+    osThreadNew(Upper_Decode_Task, NULL, &upper_decode_Task_attributes);
+}
+
+/**
+ * @brief   激光解码线程
+ */
+void Upper_Decode_Task(void)
+{
+    for (;;) {
+        for(int i=0;i<4;i++){
+            if(flag[i]){
+                STP_23L_Decode(i);
+                flag[i] = 0;
+            }
+        }
+        // if(flag1==1)
+        // {
+        //     STP_23L_Decode(1);
+        //     flag1 = 0;
+        // }
+        osDelay(100);
     }
 }

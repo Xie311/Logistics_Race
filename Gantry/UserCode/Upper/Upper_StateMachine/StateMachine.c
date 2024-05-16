@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-05-16 02:20:51
+ * @LastEditTime: 2024-05-17 02:18:48
  * @FilePath: \Gantry\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
@@ -20,9 +20,9 @@
  */
 #include "StateMachine.h"
 #include <stdlib.h>
-#define Inner_ring_weights 100
-#define Outer_ring_weights 200
-#define Slash_Length 200
+#define Inner_ring_weights 212.41224
+#define Outer_ring_weights 587.41224
+#define Slash_Length 600
 #define Stake_location  627.5
 /****************线程相关函数********************/
 
@@ -33,9 +33,10 @@
  */
 void Upper_State_Task(void *argument)
 {
-    osDelay(100);
     int index = *((int *)argument);
-    for (;;) {
+    for (;;){
+
+
         /************************砝码在内圈************************/
         if (weight_placement[index] != 0)  //两个爪子怎么处理使之同时运动，排列组合四种情况？
         {

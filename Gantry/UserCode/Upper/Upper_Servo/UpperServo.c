@@ -8,8 +8,7 @@ void Upper_Servo_Task(void *argument)
 {
     osDelay(100);
     for (;;) {
-        /*TestCode*/
-
+        
         // float Target_tmp[4] = {100,100,100,100};//单位：mm
         Upper[0].gantry_t.velocity.x = Upper[0].gantry_t.position.x - distance_aver[0];
         Upper[0].gantry_t.velocity.y = Upper[0].gantry_t.position.y - distance_aver[1];
@@ -28,7 +27,7 @@ void Upper_Servo_Task(void *argument)
                              Upper[0].Motor_Y->speedPID.output,
                              Upper[1].Motor_X->speedPID.output,
                              Upper[1].Motor_Y->speedPID.output);
-        printf("%d\n", (int)Upper[0].Motor_X->speedPID.output);
+        //printf("%d\n", (int)Upper[0].Motor_X->speedPID.output);
         //CanTransmit_DJI_1234(&hcan1, 200, 200, 200, 200);
         osDelay(10);
     }
