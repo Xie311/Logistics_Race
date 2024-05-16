@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-05-17 02:22:05
+ * @LastEditTime: 2024-05-17 02:34:28
  * @FilePath: \Gantry\UserCode\Lib\STP_23L_Decode\STP_Decode.c
  * @Brief: 
  * 
@@ -63,7 +63,7 @@ void Upper_Decode_TaskStart(void)
 void Upper_Decode_Task(void)
 {
     for (;;) {
-        for(int i=0;i<2;i++){
+        for(int i=0;i<3;i++){
             if(flag[i]){
                 STP_23L_Decode(i);
                 flag[i] = 0;
