@@ -63,7 +63,7 @@ void Upper_Decode_TaskStart(void)
 void Upper_Decode_Task(void)
 {
     for (;;) {
-        for(int i=0;i<4;i++){
+        for(int i=0;i<2;i++){
             if(flag[i]){
                 STP_23L_Decode(i);
                 flag[i] = 0;
