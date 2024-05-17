@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-05-17 02:18:48
+ * @LastEditTime: 2024-05-18 00:12:23
  * @FilePath: \Gantry\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
@@ -35,10 +35,8 @@ void Upper_State_Task(void *argument)
 {
     int index = *((int *)argument);
     for (;;){
-
-
         /************************砝码在内圈************************/
-        if (weight_placement[index] != 0)  //两个爪子怎么处理使之同时运动，排列组合四种情况？
+        if (weight_placement[index] != 0)  
         {
             /***前往砝码***/
             /*全速段*/
@@ -134,20 +132,20 @@ void Upper_StateMachine_Init_01(void)
 }
 
 /********************* 区域2 *********************/
-// void Upper_StateMachine_TaskStart_02(int index)
-// {
-//     int *parameter  = malloc(sizeof(int));
-//     *parameter      = 4;
-//     osThreadAttr_t Upper_State_attributes = {
-//         .name       = "Upper_State",
-//         .stack_size = 128 * 10,
-//         .priority   = (osPriority_t)osPriorityAboveNormal,
-//     };
-//     osThreadNew(Upper_State_Task, parameter, &Upper_State_attributes);
-// }
+void Upper_StateMachine_TaskStart_02(int index)
+{
+    int *parameter  = malloc(sizeof(int));
+    *parameter      = 4;
+    osThreadAttr_t Upper_State_attributes = {
+        .name       = "Upper_State",
+        .stack_size = 128 * 10,
+        .priority   = (osPriority_t)osPriorityAboveNormal,
+    };
+    osThreadNew(Upper_State_Task, parameter, &Upper_State_attributes);
+}
 
-// void Upper_StateMachine_Init_02()
-// {
-//     Upper[0].gantry_t.xMutex_control = xSemaphoreCreateRecursiveMutex();
-//     Upper[1].gantry_t.xMutex_control = xSemaphoreCreateRecursiveMutex();
-// }
+void Upper_StateMachine_Init_02()
+{
+    Upper[0].gantry_t.xMutex_control = xSemaphoreCreateRecursiveMutex();
+    Upper[1].gantry_t.xMutex_control = xSemaphoreCreateRecursiveMutex();
+}

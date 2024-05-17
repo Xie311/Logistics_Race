@@ -1,3 +1,13 @@
+/*
+ * @Author: X311
+ * @Date: 2024-05-13 09:00:14
+ * @LastEditors: X311 
+ * @LastEditTime: 2024-05-17 13:27:29
+ * @FilePath: \Gantry\UserCode\Upper\Upper_Start\UpperStart.c
+ * @Brief: 
+ * 
+ * Copyright (c) 2024 by ChenYiTong, All Rights Reserved. 
+ */
 #include "UpperStart.h"
 
 /**
@@ -15,8 +25,8 @@ void StartDefaultTask(void *argument)
     /*串口使能*/
     Gantry_usart_init();
 
-    /*开启线程*/
     osDelay(1000);
+    /*开启线程*/
     Upper_Decode_TaskStart();
     Upper_StateMachine_TaskStart_01(3);
     // Upper_StateMachine_TaskStart_02(4);

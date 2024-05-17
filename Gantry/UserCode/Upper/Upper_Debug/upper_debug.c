@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-16 22:06:32
  * @LastEditors: X311 
- * @LastEditTime: 2024-05-17 02:07:55
+ * @LastEditTime: 2024-05-17 02:36:35
  * @FilePath: \Gantry\UserCode\Upper\Upper_Debug\upper_debug.c
  * @Brief: 
  * 
@@ -30,7 +30,7 @@ void Upper_Debug_TaskStart(void)
 void Upper_Debug_Task(void *argument)
 {
     for (;;) {
-        printf("%f,%f,%f\n", distance_aver[2], Upper[0].Motor_X->speedPID.output, Upper[0].Motor_Y->speedPID.output);
+        printf("%f,%f,%f,%f\n", distance_aver[0], distance_aver[1],Upper[0].Motor_X->speedPID.output, Upper[0].Motor_Y->speedPID.output);
         osDelay(50);
     }
 }

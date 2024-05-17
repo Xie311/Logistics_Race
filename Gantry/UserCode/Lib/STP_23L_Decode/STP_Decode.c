@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-05-17 02:34:28
+ * @LastEditTime: 2024-05-18 00:06:22
  * @FilePath: \Gantry\UserCode\Lib\STP_23L_Decode\STP_Decode.c
  * @Brief: 
  * 
@@ -46,7 +46,10 @@ void STP_23L_Decode(uint16_t num)       //num:指明是第几个雷达，本代�
     }
 }
 
-
+/**
+ * @brief 启动激光解码线程
+ *
+ */
 void Upper_Decode_TaskStart(void)
 {
     osThreadAttr_t upper_decode_Task_attributes = {
@@ -69,11 +72,6 @@ void Upper_Decode_Task(void)
                 flag[i] = 0;
             }
         }
-        // if(flag1==1)
-        // {
-        //     STP_23L_Decode(1);
-        //     flag1 = 0;
-        // }
-        osDelay(100);
+        osDelay(2);
     }
 }
