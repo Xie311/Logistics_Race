@@ -6,17 +6,7 @@
  * @FilePath: \Gantry\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
- * Copyright (c) 2024 by ChenYiTong, All Rights Reserved. 
- */
-/**
- * @file StateMachine.c
- * @author X311
- * @brief 
- * @version 0.1
- * @date 2024-05-14
- * 
- * @copyright Copyright (c) 2024
- * 
+ * Copyright (c) 2024 by X311, All Rights Reserved. 
  */
 #include "StateMachine.h"
 #include <stdlib.h>

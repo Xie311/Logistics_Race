@@ -6,7 +6,7 @@
  * @FilePath: \Gantry\UserCode\Upper\Callback\Gantry_callback.c
  * @Brief: 
  * 
- * Copyright (c) 2024 by ChenYiTong, All Rights Reserved. 
+ * Copyright (c) 2024 by X311, All Rights Reserved. 
  */
 #include "UpperStart.h"
 #include "target.h"

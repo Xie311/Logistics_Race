@@ -4,9 +4,7 @@
  * @LastEditors: X311 
  * @LastEditTime: 2024-05-17 02:36:35
  * @FilePath: \Gantry\UserCode\Upper\Upper_Debug\upper_debug.c
- * @Brief: 
  * 
- * Copyright (c) 2024 by ChenYiTong, All Rights Reserved. 
  */
 #include "upper_debug.h"
 
