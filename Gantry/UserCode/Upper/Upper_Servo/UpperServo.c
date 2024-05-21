@@ -60,25 +60,24 @@ void Upper_Motor_init() // 电机初始化
     for (int i = 0; i < 2;i++)
     {
         // speed_PID
-        Upper[0].Motor_X->speedPID.KP = 15;
-        Upper[0].Motor_X->speedPID.KI = 2.5;
-        Upper[0].Motor_X->speedPID.KD = 5;
+        Upper[i].Motor_X->speedPID.KP = 10;
+        Upper[i].Motor_X->speedPID.KI = 0.4;
+        Upper[i].Motor_X->speedPID.KD = 1.0;
 
-        Upper[0].Motor_Y->speedPID.KP = 1;
-        Upper[0].Motor_Y->speedPID.KI = 0;
-        Upper[0].Motor_Y->speedPID.KD = 0;
+        Upper[i].Motor_Y->speedPID.KP = 10;
+        Upper[i].Motor_Y->speedPID.KI = 0.4;
+        Upper[i].Motor_Y->speedPID.KD = 1.0;
 
         //pos_PID
-        Upper[0].Motor_X->posPID.KP = 250;
-        Upper[0].Motor_X->posPID.KI = 0;
-        Upper[0].Motor_X->posPID.KD = 0;
+        Upper[i].Motor_X->posPID.KP = 80;
+        Upper[i].Motor_X->posPID.KI = 0;
+        Upper[i].Motor_X->posPID.KD = 0;
 
-        Upper[0].Motor_Y->posPID.KP = 10;
-        Upper[0].Motor_Y->posPID.KI = 0;
-        Upper[0].Motor_Y->posPID.KD = 0;
+        Upper[i].Motor_Y->posPID.KP = 10;
+        Upper[i].Motor_Y->posPID.KI = 0;
+        Upper[i].Motor_Y->posPID.KD = 0;
     }
-
-    
+ 
     CANFilterInit(&hcan1);
 }
 

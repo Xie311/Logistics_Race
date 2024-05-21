@@ -20,7 +20,7 @@ void Upper_StateMachine_Init_02(void);
 
 extern Upper_COMPONENT Upper[2];
 extern float weight_placement[5];
-extern float initial_pos[4];
-extern float current_pos[4];
+extern float initial_pos[3];
+extern float current_pos[3];
 
 #endif 
