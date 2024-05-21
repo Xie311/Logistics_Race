@@ -18,13 +18,17 @@
 
 /**
  * @brief 状态机线程
- * 
  * @param argument 
+ * @note 气缸0在地，1抬起
  */
 void Upper_State_Task(void *argument)
 {
     int index = *((int *)argument);
     for (;;){
+
+        HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET); // 爪子抬升
+        HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_RESET); // 砝码不上电
+
         /************************砝码在内圈************************/
         if (weight_placement[index] != 0)  
         {
@@ -32,7 +36,7 @@ void Upper_State_Task(void *argument)
             /*全速段*/
             do{
                 Upper[0].gantry_t.position.x = Inner_ring_weights;
-                Upper[0].gantry_t.position.y = 0;
+                Upper[0].gantry_t.position.y = ;
             } while ((distance_aver[0] - Upper[0].gantry_t.position.x) < 30); // 距离砝码3cm时电磁铁上电
 
             /*减速段*/

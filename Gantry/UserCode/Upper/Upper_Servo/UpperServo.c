@@ -27,6 +27,7 @@ void Upper_Servo_Task(void *argument)
                              Upper[0].Motor_Y->speedPID.output,
                              Upper[1].Motor_X->speedPID.output,
                              Upper[1].Motor_Y->speedPID.output);
+                             
         //printf("%d\n", (int)Upper[0].Motor_X->speedPID.output);
         //CanTransmit_DJI_1234(&hcan1, 200, 200, 200, 200);
         osDelay(10);

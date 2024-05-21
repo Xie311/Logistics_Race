@@ -31,6 +31,9 @@ void positionServo(float ref, DJI_t *motor);
 // 速度伺服
 void speedServo(float ref, DJI_t *motor);
 
+// 位置伺服,使用雷达反馈
+void positionServo_lidar(float ref, DJI_t *motor, float distance_aver);
+
 // 圆周死区控制
 void DeadBand(double x, double y, double *new_x, double *new_y, double threshould);
 
