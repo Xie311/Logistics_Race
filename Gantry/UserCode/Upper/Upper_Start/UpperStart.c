@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-05-17 13:27:29
+ * @LastEditTime: 2024-05-21 23:30:02
  * @FilePath: \Gantry\UserCode\Upper\Upper_Start\UpperStart.c
  * @Brief: 
  * 
@@ -28,8 +28,8 @@ void StartDefaultTask(void *argument)
     osDelay(1000);
     /*开启线程*/
     Upper_Decode_TaskStart();
-    Upper_StateMachine_TaskStart_01(0);
-    // Upper_StateMachine_TaskStart_02(1);
+    Upper_StateMachine_TaskStart_01();
+    // Upper_StateMachine_TaskStart_02();
     Upper_Servo_TaskStart();
     Upper_Debug_TaskStart();
 

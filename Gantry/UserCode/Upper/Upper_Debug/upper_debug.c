@@ -17,7 +17,7 @@ void Upper_Debug_TaskStart(void)
     const osThreadAttr_t upper_debug_Task_attributes = {
         .name       = "upper_debug_Task",
         .stack_size = 128 * 10,
-        .priority   = (osPriority_t)osPriorityNormal1,
+        .priority   = (osPriority_t)osPriorityNormal,
     };
     osThreadNew(Upper_Debug_Task, NULL, &upper_debug_Task_attributes);
 }
@@ -28,7 +28,7 @@ void Upper_Debug_TaskStart(void)
 void Upper_Debug_Task(void *argument)
 {
     for (;;) {
-        printf("%f,%f,%f,%f\n", distance_aver[0], distance_aver[1], distance_aver[2], Upper[0].Motor_X->speedPID.output);
+        printf("%f,%f,%f,%f,%f\n", distance_aver[0], distance_aver[1], distance_aver[2],current_pos[0], Upper[0].Motor_X->speedPID.output);
         osDelay(80);
     }
 }

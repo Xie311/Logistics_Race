@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-05-18 00:06:22
+ * @LastEditTime: 2024-05-21 20:05:10
  * @FilePath: \Gantry\UserCode\Lib\STP_23L_Decode\STP_Decode.c
  * @Brief: 
  * 
@@ -72,6 +72,6 @@ void Upper_Decode_Task(void)
                 flag[i] = 0;
             }
         }
-        osDelay(2);
+        osDelay(6);
     }
 }

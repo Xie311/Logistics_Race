@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-05-21 14:06:04
+ * @LastEditTime: 2024-05-21 23:32:00
  * @FilePath: \Gantry\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
@@ -35,6 +35,7 @@ float current_pos[3];
  */
 void Upper_State_Task(void *argument)
 {
+    osDelay(100);
     int index = *((int *)argument);
     uint16_t stateflag = 0;
 
@@ -47,29 +48,28 @@ void Upper_State_Task(void *argument)
             /***** 前往砝码 *****/
             Upper[index].gantry_t.position.y = weight_straight_distance;
             if (weight_placement[index + 2] != 0){  //砝码在内圈
-                Upper[index].gantry_t.position.x = Inner_ring_weights - claw_offset; 
+                Upper[index].gantry_t.position.x = Inner_ring_weights - claw_offset;
             }
-            else{                                   // 砝码在外圈
+            else{ // 砝码在外圈
                 Upper[index].gantry_t.position.x = Outer_ring_weights - claw_offset;
             }
 
-        //     TickType_t StartTick = xTaskGetTickCount();
-        //     initial_pos[index]   = distance_aver[index];
-        //     initial_pos[2]       = distance_aver[2];
-        //     _Bool isArray1       = 0;
-        //     float diff[2]        = {0};
-        //     do {
-        //         TickType_t CurrentTick = xTaskGetTickCount();
-        //         float current_time     = (CurrentTick - StartTick) * 1.0 / 1000.0;
-        //         VelocityPlanning(initial_pos[0], 2000, 50, Upper[index].gantry_t.position.x, current_time, &(current_pos[index]));
-        //         VelocityPlanning(initial_pos[1], 1000, 50, Upper[index].gantry_t.position.y, current_time, &(current_pos[2]));
-        //         diff[0] = fabs(Upper[index].gantry_t.position.x - current_pos[index]);
-        //         diff[1] = fabs(Upper[index].gantry_t.position.y - current_pos[2]);
-        //         if ((diff[0] < 0.01) && (diff[1] < 0.01)) { isArray1 = 1; }
-
-        //     } while (!isArray1);
-        //     stateflag = 1;
-        // }
+            TickType_t StartTick = xTaskGetTickCount();
+            initial_pos[index]   = distance_aver[index];
+            initial_pos[2]       = distance_aver[2];
+            _Bool isArray1       = 0;
+            float diff[2]        = {0};
+            do {
+                TickType_t CurrentTick = xTaskGetTickCount();
+                float current_time     = (CurrentTick - StartTick) * 1.0 / 1000.0;
+                VelocityPlanning(initial_pos[0], 2000, 50, Upper[index].gantry_t.position.x, current_time, &(current_pos[index]));
+                VelocityPlanning(initial_pos[1], 2000, 50, Upper[index].gantry_t.position.y, current_time, &(current_pos[2]));
+                diff[0] = fabs(Upper[index].gantry_t.position.x - current_pos[index]);
+                diff[1] = fabs(Upper[index].gantry_t.position.y - current_pos[2]);
+                if ((diff[0] < 1)) { isArray1 = 1; }
+            }while (!isArray1);
+            stateflag = 1;
+        }
 
         // else if (stateflag == 1) 
         // {
@@ -85,12 +85,12 @@ void Upper_State_Task(void *argument)
         //     HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET);  // 气缸抬升
         //     Upper[index].Motor_X->speedPID.integral = 0;
         //     Upper[index].Motor_Y->speedPID.integral = 0;
-        //     Upper[index].Motor_X->speedPID.KP       = 15;
-        //     Upper[index].Motor_X->speedPID.KI       = 2;
-        //     Upper[index].Motor_X->speedPID.KD       = 5;
-        //     Upper[index].Motor_Y->speedPID.KP       = 0;
-        //     Upper[index].Motor_Y->speedPID.KI       = 0;
-        //     Upper[index].Motor_Y->speedPID.KD       = 0;
+        //     Upper[index].Motor_X->speedPID.KP       = 10;
+        //     Upper[index].Motor_X->speedPID.KI       = 0.4;
+        //     Upper[index].Motor_X->speedPID.KD       = 1.0;
+        //     Upper[index].Motor_Y->speedPID.KP       = 10;
+        //     Upper[index].Motor_Y->speedPID.KI       = 0.4;
+        //     Upper[index].Motor_Y->speedPID.KD       = 1.0;
         //     stateflag = 2;
         // }
 
@@ -129,7 +129,7 @@ void Upper_State_Task(void *argument)
         //     HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_RESET);  //气缸向下
         //     osDelay(1000);
         //     HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_RESET); // 砝码下电
-        }
+        //}
 
         osDelay(10);
     }
@@ -199,15 +199,15 @@ void Upper_State_Task(void *argument)
 
 
 /********************* 区域1 *********************/
-void Upper_StateMachine_TaskStart_01(int index)
+void Upper_StateMachine_TaskStart_01(void)
 {
     int *parameter = malloc(sizeof(int));
-    *parameter = 3;
+    *parameter = 0;
 
     osThreadAttr_t Upper_State_attributes = {
         .name       = "Upper_State",
         .stack_size = 128 * 10,
-        .priority   = (osPriority_t)osPriorityAboveNormal,
+        .priority   = (osPriority_t)osPriorityNormal,
     };
     osThreadNew(Upper_State_Task, parameter, &Upper_State_attributes);
 }
@@ -219,10 +219,10 @@ void Upper_StateMachine_Init_01(void)
 }
 
 /********************* 区域2 *********************/
-void Upper_StateMachine_TaskStart_02(int index)
+void Upper_StateMachine_TaskStart_02(void)
 {
     int *parameter  = malloc(sizeof(int));
-    *parameter      = 4;
+    *parameter      = 1;
     osThreadAttr_t Upper_State_attributes = {
         .name       = "Upper_State",
         .stack_size = 128 * 10,
