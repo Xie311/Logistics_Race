@@ -10,12 +10,13 @@ void Upper_Servo_Task(void *argument)
     for (;;) {
         
         // float Target_tmp[4] = {100,100,100,100};//单位：mm
-        Upper[0].gantry_t.velocity.x = Upper[0].gantry_t.position.x - distance_aver[0];
-        Upper[0].gantry_t.velocity.y = Upper[0].gantry_t.position.y - distance_aver[1];
-        Upper[1].gantry_t.velocity.x = Upper[1].gantry_t.position.x - distance_aver[2];
-        Upper[1].gantry_t.velocity.y = Upper[1].gantry_t.position.y - distance_aver[3];
+        Upper[0].gantry_t.velocity.x = 1 * (Upper[0].gantry_t.position.x - distance_aver[0]);
+        Upper[0].gantry_t.velocity.y = 1 * (Upper[0].gantry_t.position.y - distance_aver[1]);
+        Upper[1].gantry_t.velocity.x = 1 * (Upper[1].gantry_t.position.x - distance_aver[2]);
+        Upper[1].gantry_t.velocity.y = 1 * (Upper[1].gantry_t.position.y - distance_aver[3]);
 
-        //printf("%d\n", LidarData[0][0].distance);
+        positionServo_lidar(current_pos[0], Upper[0].Motor_X, distance_aver[0]);
+        positionServo_lidar(current_pos[1], Upper[0].Motor_Y, distance_aver[1]);
 
         speedServo(Upper[0].gantry_t.velocity.x, Upper[0].Motor_X);
         speedServo(Upper[0].gantry_t.velocity.y, Upper[0].Motor_Y);
@@ -28,7 +29,6 @@ void Upper_Servo_Task(void *argument)
                              Upper[1].Motor_X->speedPID.output,
                              Upper[1].Motor_Y->speedPID.output);
                              
-        //printf("%d\n", (int)Upper[0].Motor_X->speedPID.output);
         //CanTransmit_DJI_1234(&hcan1, 200, 200, 200, 200);
         osDelay(10);
     }
@@ -57,17 +57,28 @@ void Upper_Motor_init() // 电机初始化
     hDJI[2].motorType  = M2006;
     hDJI[3].motorType  = M2006;
     DJI_Init();
-    for (int i = 0; i < 8; i++) {
-        hDJI[i].speedPID.KP        = 2.0;
-        hDJI[i].speedPID.KI        = 0.4;
-        hDJI[i].speedPID.KD        = 0.8;
-        hDJI[i].speedPID.outputMax = 8000;
+    for (int i = 0; i < 2;i++)
+    {
+        // speed_PID
+        Upper[0].Motor_X->speedPID.KP = 15;
+        Upper[0].Motor_X->speedPID.KI = 2.5;
+        Upper[0].Motor_X->speedPID.KD = 5;
 
-        hDJI[i].posPID.KP        = 80.0f;
-        hDJI[i].posPID.KI        = 0.0f;
-        hDJI[i].posPID.KD        = 0.0f;
-        hDJI[i].posPID.outputMax = 5000;
+        Upper[0].Motor_Y->speedPID.KP = 1;
+        Upper[0].Motor_Y->speedPID.KI = 0;
+        Upper[0].Motor_Y->speedPID.KD = 0;
+
+        //pos_PID
+        Upper[0].Motor_X->posPID.KP = 250;
+        Upper[0].Motor_X->posPID.KI = 0;
+        Upper[0].Motor_X->posPID.KD = 0;
+
+        Upper[0].Motor_Y->posPID.KP = 10;
+        Upper[0].Motor_Y->posPID.KI = 0;
+        Upper[0].Motor_Y->posPID.KD = 0;
     }
+
+    
     CANFilterInit(&hcan1);
 }
 

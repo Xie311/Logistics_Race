@@ -28,8 +28,8 @@ void StartDefaultTask(void *argument)
     osDelay(1000);
     /*开启线程*/
     Upper_Decode_TaskStart();
-    Upper_StateMachine_TaskStart_01(3);
-    // Upper_StateMachine_TaskStart_02(4);
+    Upper_StateMachine_TaskStart_01(0);
+    // Upper_StateMachine_TaskStart_02(1);
     Upper_Servo_TaskStart();
     Upper_Debug_TaskStart();
 

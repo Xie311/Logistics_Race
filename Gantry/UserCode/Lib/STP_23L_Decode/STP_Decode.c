@@ -72,6 +72,6 @@ void Upper_Decode_Task(void)
                 flag[i] = 0;
             }
         }
-        osDelay(10);
+        osDelay(2);
     }
 }
