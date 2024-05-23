@@ -27,8 +27,10 @@ void Upper_Debug_TaskStart(void)
  */
 void Upper_Debug_Task(void *argument)
 {
+    osDelay(100);
     for (;;) {
-        printf("%f,%f,%f,%f,%f\n", distance_aver[0], distance_aver[1], distance_aver[2],current_pos[0], Upper[0].Motor_X->speedPID.output);
-        osDelay(80);
+        printf("%f,%f,%f,%f,%f,%f,%f\n",
+               distance_aver[0], distance_aver[1], distance_aver[2], Upper[0].Motor_X->speedPID.output, Upper[1].Motor_X->speedPID.output, Upper[0].Motor_Y->speedPID.output, Upper[1].Motor_Y->speedPID.output);
+        osDelay(100);
     }
 }

@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-05-23 14:37:22
+ * @LastEditTime: 2024-05-23 23:23:39
  * @FilePath: \Gantry\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
@@ -46,92 +46,87 @@ void Upper_State_Task(void *argument)
         if(stateflag==0)
         {
             /***** 前往砝码 *****/
-            Upper[index].gantry_t.position.y = 200;
-            if (weight_placement[index + 2] != 0){  //砝码在内圈
-                Upper[index].gantry_t.position.x = Inner_ring_weights - claw_offset;
+            Upper[index].gantry_t.position.y = 906.50;
+            if (weight_placement[index] != 0){  //砝码在内圈
+                Upper[index].gantry_t.position.x = 620;
             }
             else{ // 砝码在外圈
-                Upper[index].gantry_t.position.x = Outer_ring_weights - claw_offset;
+                Upper[index].gantry_t.position.x = 620.0;
             }
 
-            TickType_t StartTick = xTaskGetTickCount();
-            initial_pos[index]   = distance_aver[index];
-            initial_pos[2]       = distance_aver[2];
-            _Bool isArray1       = 0;
-            float diff[2]        = {0};
-            do {
-                TickType_t CurrentTick = xTaskGetTickCount();
-                float current_time     = (CurrentTick - StartTick) * 1.0 / 1000.0;
-                VelocityPlanning(initial_pos[0], 2000, 50, Upper[index].gantry_t.position.x, current_time, &(current_pos[index]));
-                VelocityPlanning(initial_pos[1], 2000, 50, Upper[index].gantry_t.position.y, current_time, &(current_pos[2]));
-                diff[0] = fabs(Upper[index].gantry_t.position.x - current_pos[index]);
-                diff[1] = fabs(Upper[index].gantry_t.position.y - current_pos[2]);
-                if ((diff[0] < 1)) { isArray1 = 1; }
-            }while (!isArray1);
-            stateflag = 1;
-        }
+            if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 1) && (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 1))
+            {
+                stateflag = 1;
+            }
+        } 
 
-        // else if (stateflag == 1) 
+        // else if (stateflag == 1)
         // {
-        //     /***** 抓取砝码 *****/    // 测完再看看是否保留
-        //     Upper[index].Motor_X->speedPID.KP = 0;
-        //     Upper[index].Motor_X->speedPID.KI = 0;
-        //     Upper[index].Motor_X->speedPID.KD = 0;
-        //     Upper[index].Motor_Y->speedPID.KP = 0;
-        //     Upper[index].Motor_Y->speedPID.KI = 0;
-        //     Upper[index].Motor_Y->speedPID.KD = 0;
-        //     HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_SET); // 砝码上电
-        //     osDelay(800);
-        //     HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET);  // 气缸抬升
-        //     Upper[index].Motor_X->speedPID.integral = 0;
-        //     Upper[index].Motor_Y->speedPID.integral = 0;
-        //     Upper[index].Motor_X->speedPID.KP       = 10;
-        //     Upper[index].Motor_X->speedPID.KI       = 0.4;
-        //     Upper[index].Motor_X->speedPID.KD       = 1.0;
-        //     Upper[index].Motor_Y->speedPID.KP       = 10;
-        //     Upper[index].Motor_Y->speedPID.KI       = 0.4;
-        //     Upper[index].Motor_Y->speedPID.KD       = 1.0;
-        //     stateflag = 2;
+        //     KP = 10;
+        //     /***** 前往砝码 *****/
+        //     Upper[index].gantry_t.position.y = 906.50;
+        //     if (weight_placement[index] != 0) { // 砝码在内圈
+        //         Upper[index].gantry_t.position.x = 620;
+        //     } else { // 砝码在外圈
+        //         Upper[index].gantry_t.position.x = 620;
+        //     }
+
+        //     if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 1) && (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 1)) {
+        //         stateflag = 2;
+        //         KP  = 0;
+        //     }
         // }
 
-        // else if (stateflag == 2) 
+        // else if (stateflag == 2) {
+        //     KP = 30;
+        //     /***** 前往砝码 *****/
+        //     Upper[index].gantry_t.position.y = 916.50;
+        //     if (weight_placement[index] != 0) { // 砝码在内圈
+        //         Upper[index].gantry_t.position.x = 500;
+        //     } else { // 砝码在外圈
+        //         Upper[index].gantry_t.position.x = 617.5;
+        //     }
+
+        //     if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 1) && (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 1)) {
+        //         stateflag = 2;
+        //     }
+        // }
+
+        // else if (stateflag == 3) {
+        //     /***** 抓取砝码 *****/
+        //     KP = 0;
+        //     osDelay(500);
+        //     //HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET);  // 气缸抬升
+        //     stateflag = 4;
+        // }
+
+        // else if (stateflag == 3)
         // {
         //     /***** 前往木桩 *****/
-        //     Upper[index].gantry_t.position.x   = Stake_skew - claw_offset;
-        //     Upper[index].gantry_t.position.y   = Stake_straight_distance;
-        //     TickType_t StartTick           = xTaskGetTickCount();
-        //     initial_pos[0]                 = distance_aver[index];
-        //     initial_pos[1]                 = distance_aver[2];
-        //     _Bool isArray2                 = 0;
-        //     float diff[2]                  = {0};
-        //     do {
-        //         TickType_t CurrentTick = xTaskGetTickCount();
-        //         float current_time     = (CurrentTick - StartTick) * 1.0 / 1000.0;
-        //         VelocityPlanning(initial_pos[0], 2000, 50, Upper[index].gantry_t.position.x, current_time, &(current_pos[index]));
-        //         VelocityPlanning(initial_pos[1], 1000, 50, Upper[index].gantry_t.position.y, current_time, &(current_pos[2]));
-        //         diff[0] = fabs(Upper[index].gantry_t.position.x - current_pos[index]);
-        //         diff[1] = fabs(Upper[index].gantry_t.position.y - current_pos[2]);
-        //         if ((diff[0] < 0.01) && (diff[1] < 0.01)) { isArray2 = 1; }
+        //     KP = 60;
+        //     Upper[index].gantry_t.position.x   = 700;
+        //     Upper[index].gantry_t.position.y   = 300;
 
-        //     } while (!isArray2);
-        //     stateflag = 3;
-        // } 
-        
-        // else if (stateflag == 3) 
-        // {
-        //     /***** 放下砝码 *****/
-        //     Upper[index].Motor_X->speedPID.KP = 0;
-        //     Upper[index].Motor_X->speedPID.KI = 0;
-        //     Upper[index].Motor_X->speedPID.KD = 0;
-        //     Upper[index].Motor_Y->speedPID.KP = 0;
-        //     Upper[index].Motor_Y->speedPID.KI = 0;
-        //     Upper[index].Motor_Y->speedPID.KD = 0;
-        //     HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_RESET);  //气缸向下
-        //     osDelay(1000);
-        //     HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_RESET); // 砝码下电
-        //}
+        //     if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 1) || (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 1)) {
+        //         stateflag = 4;
+        //     }
+        // }
 
-        osDelay(10);
+            // else if (stateflag == 3)
+            // {
+            //     /***** 放下砝码 *****/
+            //     Upper[index].Motor_X->speedPID.KP = 0;
+            //     Upper[index].Motor_X->speedPID.KI = 0;
+            //     Upper[index].Motor_X->speedPID.KD = 0;
+            //     Upper[index].Motor_Y->speedPID.KP = 0;
+            //     Upper[index].Motor_Y->speedPID.KI = 0;
+            //     Upper[index].Motor_Y->speedPID.KD = 0;
+            //     HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_RESET);  //气缸向下
+            //     osDelay(1000);
+            //     HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_RESET); // 砝码下电
+            //}
+
+            osDelay(8);
     }
 }
             // /************************砝码在内圈************************/
@@ -236,3 +231,4 @@ void Upper_StateMachine_Init_02(void)
     Upper[0].gantry_t.xMutex_control = xSemaphoreCreateRecursiveMutex();
     Upper[1].gantry_t.xMutex_control = xSemaphoreCreateRecursiveMutex();
 }
+

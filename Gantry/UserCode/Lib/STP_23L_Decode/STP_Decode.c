@@ -65,6 +65,7 @@ void Upper_Decode_TaskStart(void)
  */
 void Upper_Decode_Task(void)
 {
+    osDelay(50);
     for (;;) {
         for(int i=0;i<3;i++){
             if(flag[i]){
@@ -72,6 +73,6 @@ void Upper_Decode_Task(void)
                 flag[i] = 0;
             }
         }
-        osDelay(5);
+        osDelay(3);
     }
 }

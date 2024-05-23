@@ -1,46 +1,56 @@
-
+/*
+ * @Author: X311
+ * @Date: 2024-05-13 09:00:14
+ * @FilePath: \Gantry\UserCode\Upper\Upper_Servo\UpperServo.c
+ * @Brief:
+ *
+ * Copyright (c) 2024 by X311, All Rights Reserved.
+ */
 #include "UpperServo.h"
 
 Upper_COMPONENT Upper[2]; // 龙门蝴蝶结两侧的数据
-
+float KP = 40;
 /********线程相关部分*************/
+/**
+ * @brief 伺服函数
+ * @note  1：斜右 负向末端前进
+          3：斜左 正向末端前进
+          2：直右 正向前
+          4：直左 负向前
+*/
 void Upper_Servo_Task(void *argument)
 {
     osDelay(100);
     for (;;) {
         /***** 测试代码 *****/
-        speedServo(3000, Upper[0].Motor_X);
+        // speedServo(-3000, Upper[0].Motor_X);
         // speedServo(4000, Upper[1].Motor_X);
-        speedServo(3000, Upper[0].Motor_Y);
-        speedServo(-3000, Upper[1].Motor_Y);
+        // speedServo(-4000, Upper[0].Motor_Y);
+        // speedServo(4000, Upper[1].Motor_Y);
 
-        CanTransmit_DJI_1234(&hcan1,
-                             Upper[0].Motor_X->speedPID.output,
-                             Upper[0].Motor_Y->speedPID.output, // 直线Y轴前进
-                             0,
-                             Upper[1].Motor_Y->speedPID.output // 直线Y轴前进
-        );
         // positionServo_lidar(current_pos[0], Upper[0].Motor_X, distance_aver[0]);
         // positionServo_lidar(current_pos[1], Upper[1].Motor_X, distance_aver[1]);
         // positionServo_lidar(current_pos[2], Upper[0].Motor_Y, distance_aver[2]);
+        // positionServo_lidar(current_pos[2], Upper[1].Motor_Y, distance_aver[2]);
 
+        Upper[0].gantry_t.velocity.x = -KP * (Upper[0].gantry_t.position.x - distance_aver[0]);
+        Upper[1].gantry_t.velocity.x =  KP * (Upper[1].gantry_t.position.x - distance_aver[1]);
+        Upper[0].gantry_t.velocity.y =  KP * (Upper[0].gantry_t.position.y - distance_aver[2]);
+        Upper[1].gantry_t.velocity.y = -KP * (Upper[1].gantry_t.position.y - distance_aver[2]);
 
-        //CanTransmit_DJI_1234(&hcan1, 6000, 0, -6000, 0);
-        // 1：斜右 负向末端前进
-        // 3：斜左 正向末端前进
-        // 2：直右 正向前
-        // 4：直左 负向前
+        speedServo(Upper[0].gantry_t.velocity.x, Upper[0].Motor_X);
+        speedServo(Upper[0].gantry_t.velocity.y, Upper[0].Motor_Y);
+        speedServo(Upper[1].gantry_t.velocity.x, Upper[1].Motor_X);
+        speedServo(Upper[1].gantry_t.velocity.y, Upper[1].Motor_Y);
+
+        //CanTransmit_DJI_1234(&hcan1, 0, 0, 0, 0);
+        CanTransmit_DJI_1234(&hcan1,
+                             Upper[0].Motor_X->speedPID.output,   // 负向末端前进
+                             Upper[0].Motor_Y->speedPID.output,   // 正向前
+                             Upper[1].Motor_X->speedPID.output,   // 正向末端前进
+                             Upper[1].Motor_Y->speedPID.output    // 负向前
+        );
         osDelay(4);
-
-        // Upper[0].gantry_t.velocity.x = 1 * (Upper[0].gantry_t.position.x - distance_aver[0]);
-        // Upper[0].gantry_t.velocity.y = 1 * (Upper[0].gantry_t.position.y - distance_aver[1]);
-        // Upper[1].gantry_t.velocity.x = 1 * (Upper[1].gantry_t.position.x - distance_aver[2]);
-        // Upper[1].gantry_t.velocity.y = 1 * (Upper[1].gantry_t.position.y - distance_aver[3]);
-
-        // speedServo(Upper[0].gantry_t.velocity.x, Upper[0].Motor_X);
-        // speedServo(Upper[0].gantry_t.velocity.y, Upper[0].Motor_Y);
-        // speedServo(Upper[1].gantry_t.velocity.x, Upper[1].Motor_X);
-        // speedServo(Upper[1].gantry_t.velocity.y, Upper[1].Motor_Y);
     }
 }
 
@@ -70,25 +80,37 @@ void Upper_Motor_init() // 电机初始化
     for (int i = 0; i < 2;i++)
     {
         // 注意在状态机线程里同步参数修改！
-        // speed_PID
-        Upper[i].Motor_X->speedPID.KP = 4;
-        Upper[i].Motor_X->speedPID.KI = 0.4;
-        Upper[i].Motor_X->speedPID.KD = 1.0;
-
-        Upper[i].Motor_Y->speedPID.KP = 4;
-        Upper[i].Motor_Y->speedPID.KI = 0.4;
-        Upper[i].Motor_Y->speedPID.KD = 1.0;
-
-        //pos_PID
-        Upper[i].Motor_X->posPID.KP = 240;
-        Upper[i].Motor_X->posPID.KI = 0;
-        Upper[i].Motor_X->posPID.KD = 0;
-
-        Upper[i].Motor_Y->posPID.KP = 240;
-        Upper[i].Motor_Y->posPID.KI = 0;
-        Upper[i].Motor_Y->posPID.KD = 0;
+        Upper[i].Motor_Y->speedPID.KP = 2.0;
+        Upper[i].Motor_Y->speedPID.KI = 1.0;
+        Upper[i].Motor_Y->speedPID.KD = 3.0;
     }
- 
+
+    // speed_PID
+    Upper[0].Motor_X->speedPID.KP = 8;
+    Upper[0].Motor_X->speedPID.KI = 0.4;
+    Upper[0].Motor_X->speedPID.KD = 0.8;
+
+    Upper[1].Motor_X->speedPID.KP = 1.0;
+    Upper[1].Motor_X->speedPID.KI = 0.05;
+    Upper[1].Motor_X->speedPID.KD = 8.0;
+
+    // // pos_PID
+    // Upper[0].Motor_X->posPID.KP = -800;
+    // Upper[0].Motor_X->posPID.KI = 0;
+    // Upper[0].Motor_X->posPID.KD = 0;
+
+    // Upper[0].Motor_Y->posPID.KP = -800;
+    // Upper[0].Motor_Y->posPID.KI = 0;
+    // Upper[0].Motor_Y->posPID.KD = 0;
+
+    // Upper[1].Motor_X->posPID.KP = 800;
+    // Upper[1].Motor_X->posPID.KI = 0;
+    // Upper[1].Motor_X->posPID.KD = 0;
+
+    // Upper[1].Motor_Y->posPID.KP = 800;
+    // Upper[1].Motor_Y->posPID.KI = 0;
+    // Upper[1].Motor_Y->posPID.KD = 0;
+
     CANFilterInit(&hcan1);
 }
 
