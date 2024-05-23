@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-05-21 23:32:00
+ * @LastEditTime: 2024-05-23 14:37:22
  * @FilePath: \Gantry\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
@@ -11,15 +11,15 @@
 #include "StateMachine.h"
 #include <stdlib.h>
 // 雷达单位为毫米
-#define Inner_ring_weights 2124.1224        // 雷达平面到内圈砝码半径的距离
-#define Outer_ring_weights 5874.1224        // 雷达平面到外圈砝码半径的距离
-#define weight_straight_distance  6275      // 雷达平面到砝码中心的直距离
+#define Inner_ring_weights 212.41224        // 雷达平面到内圈砝码半径的距离
+#define Outer_ring_weights 587.41224        // 雷达平面到外圈砝码半径的距离
+#define weight_straight_distance  627.5      // 雷达平面到砝码中心的直距离
 
-#define Stake_straight_distance  2450       // 雷达平面到木桩中心的直距离
-#define Stake_skew 6275                     // 雷达平面到木桩中心的斜距离
+#define Stake_straight_distance  245.0       // 雷达平面到木桩中心的直距离
+#define Stake_skew 627.5                     // 雷达平面到木桩中心的斜距离
 
 #define offset 730
-#define claw_offset 1380.3 //?
+#define claw_offset 138.03 //?
 
 float initial_pos[3];
 float current_pos[3];
@@ -39,14 +39,14 @@ void Upper_State_Task(void *argument)
     int index = *((int *)argument);
     uint16_t stateflag = 0;
 
-    HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_RESET);           // 爪子不抬升
-    HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_SET);   // 砝码上电
+    //HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_RESET);           // 爪子不抬升
+    //HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_SET);   // 砝码上电
 
     for (;;){
         if(stateflag==0)
         {
             /***** 前往砝码 *****/
-            Upper[index].gantry_t.position.y = weight_straight_distance;
+            Upper[index].gantry_t.position.y = 200;
             if (weight_placement[index + 2] != 0){  //砝码在内圈
                 Upper[index].gantry_t.position.x = Inner_ring_weights - claw_offset;
             }

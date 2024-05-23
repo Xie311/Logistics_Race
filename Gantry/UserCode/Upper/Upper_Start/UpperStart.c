@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-05-21 23:30:02
+ * @LastEditTime: 2024-05-23 14:46:17
  * @FilePath: \Gantry\UserCode\Upper\Upper_Start\UpperStart.c
  * @Brief: 
  * 
@@ -25,6 +25,7 @@ void StartDefaultTask(void *argument)
     /*串口使能*/
     Gantry_usart_init();
 
+    HAL_GPIO_WritePin(electromagnet_04_GPIO_Port, electromagnet_04_Pin, GPIO_PIN_SET);
     osDelay(1000);
     /*开启线程*/
     Upper_Decode_TaskStart();

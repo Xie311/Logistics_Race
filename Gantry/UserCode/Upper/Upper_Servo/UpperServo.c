@@ -8,30 +8,39 @@ void Upper_Servo_Task(void *argument)
 {
     osDelay(100);
     for (;;) {
-    
+        /***** 测试代码 *****/
+        speedServo(3000, Upper[0].Motor_X);
+        // speedServo(4000, Upper[1].Motor_X);
+        speedServo(3000, Upper[0].Motor_Y);
+        speedServo(-3000, Upper[1].Motor_Y);
+
+        CanTransmit_DJI_1234(&hcan1,
+                             Upper[0].Motor_X->speedPID.output,
+                             Upper[0].Motor_Y->speedPID.output, // 直线Y轴前进
+                             0,
+                             Upper[1].Motor_Y->speedPID.output // 直线Y轴前进
+        );
+        // positionServo_lidar(current_pos[0], Upper[0].Motor_X, distance_aver[0]);
+        // positionServo_lidar(current_pos[1], Upper[1].Motor_X, distance_aver[1]);
+        // positionServo_lidar(current_pos[2], Upper[0].Motor_Y, distance_aver[2]);
+
+
+        //CanTransmit_DJI_1234(&hcan1, 6000, 0, -6000, 0);
+        // 1：斜右 负向末端前进
+        // 3：斜左 正向末端前进
+        // 2：直右 正向前
+        // 4：直左 负向前
+        osDelay(4);
+
         // Upper[0].gantry_t.velocity.x = 1 * (Upper[0].gantry_t.position.x - distance_aver[0]);
         // Upper[0].gantry_t.velocity.y = 1 * (Upper[0].gantry_t.position.y - distance_aver[1]);
         // Upper[1].gantry_t.velocity.x = 1 * (Upper[1].gantry_t.position.x - distance_aver[2]);
         // Upper[1].gantry_t.velocity.y = 1 * (Upper[1].gantry_t.position.y - distance_aver[3]);
 
-        positionServo_lidar(current_pos[0], Upper[0].Motor_X, distance_aver[0]);
-        positionServo_lidar(current_pos[1], Upper[1].Motor_X, distance_aver[1]);
-        positionServo_lidar(current_pos[2], Upper[0].Motor_Y, distance_aver[2]);
-
         // speedServo(Upper[0].gantry_t.velocity.x, Upper[0].Motor_X);
         // speedServo(Upper[0].gantry_t.velocity.y, Upper[0].Motor_Y);
         // speedServo(Upper[1].gantry_t.velocity.x, Upper[1].Motor_X);
         // speedServo(Upper[1].gantry_t.velocity.y, Upper[1].Motor_Y);
-
-        CanTransmit_DJI_1234(&hcan1,
-                             Upper[0].Motor_X->speedPID.output,
-                             Upper[0].Motor_Y->speedPID.output, // 直线Y轴前进
-                             Upper[1].Motor_X->speedPID.output,
-                             Upper[1].Motor_Y->speedPID.output  // 不接
-                             );
-                             
-        //CanTransmit_DJI_1234(&hcan1, 200, 200, 200, 200);
-        osDelay(10);
     }
 }
 
@@ -62,11 +71,11 @@ void Upper_Motor_init() // 电机初始化
     {
         // 注意在状态机线程里同步参数修改！
         // speed_PID
-        Upper[i].Motor_X->speedPID.KP = 5;
+        Upper[i].Motor_X->speedPID.KP = 4;
         Upper[i].Motor_X->speedPID.KI = 0.4;
         Upper[i].Motor_X->speedPID.KD = 1.0;
 
-        Upper[i].Motor_Y->speedPID.KP = 5;
+        Upper[i].Motor_Y->speedPID.KP = 4;
         Upper[i].Motor_Y->speedPID.KI = 0.4;
         Upper[i].Motor_Y->speedPID.KD = 1.0;
 
