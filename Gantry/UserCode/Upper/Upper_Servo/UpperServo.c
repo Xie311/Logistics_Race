@@ -9,7 +9,7 @@
 #include "UpperServo.h"
 
 Upper_COMPONENT Upper[2]; // 龙门蝴蝶结两侧的数据
-float KP = 40;
+float KP = 20;
 /********线程相关部分*************/
 /**
  * @brief 伺服函数
@@ -76,9 +76,9 @@ void Upper_Motor_init() // 电机初始化
     DJI_Init();
     for (int i = 0; i < 2;i++)
     {
-        Upper[i].Motor_Y->speedPID.KP = 1.0;
+        Upper[i].Motor_Y->speedPID.KP = 4.0;
         Upper[i].Motor_Y->speedPID.KI = 0.4;
-        Upper[i].Motor_Y->speedPID.KD = 1.0; // 1.2;
+        Upper[i].Motor_Y->speedPID.KD = 1.2; // 1.2;
     }
 
     // speed_PID

@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-05-24 21:59:38
+ * @LastEditTime: 2024-05-24 22:50:40
  * @FilePath: \Gantry\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
@@ -40,23 +40,19 @@ void Upper_State_Task(void *argument)
     osDelay(100);
     int index = *((int *)argument);
 
-    //HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_RESET);           // 爪子不抬升
-    HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_SET);   // 砝码上电
-    HAL_GPIO_WritePin(electromagnet_04_GPIO_Port, electromagnet_04_Pin, GPIO_PIN_SET);   // 砝码上电
-
     for (;;){
         if(stateflag[index]==0)
         {
             /***** 前往砝码 *****/
-            Upper[index].gantry_t.position.y = 840.50;
+            Upper[index].gantry_t.position.y = 877.0;
             if (weight_placement[index] != 0){  //砝码在内圈
-                Upper[index].gantry_t.position.x = 260.0; 
+                Upper[index].gantry_t.position.x = 615.0; 
             }
             else{                               // 砝码在外圈
-                Upper[index].gantry_t.position.x = 620.0;
+                Upper[index].gantry_t.position.x = 650.0;  //630
             }
 
-            if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 10) && (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 10))
+            if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 2) && (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 2))
             {
                 stateflag[index] = 1;
             }
@@ -65,36 +61,40 @@ void Upper_State_Task(void *argument)
         else if (stateflag[index] == 1)
         {
             /***** 前往砝码 *****/
-            osDelay(100);
-            KP = 80;
-            Upper[index].gantry_t.position.y = 840.50;
+            osDelay(500);
+            //KP = 50;
+            Upper[index].gantry_t.position.y = 877.0;
             if (weight_placement[index] != 0) { // 砝码在内圈
-                Upper[index].gantry_t.position.x = 200.0;
+                Upper[index].gantry_t.position.x = 570.0;
             } else { // 砝码在外圈
-                Upper[index].gantry_t.position.x = 558.0;
+                Upper[index].gantry_t.position.x = 570.0;
             }
 
-            if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 15) && (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 15)) {
+            if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 5) && (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 5)) {
                 stateflag[index] = 2;
             }
 
             // 如果两边均完成砝码夹取则前往木桩
-            if ((stateflag[0] == 2) && (stateflag[1] == 2)) {
+            // if ((stateflag[0] == 2) && (stateflag[1] == 2)) {
+            //     stake_flag = 1;
+            // }
+            if(stateflag[0] == 2) {
                 stake_flag = 1;
             }
         }
 
-        // else if (stake_flag==1)
-        // {
-        //     osDelay(1000);
-        //     /***** 前往木桩 *****/
-        //     Upper[index].gantry_t.position.x   = 705.0;
-        //     Upper[index].gantry_t.position.y   = 303.5;
+        else if (stake_flag==1)
+        {
+            //osDelay(500);
+            /***** 前往木桩 *****/
+            //KP  = 20;
+            Upper[index].gantry_t.position.x   = 705.0;
+            Upper[index].gantry_t.position.y   = 303.5;
 
-        //     if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 1) || (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 1)) {
-        //         stateflag[index] = 3;
-        //     }
-        // }
+            if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 1) || (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 1)) {
+                stateflag[index] = 3;
+            }
+        }
 
             // else if (stateflag == 3)
             // {
