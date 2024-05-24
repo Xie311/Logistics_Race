@@ -23,5 +23,6 @@ extern float weight_placement[5];
 extern float initial_pos[3];
 extern float current_pos[3];
 extern uint16_t stateflag[2];
+extern uint16_t stake_flag;
 
 #endif 
