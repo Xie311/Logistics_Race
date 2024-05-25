@@ -23,7 +23,9 @@ void Target_Decode_Task();
 /************************变量定义 ***************************/
 extern float weight_placement[5];
 extern uint8_t receive_buffer[24];
-extern int tar_count;
+//extern int tar_count;
+extern float final_weight_placement[5];
+
 typedef struct Tar_t {
     float pos_x;   // x坐标
     float pos_y;   // y坐标
