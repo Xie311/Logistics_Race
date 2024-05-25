@@ -13,14 +13,15 @@
 uint8_t receive_buffer[24];
 Tar_t Tar_Data = {0};
 float weight_placement[5] = {0};
+int tar_count = 0;
 /**
  * @brief 上位机数据接收
  *
  */
 void Upper_Target_Init()
 {
-    __HAL_UART_ENABLE_IT(&huart6, UART_IT_RXNE);
-    HAL_UART_Receive_IT(&huart6, receive_buffer, sizeof(receive_buffer));
+    __HAL_UART_ENABLE_IT(&huart5, UART_IT_RXNE);
+    HAL_UART_Receive_IT(&huart5, receive_buffer, sizeof(receive_buffer));
 }
 
 void Upper_Target_Decode()
@@ -38,5 +39,36 @@ void Upper_Target_Decode()
         for (int t = 0; t < 5; t++) {
             weight_placement[t] = state.weight_state[t];
         }
+    }
+}
+
+/**
+ * @brief 启动上位机数据解码线程
+ *
+ */
+void Target_Decode_TaskStart(void)
+{
+    osThreadAttr_t target_decode_Task_attributes = {
+        .name       = "target_decode_Task",
+        .stack_size = 128 * 10,
+        .priority   = (osPriority_t)osPriorityNormal,
+    };
+    osThreadNew(Target_Decode_Task, NULL, &target_decode_Task_attributes);
+}
+
+/**
+ * @brief   上位机数据解码线程
+ */
+void Target_Decode_Task(void)
+{
+    //osDelay(100);
+    for (;;) {
+       if(flag[3]==1)
+       {
+           Upper_Target_Decode();
+           count += 1;
+           flag[3] = 0;
+       }
+        osDelay(4);
     }
 }

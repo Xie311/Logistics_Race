@@ -14,13 +14,16 @@
 #include "UpperStart.h"
 void Upper_Target_Init();
 void Upper_Target_Decode();
+void Target_Decode_TaskStart();
+void Target_Decode_Task();
 /************************ 用户定义 ***************************/
-#define Tar_UART_HANDLE huart6 // 串口选项
-#define Tar_UART        USART6  // 串口选项
+#define Tar_UART_HANDLE huart5 // 串口选项
+#define Tar_UART        USART5  // 串口选项
 
 /************************变量定义 ***************************/
 extern float weight_placement[5];
 extern uint8_t receive_buffer[24];
+extern int tar_count;
 typedef struct Tar_t {
     float pos_x;   // x坐标
     float pos_y;   // y坐标

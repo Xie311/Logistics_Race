@@ -32,10 +32,10 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
         HAL_UART_Receive_IT(&huart3, Rxbuffer[2], sizeof(Rxbuffer[2]));
     }
 
-    if (huart->Instance == USART6) {
+    if (huart->Instance == USART5) {
         // 接收上位机数据并解码
         flag[3] = 1;
-        HAL_UART_Receive_IT(&huart6, (uint8_t *)receive_buffer, sizeof(receive_buffer));
+        HAL_UART_Receive_IT(&huart5, (uint8_t *)receive_buffer, sizeof(receive_buffer));
     }
 
 }
