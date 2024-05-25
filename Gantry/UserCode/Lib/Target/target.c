@@ -61,14 +61,40 @@ void Target_Decode_TaskStart(void)
  */
 void Target_Decode_Task(void)
 {
+    float weight_placement_tmp[5] = {0};
+    int switch_flag = 0;
     //osDelay(100);
-    for (;;) {
-       if(flag[3]==1)
-       {
-           Upper_Target_Decode();
-           count += 1;
-           flag[3] = 0;
-       }
-        osDelay(4);
+    if(flag[3]==1){
+        Upper_Target_Decode();
+        for (int i = 0; i < 5;i++){
+            weight_placement_tmp[i] = weight_placement[i];
+        }
+        flag[3] = 0;
+
+        for (;;) {
+            if (flag[3] == 1) {
+                Upper_Target_Decode();
+                flag[3] = 0;
+
+                for (int i = 0; i < 5;i++){
+                    if(weight_placement_tmp[i] == weight_placement[i]){
+                        switch_flag = 1;
+                    }
+                }
+                
+                //收到的数组与基准数组相等
+                if (switch_flag == 0){
+                    count++;
+                }
+                else{
+                    
+                }
+
+                if(count)
+            }
+            osDelay(4);
+        }
     }
+
+
 }
