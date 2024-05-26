@@ -18,8 +18,9 @@
 void StartDefaultTask(void *argument)
 {
     /*** 接受树莓派串口初始化 ***/
-    __HAL_UART_ENABLE_IT(&huart5, UART_IT_RXNE);
-    HAL_UART_Receive_IT(&huart5, (uint8_t *)receive_buffer, sizeof(receive_buffer));
+    Upper_Target_Init();
+
+    Target_Decode_TaskStart();
     while (Uart_State != 2) {
         ; // 若未收到上位机数据则一直循环
     }
