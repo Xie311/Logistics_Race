@@ -9,8 +9,4 @@ void Gantry_usart_init()
 
     __HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
     HAL_UART_Receive_IT(&huart3, Rxbuffer[2], sizeof(Rxbuffer[2]));
-
-
-    __HAL_UART_ENABLE_IT(&huart5, UART_IT_RXNE);
-    HAL_UART_Receive_IT(&huart5, (uint8_t *)receive_buffer, sizeof(receive_buffer));
 }

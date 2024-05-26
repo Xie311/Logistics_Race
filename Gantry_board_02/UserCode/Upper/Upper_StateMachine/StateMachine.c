@@ -46,10 +46,10 @@ void Upper_State_Task(void *argument)
             /***** 上电 定爪猪突猛进 *****/
             Upper[index].gantry_t.position.y = 877.0;
 
-            if (final_weight_placement[index] == 1) {  //砝码在内圈
+            if (weight_placement[index] == 1) {  //砝码在内圈
                 Upper[index].gantry_t.position.x = 615.0; 
             }
-            else if(final_weight_placement[index] == 0) {                                              // 砝码在外圈
+            else if(weight_placement[index] == 0) {                                              // 砝码在外圈
                 Upper[index].gantry_t.position.x = 650.0;  //630
             }
 
@@ -68,10 +68,10 @@ void Upper_State_Task(void *argument)
             osDelay(500);
             //KP = 50;
             Upper[index].gantry_t.position.y = 877.0;
-            if (final_weight_placement[index] == 1) { // 砝码在内圈
+            if (weight_placement[index] == 1) { // 砝码在内圈
                 Upper[index].gantry_t.position.x = 570.0;
             } 
-            else if (final_weight_placement[index] == 0) { // 砝码在外圈
+            else if (weight_placement[index] == 0) { // 砝码在外圈
                 Upper[index].gantry_t.position.x = 570.0;
             }
 
@@ -95,9 +95,9 @@ void Upper_State_Task(void *argument)
         else if (stake_flag == 2) {
             /***** 前往砝码 *****/
             Upper[index].gantry_t.position.y = 877.0;
-            if (final_weight_placement[index] == 1) { // 砝码在内圈
+            if (weight_placement[index] == 1) { // 砝码在内圈
                 Upper[index].gantry_t.position.x = 570.0;
-            } else if (final_weight_placement[index] == 0) { // 砝码在外圈
+            } else if (weight_placement[index] == 0) { // 砝码在外圈
                 Upper[index].gantry_t.position.x = 570.0;
             }
 
@@ -109,10 +109,10 @@ void Upper_State_Task(void *argument)
         else if (stateflag[index] == 1) {
             /***** 前往砝码 *****/
             Upper[index].gantry_t.position.y = 877.0;
-            if (final_weight_placement[index] == 1) { // 砝码在内圈
+            if (weight_placement[index] == 1) { // 砝码在内圈
                 Upper[index].gantry_t.position.x = 570.0;
             }
-             else if (final_weight_placement[index] == 0) { // 砝码在外圈
+             else if (weight_placement[index] == 0) { // 砝码在外圈
                 Upper[index].gantry_t.position.x = 570.0;
             }
 

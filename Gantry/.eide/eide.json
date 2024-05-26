@@ -7,7 +7,8 @@
     "Core",
     "Drivers",
     "Middlewares",
-    "UserCode"
+    "UserCode",
+    "build"
   ],
   "virtualFolder": {
     "name": "<virtual_root>",

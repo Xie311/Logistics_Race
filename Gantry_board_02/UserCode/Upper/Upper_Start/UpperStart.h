@@ -32,4 +32,5 @@
 #include "upper_debug.h"
 extern int flag[4];
 extern int flag1;
+extern uint8_t Uart_State;
 #endif // __UPPERSTART_H__
