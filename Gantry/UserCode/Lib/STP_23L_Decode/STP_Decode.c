@@ -74,9 +74,9 @@ void Upper_Decode_Task(void)
             }
         }
 
-        // if ((distance_aver[0] == 0) || (distance_aver[1] == 0) || (distance_aver[2] == 0)) {
-        //     Upper_Decode_TaskStart();
-        // }
-        osDelay(4);
+        if ((distance_aver[0] == 0) || (distance_aver[1] == 0) || (distance_aver[2] == 0)) {
+            Upper_Decode_TaskStart();
+        }
+        osDelay(3);
     }
 }

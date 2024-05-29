@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-05-26 00:47:21
+ * @LastEditTime: 2024-05-29 22:07:27
  * @FilePath: \Gantry\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
@@ -43,16 +43,20 @@ void Upper_State_Task(void *argument)
     for (;;){
         if(stateflag[index]==0)
         {
+            // /***调试代码***/
+            // Upper[index].gantry_t.position.y = 300.0;
+            // Upper[index].gantry_t.position.x = 800.0;
+
             /***** 前往砝码 *****/
-            Upper[index].gantry_t.position.y = 877.0;
+            Upper[index].gantry_t.position.y = 870.0;
             if (weight_placement[index] == 1) {  //砝码在内圈
-                Upper[index].gantry_t.position.x = 615.0; 
+                Upper[index].gantry_t.position.x = 650.0; 
             }
             else if(weight_placement[index] == 0) {                                              // 砝码在外圈
-                Upper[index].gantry_t.position.x = 650.0;  //630
+                Upper[index].gantry_t.position.x = 650.0;  
             }
 
-            if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 2) && (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 2))
+            if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 5) && (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 5))
             {
                 stateflag[index] = 1;
             }
@@ -61,60 +65,70 @@ void Upper_State_Task(void *argument)
         else if (stateflag[index] == 1)
         {
             /***** 前往砝码 *****/
-            osDelay(500);
-            //KP = 50;
-            Upper[index].gantry_t.position.y = 877.0;
-            if (weight_placement[index] == 1) { // 砝码在内圈
-                Upper[index].gantry_t.position.x = 570.0;
-            } 
-            else if (weight_placement[index] == 0) { // 砝码在外圈
-                Upper[index].gantry_t.position.x = 570.0;
+            //osDelay(500);
+            Upper[index].gantry_t.position.y = 867.0;
+            
+            /***** 砝码位置 *****/
+            if(index==0){
+                if (weight_placement[index] == 1) { // 砝码在内圈
+                    Upper[index].gantry_t.position.x = 570.0;
+                } else if (weight_placement[index] == 0) { // 砝码在外圈
+                    Upper[index].gantry_t.position.x = 560.0;  //562
+                }
             }
+            else{
+                if (weight_placement[index] == 1) { // 砝码在内圈
+                Upper[index].gantry_t.position.x = 570.0;
+                } else if (weight_placement[index] == 0) { // 砝码在外圈
+                    Upper[index].gantry_t.position.x = 570.0;  //573
+                }
+            }
+            /*****************/
 
-            if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 5) && (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 5)) {
+            if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 8) && (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 8)) {
                 stateflag[index] = 2;
             }
 
-            //如果两边均完成砝码夹取则前往木桩
+            // 如果两边均完成砝码夹取则前往木桩
             if ((stateflag[0] == 2) && (stateflag[1] == 2)) {
+                osDelay(500);
+                HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_RESET); // 气缸向上
+                HAL_GPIO_WritePin(cylinder_04_GPIO_Port, cylinder_04_Pin, GPIO_PIN_RESET); // 气缸向上
+
                 stake_flag = 1;
             }
-
-            // /****调试代码****/
-            // if(stateflag[0] == 2) {
-            //     stake_flag = 1;
-            // }
         }
 
-        else if (stake_flag==1)
-        {
-            //osDelay(500);
-            /***** 前往木桩 *****/
-            //KP  = 20;
-            Upper[index].gantry_t.position.x   = 705.0;
-            Upper[index].gantry_t.position.y   = 303.5;
+        // else if (stake_flag==1)
+        // {
+        //     //osDelay(500);
+        //     /***** 前往木桩 *****/
+        //     //KP  = 20;
+        //     Upper[index].gantry_t.position.x   = 705.0;
+        //     Upper[index].gantry_t.position.y   = 303.5;
 
-            if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 3) || (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 3)) {
-                stateflag[index] = 3;
-            }
-        }
+        //     if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 3) || (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 3)) {
+        //         stateflag[index] = 3;
+        //     }
+        // }
 
-        else if (stateflag[index] == 3)
-        {
-            /***** 放下砝码 *****/
-            KP = 0;
-            if(index==0){
-                HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_RESET); // 气缸向下
-                osDelay(1000);
-                HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_RESET); // 砝码下电
-            }
+        // else if (stateflag[index] == 3)
+        // {
+        //     osDealy(1000);
+        //     /***** 放下砝码 *****/
+        //     KP = 0;
+        //     if(index==0){
+        //         HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_RESET); // 气缸向下
+        //         osDelay(1000);
+        //         HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_RESET); // 砝码下电
+        //     }
 
-            if (index == 1) {
-                HAL_GPIO_WritePin(cylinder_04_GPIO_Port, cylinder_04_Pin, GPIO_PIN_RESET); // 气缸向下
-                osDelay(1000);
-                HAL_GPIO_WritePin(electromagnet_04_GPIO_Port, electromagnet_04_Pin, GPIO_PIN_RESET); // 砝码下电
-            }
-        }
+        //     if (index == 1) {
+        //         HAL_GPIO_WritePin(cylinder_04_GPIO_Port, cylinder_04_Pin, GPIO_PIN_RESET); // 气缸向下
+        //         osDelay(1000);
+        //         HAL_GPIO_WritePin(electromagnet_04_GPIO_Port, electromagnet_04_Pin, GPIO_PIN_RESET); // 砝码下电
+        //     }
+        // }
 
         osDelay(8);
     }
