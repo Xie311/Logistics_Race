@@ -24,6 +24,9 @@ void StartDefaultTask(void *argument)
     // while (Uart_State != 2) {
     //     ; // 若未收到上位机数据则一直循环
     // }
+    
+    // weight_placement[0]=1;
+    // weight_placement[1]=1;
 
     /*串口使能*/
     Gantry_usart_init();
@@ -33,8 +36,8 @@ void StartDefaultTask(void *argument)
     Upper_StateMachine_Init_02();
     Upper_Motor_init();
 
-    HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET);   //  气缸抬升
-    HAL_GPIO_WritePin(cylinder_04_GPIO_Port, cylinder_04_Pin, GPIO_PIN_SET);   //  气缸抬升
+    HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET);   //  SET 气缸抬升
+    HAL_GPIO_WritePin(cylinder_04_GPIO_Port, cylinder_04_Pin, GPIO_PIN_SET);   //  SET 气缸抬升
     HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_SET);
     HAL_GPIO_WritePin(electromagnet_04_GPIO_Port, electromagnet_04_Pin, GPIO_PIN_SET);
     osDelay(1000);

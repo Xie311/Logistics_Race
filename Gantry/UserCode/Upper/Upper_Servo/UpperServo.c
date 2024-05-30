@@ -33,8 +33,7 @@ void Upper_Servo_Task(void *argument)
         speedServo(Upper[1].gantry_t.velocity.y, Upper[1].Motor_Y);
 
         if ((distance_aver[0] == 0) || (distance_aver[1] == 0) || (distance_aver[2] == 0)) {
-            Upper_Decode_TaskStart();
-            osDelay(100);
+            StartDefaultTask();
         }
 
         CanTransmit_DJI_1234(&hcan1,
