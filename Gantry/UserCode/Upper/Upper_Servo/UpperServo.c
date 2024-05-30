@@ -22,13 +22,6 @@ void Upper_Servo_Task(void *argument)
 {
     osDelay(100);
     for (;;) {
-        /***** 调试代码 *****/
-        // speedServo(2000, Upper[0].Motor_X);
-        // speedServo(-2000, Upper[1].Motor_X);
-        // speedServo(2000, Upper[0].Motor_Y);
-        // speedServo(-2000, Upper[1].Motor_Y);
-
-        /*************************************************************/
         Upper[0].gantry_t.velocity.x = -KP * (Upper[0].gantry_t.position.x - distance_aver[0]);
         Upper[1].gantry_t.velocity.x =  KP * (Upper[1].gantry_t.position.x - distance_aver[1]); //原来无负号
         Upper[0].gantry_t.velocity.y =  KP * (Upper[0].gantry_t.position.y - distance_aver[2]);
