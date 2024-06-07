@@ -125,7 +125,7 @@ void Target_Decode_Task(void)
                 }
             }
 
-            osDelay(2);
+            osDelay(4);
         }
     }
 }

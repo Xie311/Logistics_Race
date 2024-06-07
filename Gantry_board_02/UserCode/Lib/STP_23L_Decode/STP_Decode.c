@@ -2,8 +2,8 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-05-24 18:52:17
- * @FilePath: \Gantry\UserCode\Lib\STP_23L_Decode\STP_Decode.c
+ * @LastEditTime: 2024-06-05 23:31:14
+ * @FilePath: \Gantry_board_02\UserCode\Lib\STP_23L_Decode\STP_Decode.c
  * @Brief: 
  * 
  * Copyright (c) 2024 by ChenYiTong, All Rights Reserved. 
@@ -74,9 +74,6 @@ void Upper_Decode_Task(void)
             }
         }
 
-        // if ((distance_aver[0] == 0) || (distance_aver[1] == 0) || (distance_aver[2] == 0)) {
-        //     Upper_Decode_TaskStart();
-        // }
-        osDelay(4);
+        osDelay(3);
     }
 }

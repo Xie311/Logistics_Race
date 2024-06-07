@@ -1,7 +1,7 @@
 /*
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
- * @FilePath: \Gantry\UserCode\Upper\Upper_Servo\UpperServo.c
+ * @FilePath: \Gantry_board_02\UserCode\Upper\Upper_Servo\UpperServo.c
  * @Brief:
  *
  * Copyright (c) 2024 by X311, All Rights Reserved.
@@ -22,15 +22,8 @@ void Upper_Servo_Task(void *argument)
 {
     osDelay(100);
     for (;;) {
-        /***** 调试代码 *****/
-        // speedServo(2000, Upper[0].Motor_X);
-        // speedServo(-2000, Upper[1].Motor_X);
-        // speedServo(2000, Upper[0].Motor_Y);
-        // speedServo(-2000, Upper[1].Motor_Y);
-
-        /*************************************************************/
         Upper[0].gantry_t.velocity.x = -KP * (Upper[0].gantry_t.position.x - distance_aver[0]);
-        Upper[1].gantry_t.velocity.x =  KP * (Upper[1].gantry_t.position.x - distance_aver[1]);
+        Upper[1].gantry_t.velocity.x =  KP * (Upper[1].gantry_t.position.x - distance_aver[1]); //原来无负号
         Upper[0].gantry_t.velocity.y =  KP * (Upper[0].gantry_t.position.y - distance_aver[2]);
         Upper[1].gantry_t.velocity.y = -KP * (Upper[1].gantry_t.position.y - distance_aver[2]);
 
@@ -39,7 +32,9 @@ void Upper_Servo_Task(void *argument)
         speedServo(Upper[1].gantry_t.velocity.x, Upper[1].Motor_X);
         speedServo(Upper[1].gantry_t.velocity.y, Upper[1].Motor_Y);
 
-        //CanTransmit_DJI_1234(&hcan1, 0, 0, 0, 0);
+        if ((distance_aver[0] == 0) || (distance_aver[1] == 0) || (distance_aver[2] == 0)) {
+            StartDefaultTask();
+        }
 
         CanTransmit_DJI_1234(&hcan1,
                              Upper[0].Motor_X->speedPID.output,   // 负向末端前进
@@ -82,34 +77,13 @@ void Upper_Motor_init() // 电机初始化
     }
 
     // speed_PID
-    Upper[0].Motor_X->speedPID.KP = 8;
+    Upper[0].Motor_X->speedPID.KP = 4.0;
     Upper[0].Motor_X->speedPID.KI = 0.4;
     Upper[0].Motor_X->speedPID.KD = 0.8;
 
-    Upper[1].Motor_X->speedPID.KP = 6;
+    Upper[1].Motor_X->speedPID.KP = 4.0;
     Upper[1].Motor_X->speedPID.KI = 0.4;
-    Upper[1].Motor_X->speedPID.KD = 10.0;
-
-    // Upper[1].Motor_X->speedPID.KP = 1.0;
-    // Upper[1].Motor_X->speedPID.KI = 0.05;
-    // Upper[1].Motor_X->speedPID.KD = 8.0;
-
-    // // pos_PID
-    // Upper[0].Motor_X->posPID.KP = -800;
-    // Upper[0].Motor_X->posPID.KI = 0;
-    // Upper[0].Motor_X->posPID.KD = 0;
-
-    // Upper[0].Motor_Y->posPID.KP = -800;
-    // Upper[0].Motor_Y->posPID.KI = 0;
-    // Upper[0].Motor_Y->posPID.KD = 0;
-
-    // Upper[1].Motor_X->posPID.KP = 800;
-    // Upper[1].Motor_X->posPID.KI = 0;
-    // Upper[1].Motor_X->posPID.KD = 0;
-
-    // Upper[1].Motor_Y->posPID.KP = 800;
-    // Upper[1].Motor_Y->posPID.KI = 0;
-    // Upper[1].Motor_Y->posPID.KD = 0;
+    Upper[1].Motor_X->speedPID.KD = 0.8;
 
     CANFilterInit(&hcan1);
 }

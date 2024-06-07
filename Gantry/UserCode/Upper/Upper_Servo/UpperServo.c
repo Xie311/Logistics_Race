@@ -34,14 +34,14 @@ void Upper_Servo_Task(void *argument)
 
         if ((distance_aver[0] == 0) || (distance_aver[1] == 0) || (distance_aver[2] == 0)) {
             StartDefaultTask();
-        }
+        }       
 
-        CanTransmit_DJI_1234(&hcan1,
-                             Upper[0].Motor_X->speedPID.output,   // 负向末端前进
-                             Upper[0].Motor_Y->speedPID.output,   // 正向前
-                             Upper[1].Motor_X->speedPID.output,   // 正向末端前进
-                             Upper[1].Motor_Y->speedPID.output    // 负向前
-        );
+        // CanTransmit_DJI_1234(&hcan1,
+        //                      Upper[0].Motor_X->speedPID.output,   // 负向末端前进
+        //                      Upper[0].Motor_Y->speedPID.output,   // 正向前
+        //                      Upper[1].Motor_X->speedPID.output,   // 正向末端前进
+        //                      Upper[1].Motor_Y->speedPID.output    // 负向前
+        // );
         osDelay(6);
     }
 }
