@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-06-07 23:43:38
+ * @LastEditTime: 2024-06-11 23:29:16
  * @FilePath: \Gantry_board_02\UserCode\Upper\Upper_Start\UpperStart.c
  * @Brief: 
  * 
@@ -38,8 +38,10 @@ void StartDefaultTask(void *argument)
 
     HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET);       // SET气缸抬升
     HAL_GPIO_WritePin(cylinder_04_GPIO_Port, cylinder_04_Pin, GPIO_PIN_SET);       // SET气缸抬升
+    HAL_GPIO_WritePin(cylinder_05_GPIO_Port, cylinder_05_Pin, GPIO_PIN_SET);       // SET气缸抬升
     HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_SET);
     HAL_GPIO_WritePin(electromagnet_04_GPIO_Port, electromagnet_04_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(electromagnet_05_GPIO_Port, electromagnet_05_Pin, GPIO_PIN_SET);
     osDelay(1000);
 
     /*开启线程*/
@@ -50,7 +52,7 @@ void StartDefaultTask(void *argument)
     Upper_Debug_TaskStart();
 
     for (;;) {
-        HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin);
+        //HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin);
 
         osDelay(800);
     }
