@@ -42,7 +42,7 @@ void Upper_Servo_Task(void *argument)
                              Upper[1].Motor_X->speedPID.output,   // 正向末端前进
                              Upper[1].Motor_Y->speedPID.output    // 负向前
         );
-        osDelay(4);
+        osDelay(3);
     }
 }
 
@@ -73,7 +73,7 @@ void Upper_Motor_init() // 电机初始化
     {
         Upper[i].Motor_Y->speedPID.KP = 4.0;
         Upper[i].Motor_Y->speedPID.KI = 0.4;
-        Upper[i].Motor_Y->speedPID.KD = 0.4; // 1.2;
+        Upper[i].Motor_Y->speedPID.KD = 0.2; // 1.2;
     }
 
     // speed_PID
