@@ -40,11 +40,12 @@ void Upper_Target_Decode()
     } state;
 
     if ((receive_buffer[0] == 0xFF) && (receive_buffer[1] == 0xFE) && (receive_buffer[22] == 0xFE) && (receive_buffer[23] == 0xFF)) {
-        for (int i = 0; i < 20; i++) {
+       
+        for (int i = 0; i < 8; i++) {
             state.data[i] = receive_buffer[i + 2];
         }
 
-        for (int t = 0; t < 5; t++) {
+        for (int t = 0; t < 2; t++) {
             weight_placement[t] = state.weight_state[t];
         }
     }

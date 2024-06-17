@@ -18,11 +18,9 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
     if (huart->Instance == USART1) {
         flag[0] = 1;
         HAL_UART_Receive_IT(&huart1, Rxbuffer[0], sizeof(Rxbuffer[0]));
-        //printf("1\n");
     }
 
     if (huart->Instance == USART2) {
-        //printf("2\n");
         flag[1] = 1;
         HAL_UART_Receive_IT(&huart2, Rxbuffer[1], sizeof(Rxbuffer[1]));
     }
@@ -35,6 +33,8 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
     if (huart->Instance == UART5) {
         // 接收上位机数据并解码
         flag[3] = 1;
+        printf("11111111111");
+        //Upper_Target_Decode();
         HAL_UART_Receive_IT(&huart5, (uint8_t *)receive_buffer, sizeof(receive_buffer));
     }
 
