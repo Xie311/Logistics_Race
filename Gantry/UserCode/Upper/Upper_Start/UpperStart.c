@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-06-18 00:23:03
+ * @LastEditTime: 2024-06-18 01:00:23
  * @FilePath: \Gantry\UserCode\Upper\Upper_Start\UpperStart.c
  * @Brief: 
  * 
@@ -35,8 +35,8 @@ void StartDefaultTask(void *argument)
     osDelay(2000);
     Upper_Motor_init();
 
-    HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET);   //  SET 气缸抬升
-    HAL_GPIO_WritePin(cylinder_04_GPIO_Port, cylinder_04_Pin, GPIO_PIN_SET);   //  SET 气缸抬升
+    HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_RESET);   //  SET 气缸抬升
+    HAL_GPIO_WritePin(cylinder_04_GPIO_Port, cylinder_04_Pin, GPIO_PIN_RESET);   //  SET 气缸抬升
     HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_SET);
     HAL_GPIO_WritePin(electromagnet_04_GPIO_Port, electromagnet_04_Pin, GPIO_PIN_SET);
     osDelay(600);
