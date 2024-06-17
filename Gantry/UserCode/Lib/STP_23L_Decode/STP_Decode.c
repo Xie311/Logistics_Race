@@ -65,7 +65,7 @@ void Upper_Decode_TaskStart(void)
  */
 void Upper_Decode_Task(void)
 {
-    osDelay(100);
+    osDelay(20);
     for (;;) {
         for(int i=0;i<3;i++){
             if(flag[i]){
