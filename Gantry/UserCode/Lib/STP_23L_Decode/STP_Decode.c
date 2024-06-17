@@ -16,7 +16,6 @@ LidarPointTypedef LidarData[4][12];
 float distance_aver[4];
 void STP_23L_Decode(uint16_t num)       //num:指明是第几个雷达，本代码框架中范围为0-3
 {
-    printf("1111111111111111\n");
     if ((Rxbuffer[num][0] == Rxbuffer[num][1]) && (Rxbuffer[num][1] == Rxbuffer[num][2]) && (Rxbuffer[num][2] == Rxbuffer[num][3]) && (Rxbuffer[num][3] == 0xAA)) // 检测帧头
     {
         if (Rxbuffer[num][5] == PACK_GET_DISTANCE)                                                                       //检测命令码
