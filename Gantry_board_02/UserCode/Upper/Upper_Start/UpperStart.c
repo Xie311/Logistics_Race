@@ -21,9 +21,9 @@ void StartDefaultTask(void *argument)
     Upper_Target_Init();
     Upper_Target_Decode();
 
-    
-    weight_placement[0]=1;
-    weight_placement[1]=1;
+    /**** 测试代码 ****/
+    // weight_placement[0]=1;
+    // weight_placement[1]=1;
 
     /*串口使能*/
     Gantry_usart_init();

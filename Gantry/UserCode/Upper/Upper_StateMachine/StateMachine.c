@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-06-18 01:57:21
+ * @LastEditTime: 2024-06-18 17:34:12
  * @FilePath: \Gantry\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
@@ -145,7 +145,7 @@ void Upper_State_Task(void *argument)
             if (index == 0) {
                 Upper[index].gantry_t.position.x = 700.0;
             } else {
-                Upper[index].gantry_t.position.x = 687.5;
+                Upper[index].gantry_t.position.x = 687.0;
             }
             /*****************/
 

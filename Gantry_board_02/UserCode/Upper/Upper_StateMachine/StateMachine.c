@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-06-18 17:17:51
+ * @LastEditTime: 2024-06-18 19:44:47
  * @FilePath: \Gantry_board_02\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
@@ -38,7 +38,7 @@ void Upper_State_Task(void *argument)
             // Upper[index].gantry_t.position.x = 800.0;
 
             /***** 上电 定爪前进 *****/
-             if (weight_placement[5] == 1) { // 砝码在内圈
+             if (weight_placement[2] == 1) { // 砝码在内圈
                  Upper[index].gantry_t.position.y = 2180.0;
              } else { // 砝码在外圈
                  Upper[index].gantry_t.position.y = 1782.0;
@@ -63,8 +63,8 @@ void Upper_State_Task(void *argument)
             osDelay(400);
             //KP                               = 32;
             /***** 定爪前进 *****/
-             if (weight_placement[5] == 1) { // 砝码在内圈
-                 Upper[index].gantry_t.position.y = 2220.0;
+             if (weight_placement[2] == 1) { // 砝码在内圈
+                 Upper[index].gantry_t.position.y = 2200.0;
              } else { // 砝码在外圈
                  Upper[index].gantry_t.position.y = 1844.0;
              }
@@ -214,8 +214,6 @@ void Upper_State_Task(void *argument)
                 Upper[index].gantry_t.position.x = 740.0;
             }
 
-            osDelay(1000);
-            KP = 0;
         }
 
         osDelay(6);
