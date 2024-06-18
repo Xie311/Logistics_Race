@@ -41,11 +41,11 @@ void Upper_Target_Decode()
 
     /*******此侧接收3-5号砝码数据********/
     if ((receive_buffer[0] == 0xFF) && (receive_buffer[1] == 0xFE) && (receive_buffer[22] == 0xFE) && (receive_buffer[23] == 0xFF)) {
-        for (int i = 0; i < 13; i++) {
+        for (int i = 0; i < 12; i++) {
             state.data[i] = receive_buffer[i + 10];
         }
 
-        for (int t = 0; t < 4; t++) {
+        for (int t = 0; t < 3; t++) {
             weight_placement[t] = state.weight_state[t];
         }
     }
