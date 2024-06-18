@@ -79,7 +79,7 @@ void Upper_Motor_init() // 电机初始化
     // speed_PID
     Upper[0].Motor_X->speedPID.KP = 4.0;
     Upper[0].Motor_X->speedPID.KI = 0.4;
-    Upper[0].Motor_X->speedPID.KD = 0.8;
+    Upper[0].Motor_X->speedPID.KD = 1.2;
 
     Upper[1].Motor_X->speedPID.KP = 4.0;
     Upper[1].Motor_X->speedPID.KI = 0.4;

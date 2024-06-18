@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-06-16 21:57:14
+ * @LastEditTime: 2024-06-18 13:24:02
  * @FilePath: \Gantry_board_02\UserCode\Upper\Upper_Start\UpperStart.c
  * @Brief: 
  * 
@@ -18,15 +18,12 @@
 void StartDefaultTask(void *argument)
 {
     // /*** 接受树莓派串口初始化 ***/
-    // Upper_Target_Init();
+    Upper_Target_Init();
+    Upper_Target_Decode();
 
-    // Target_Decode_TaskStart();
-    // while (Uart_State != 2) {
-    //     ; // 若未收到上位机数据则一直循环
-    // }
     
-    // weight_placement[0]=1;
-    // weight_placement[1]=1;
+    weight_placement[0]=1;
+    weight_placement[1]=1;
 
     /*串口使能*/
     Gantry_usart_init();
