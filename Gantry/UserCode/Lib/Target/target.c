@@ -2,8 +2,8 @@
  * @Author: X311
  * @Date: 2024-05-14 00:50:30
  * @LastEditors: X311 
- * @LastEditTime: 2024-05-26 22:25:32
- * @FilePath: \Gantry_board_02\UserCode\Lib\Target\target.c
+ * @LastEditTime: 2024-06-19 15:24:46
+ * @FilePath: \Gantry\UserCode\Lib\Target\target.c
  * @Brief: 
  * 
  * Copyright (c) 2024 by X311, All Rights Reserved. 

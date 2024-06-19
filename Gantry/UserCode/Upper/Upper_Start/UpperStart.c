@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-06-18 01:00:23
+ * @LastEditTime: 2024-06-19 15:14:03
  * @FilePath: \Gantry\UserCode\Upper\Upper_Start\UpperStart.c
  * @Brief: 
  * 
@@ -21,8 +21,8 @@ void StartDefaultTask(void *argument)
     Upper_Target_Init();
     Upper_Target_Decode();
 
-    // weight_placement[0]=1;
-    // weight_placement[1]=1;
+    // weight_placement[0] = 1;
+    // weight_placement[1] = 1;
 
     /*串口使能*/
     Gantry_usart_init();
