@@ -59,7 +59,7 @@ void Upper_State_Task(void *argument)
                
             }
             else{  // 砝码在外圈
-                Upper[index].gantry_t.position.x = 640.0;  
+                Upper[index].gantry_t.position.x = 650.0;  
             }
             /************************/
 
@@ -71,13 +71,14 @@ void Upper_State_Task(void *argument)
 
         else if (stateflag[index] == 1)
         {
+            osDelay(600);
             if(index==0){
-                HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET); // 气缸向下
+                HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_RESET); // 气缸向下
             }
             else{
-                HAL_GPIO_WritePin(cylinder_04_GPIO_Port, cylinder_04_Pin, GPIO_PIN_SET); // 气缸向下
+                HAL_GPIO_WritePin(cylinder_04_GPIO_Port, cylinder_04_Pin, GPIO_PIN_RESET); // 气缸向下
             }
-            osDelay(500);
+            osDelay(400);
 
             /***** 前往砝码 *****/
             KP                               = 80;
@@ -106,8 +107,8 @@ void Upper_State_Task(void *argument)
             // 如果两边均完成砝码夹取则前往木桩
             if ((stateflag[0] == 2) && (stateflag[1] == 2)) {
                 osDelay(600);
-                HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_RESET); // 气缸向上
-                HAL_GPIO_WritePin(cylinder_04_GPIO_Port, cylinder_04_Pin, GPIO_PIN_RESET); // 气缸向上
+                HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET); // 气缸向上
+                HAL_GPIO_WritePin(cylinder_04_GPIO_Port, cylinder_04_Pin, GPIO_PIN_SET); // 气缸向上
                 osDelay(600);
 
                 stake_flag = 1;
@@ -139,7 +140,7 @@ void Upper_State_Task(void *argument)
 
         else if (stake_flag == 2) {
             /***** 前往木桩 *****/
-            KP = 30;
+            KP = 40;
             Upper[index].gantry_t.position.y   = 330.0;
             /***** 木桩位置 *****/
             if (index == 0) {
@@ -174,7 +175,7 @@ void Upper_State_Task(void *argument)
             if (index == 0) {
                 Upper[index].gantry_t.position.x = 720.0;
             } else {
-                Upper[index].gantry_t.position.x = 700.0;
+                Upper[index].gantry_t.position.x = 710.0;
             }
         }
 
