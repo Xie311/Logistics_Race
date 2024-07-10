@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-05-26 22:32:29
+ * @LastEditTime: 2024-07-08 23:11:17
  * @FilePath: \Gantry_board_02\UserCode\Upper\Callback\Gantry_callback.c
  * @Brief: 
  * 
@@ -36,6 +36,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
         // 接收上位机数据并解码
         flag[3] = 1;
         HAL_UART_Receive_IT(&huart5, (uint8_t *)receive_buffer, sizeof(receive_buffer));
+        //osDelay(100);
     }
 
 }

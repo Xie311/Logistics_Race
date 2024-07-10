@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-14 00:50:30
  * @LastEditors: X311 
- * @LastEditTime: 2024-05-26 22:25:32
+ * @LastEditTime: 2024-07-10 14:36:57
  * @FilePath: \Gantry_board_02\UserCode\Lib\Target\target.c
  * @Brief: 
  * 
@@ -38,15 +38,22 @@ void Upper_Target_Decode()
         uint8_t data[12];
         float weight_state[3];
     } state;
+    osDelay(1000);
 
     /*******此侧接收3-5号砝码数据********/
-    if ((receive_buffer[0] == 0xFF) && (receive_buffer[1] == 0xFE) && (receive_buffer[22] == 0xFE) && (receive_buffer[23] == 0xFF)) {
-        for (int i = 0; i < 12; i++) {
-            state.data[i] = receive_buffer[i + 10];
-        }
+    if (receive_buffer[0] == 0xFF){
+        if(receive_buffer[1]==0xFE){
+            if (receive_buffer[22] == 0xFE) {
+                if (receive_buffer[23] == 0xFF){
+                    for (int i = 0; i < 12; i++) {
+                        state.data[i] = receive_buffer[i + 10];
+                    }
 
-        for (int t = 0; t < 3; t++) {
-            weight_placement[t] = state.weight_state[t];
+                for (int t = 0; t < 3; t++) {
+                    weight_placement[t] = state.weight_state[t];
+                }
+                }
+            }
         }
     }
 }
@@ -78,7 +85,6 @@ void Target_Decode_Task(void)
     // 获取当前任务的句柄
     xHandle = xTaskGetCurrentTaskHandle();
 
-    //osDelay(100);
 
     for (;;) {
         if (Uart_State == 0) {

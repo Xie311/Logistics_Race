@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-14 00:50:30
  * @LastEditors: X311 
- * @LastEditTime: 2024-06-19 15:24:46
+ * @LastEditTime: 2024-07-10 16:13:31
  * @FilePath: \Gantry\UserCode\Lib\Target\target.c
  * @Brief: 
  * 
@@ -40,7 +40,6 @@ void Upper_Target_Decode()
     } state;
 
     if ((receive_buffer[0] == 0xFF) && (receive_buffer[1] == 0xFE) && (receive_buffer[22] == 0xFE) && (receive_buffer[23] == 0xFF)) {
-       
         for (int i = 0; i < 8; i++) {
             state.data[i] = receive_buffer[i + 2];
         }
