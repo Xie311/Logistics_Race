@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-08 19:22:51
+ * @LastEditTime: 2024-07-11 18:53:17
  * @FilePath: \Gantry\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
@@ -51,7 +51,7 @@ void Upper_State_Task(void *argument)
             Upper[index].gantry_t.position.y = 903;
             if (weight_placement[index] == 1) {  //砝码在内圈
                 if(index==0){
-                     Upper[index].gantry_t.position.x = 220.0; 
+                     Upper[index].gantry_t.position.x = 250.0; 
                 }
                 else{
                     Upper[index].gantry_t.position.x = 260.0;
@@ -71,31 +71,31 @@ void Upper_State_Task(void *argument)
 
         else if (stateflag[index] == 1)
         {
-            osDelay(200);
+            osDelay(400);
             if(index==0){
                 HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_RESET); // 气缸向下
             }
             else{
                 HAL_GPIO_WritePin(cylinder_04_GPIO_Port, cylinder_04_Pin, GPIO_PIN_RESET); // 气缸向下
             }
-            osDelay(400);
+            osDelay(800);
 
             /***** 前往砝码 *****/
-            KP                               = 60;
+            KP                               = 80;
             Upper[index].gantry_t.position.y = 903; 
             /***** 砝码位置 *****/
             if(index==0){
                 if (weight_placement[index] == 1) { // 砝码在内圈
-                    Upper[index].gantry_t.position.x = 200.0;
+                    Upper[index].gantry_t.position.x = 198.0;
                 } else if (weight_placement[index] == 0) { // 砝码在外圈
                     Upper[index].gantry_t.position.x = 584; 
                 }
             }
             else{
                 if (weight_placement[index] == 1) { // 砝码在内圈
-                Upper[index].gantry_t.position.x = 211.0;
+                Upper[index].gantry_t.position.x = 210.0;
                 } else if (weight_placement[index] == 0) { // 砝码在外圈
-                    Upper[index].gantry_t.position.x = 564.0;  
+                    Upper[index].gantry_t.position.x = 560.0;  
                 }
             }
             /*****************/

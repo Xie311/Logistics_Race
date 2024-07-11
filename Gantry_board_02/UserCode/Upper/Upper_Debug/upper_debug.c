@@ -39,6 +39,6 @@ void Upper_Debug_Task(void *argument)
         // printf("%d,%d,%d,%d,%d,%d\n",
         //        receive_buffer[0],receive_buffer[22],receive_buffer[23],
         //        (int)weight_placement[0], (int)weight_placement[1], (int)weight_placement[2]);
-        osDelay(100);
+        // osDelay(100);
     }
 }

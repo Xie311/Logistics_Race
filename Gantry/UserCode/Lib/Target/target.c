@@ -39,6 +39,8 @@ void Upper_Target_Decode()
         float weight_state[5];
     } state;
 
+    // osDelay(1000);
+
     if ((receive_buffer[0] == 0xFF) && (receive_buffer[1] == 0xFE) && (receive_buffer[22] == 0xFE) && (receive_buffer[23] == 0xFF)) {
         for (int i = 0; i < 8; i++) {
             state.data[i] = receive_buffer[i + 2];

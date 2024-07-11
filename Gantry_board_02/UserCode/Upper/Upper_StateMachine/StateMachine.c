@@ -82,7 +82,7 @@ void Upper_State_Task(void *argument)
             osDelay(400);
 
             KP = 40;
-            Upper[index].gantry_t.position.y = 2646.0;
+            Upper[index].gantry_t.position.y = 2654.0;
 
             if (fabs(Upper[index].gantry_t.position.y - distance_aver[2])< 2){
                 //KP = 0;
@@ -168,7 +168,7 @@ void Upper_State_Task(void *argument)
         else if (stake_flag == 4) {
             /***** 前往木桩 *****/
             KP                               = 30;
-            Upper[index].gantry_t.position.y = 500.0;
+            Upper[index].gantry_t.position.y = 1000.0;
             /***** 砝码位置 *****/
             if (index == 0) {
                 Upper[index].gantry_t.position.x = 700.0;
@@ -177,7 +177,7 @@ void Upper_State_Task(void *argument)
             }
             /*****************/
 
-            if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 2) && (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 2)) {
+            if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 5) && (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 5)) {
                 stateflag[index] = 4;
             }
 
@@ -187,6 +187,7 @@ void Upper_State_Task(void *argument)
         }
 
         else if (stake_flag == 5) {
+            osDelay(100);
             /***** 前往木桩 *****/
             Upper[index].gantry_t.position.y = 360.0;
             /***** 砝码位置 *****/
