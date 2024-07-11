@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-11 22:14:07
+ * @LastEditTime: 2024-07-11 23:01:01
  * @FilePath: \Gantry\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
@@ -141,12 +141,12 @@ void Upper_State_Task(void *argument)
         else if (stake_flag == 2) {
             /***** 前往木桩 *****/
             KP = 40;
-            Upper[index].gantry_t.position.y   = 335.0;
+            Upper[index].gantry_t.position.y   = 340.0;
             /***** 木桩位置 *****/
             if (index == 0) {
                 Upper[index].gantry_t.position.x = 703.0;
             } else {
-                Upper[index].gantry_t.position.x = 687.0;
+                Upper[index].gantry_t.position.x = 692.0;
             }
             /*****************/
 
@@ -173,9 +173,9 @@ void Upper_State_Task(void *argument)
             osDelay(600);
 
             if (index == 0) {
-                Upper[index].gantry_t.position.x = 720.0;
+                Upper[index].gantry_t.position.x = 730.0;
             } else {
-                Upper[index].gantry_t.position.x = 710.0;
+                Upper[index].gantry_t.position.x = 730.0;
             }
         }
 
