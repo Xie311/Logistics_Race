@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-10 14:48:10
+ * @LastEditTime: 2024-07-11 17:08:58
  * @FilePath: \Gantry_board_02\UserCode\Upper\Upper_Start\UpperStart.c
  * @Brief: 
  * 
@@ -22,8 +22,10 @@ void StartDefaultTask(void *argument)
     Upper_Target_Decode();
 
     /**** 测试代码 ****/
-   //weight_placement[0]=1;
-   // weight_placement[1]=1;
+//    weight_placement[0]=1;
+//    weight_placement[1]=1;
+//    weight_placement[2]=1;
+   
 
     /*串口使能*/
     Gantry_usart_init();
@@ -50,8 +52,6 @@ void StartDefaultTask(void *argument)
     Upper_Debug_TaskStart();
 
     for (;;) {
-        //HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin);
-
         osDelay(800);
     }
 }
