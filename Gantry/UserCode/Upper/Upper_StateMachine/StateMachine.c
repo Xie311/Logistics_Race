@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-11 18:53:17
+ * @LastEditTime: 2024-07-11 22:14:07
  * @FilePath: \Gantry\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
@@ -88,14 +88,14 @@ void Upper_State_Task(void *argument)
                 if (weight_placement[index] == 1) { // 砝码在内圈
                     Upper[index].gantry_t.position.x = 198.0;
                 } else if (weight_placement[index] == 0) { // 砝码在外圈
-                    Upper[index].gantry_t.position.x = 584; 
+                    Upper[index].gantry_t.position.x = 580; 
                 }
             }
             else{
                 if (weight_placement[index] == 1) { // 砝码在内圈
                 Upper[index].gantry_t.position.x = 210.0;
                 } else if (weight_placement[index] == 0) { // 砝码在外圈
-                    Upper[index].gantry_t.position.x = 560.0;  
+                    Upper[index].gantry_t.position.x = 568.0;  
                 }
             }
             /*****************/

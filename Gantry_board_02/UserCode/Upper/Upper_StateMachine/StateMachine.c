@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-11 16:14:34
+ * @LastEditTime: 2024-07-11 22:21:40
  * @FilePath: \Gantry_board_02\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
@@ -33,15 +33,11 @@ void Upper_State_Task(void *argument)
     for (;;){
         if(stake_flag == 0)
         {
-             /***调试代码***/
-            // Upper[index].gantry_t.position.y = 300.0;
-            // Upper[index].gantry_t.position.x = 800.0;
-
             /***** 上电 定爪前进 *****/
              if (weight_placement[2] == 1) { // 砝码在内圈
-                 Upper[index].gantry_t.position.y = 2220.0;
+                 Upper[index].gantry_t.position.y = 2180.0;
              } else { // 砝码在外圈
-                 Upper[index].gantry_t.position.y = 1800.0;
+                 Upper[index].gantry_t.position.y = 1760.0;
              }
 
             /***** 两个爪子前往砝码 *****/
@@ -64,7 +60,7 @@ void Upper_State_Task(void *argument)
             KP                               = 32;
             /***** 定爪前进 *****/
              if (weight_placement[2] == 1) { // 砝码在内圈
-                 Upper[index].gantry_t.position.y = 2288.0;  
+                 Upper[index].gantry_t.position.y = 2278.0;  
              } else { // 砝码在外圈
                  Upper[index].gantry_t.position.y = 1828.0;
              }
@@ -80,17 +76,7 @@ void Upper_State_Task(void *argument)
             osDelay(800);
             HAL_GPIO_WritePin(cylinder_05_GPIO_Port, cylinder_05_Pin, GPIO_PIN_SET); // 气缸向上
             osDelay(400);
-
-            KP = 40;
-            Upper[index].gantry_t.position.y = 2654.0;
-
-            if (fabs(Upper[index].gantry_t.position.y - distance_aver[2])< 2){
-                //KP = 0;
-                osDelay(800);
-                HAL_GPIO_WritePin(electromagnet_05_GPIO_Port, electromagnet_05_Pin, 0); // 砝码下电
-
-                stake_flag  = 3;  
-            }
+            stake_flag = 3;
         }
 
         else if (stake_flag == 3) {
@@ -165,11 +151,23 @@ void Upper_State_Task(void *argument)
             }
         }
 
-        else if (stake_flag == 4) {
+        else if(stake_flag == 4){
+            KP = 40;
+            Upper[index].gantry_t.position.y = 2654.0;
+
+            if (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 2) {
+                // KP = 0;
+                osDelay(800);
+                HAL_GPIO_WritePin(electromagnet_05_GPIO_Port, electromagnet_05_Pin, 0); // 砝码下电
+
+                stake_flag = 5;
+            }
+        }
+        else if (stake_flag == 5) {
             /***** 前往木桩 *****/
             KP                               = 30;
             Upper[index].gantry_t.position.y = 1000.0;
-            /***** 砝码位置 *****/
+            /***** 木桩位置 *****/
             if (index == 0) {
                 Upper[index].gantry_t.position.x = 700.0;
             } else {
@@ -182,11 +180,11 @@ void Upper_State_Task(void *argument)
             }
 
             if ((stateflag[0] == 4) && (stateflag[1] == 4)) {
-                stake_flag = 5;
+                stake_flag = 6;
             }
         }
 
-        else if (stake_flag == 5) {
+        else if (stake_flag == 6) {
             osDelay(100);
             /***** 前往木桩 *****/
             Upper[index].gantry_t.position.y = 360.0;
@@ -203,11 +201,11 @@ void Upper_State_Task(void *argument)
             }
 
             if ((stateflag[0] == 5) && (stateflag[1] == 5)) {
-                stake_flag = 6;
+                stake_flag = 7;
             }
         }
 
-        else if (stake_flag == 6) {
+        else if (stake_flag == 7) {
             /***** 放下砝码 *****/
             osDelay(600);
             //KP = 0;
@@ -215,10 +213,10 @@ void Upper_State_Task(void *argument)
             HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_RESET); // 砝码下电
             HAL_GPIO_WritePin(electromagnet_04_GPIO_Port, electromagnet_04_Pin, GPIO_PIN_RESET); // 砝码下电
 
-            stake_flag = 7;
+            stake_flag = 8;
         }
 
-        else if (stake_flag == 7) {
+        else if (stake_flag == 8) {
             osDelay(600);
             KP=20;
 
