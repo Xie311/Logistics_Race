@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-11 23:14:31
+ * @LastEditTime: 2024-07-13 14:39:50
  * @FilePath: \Gantry_board_02\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
@@ -152,7 +152,7 @@ void Upper_State_Task(void *argument)
         }
 
         else if(stake_flag == 4){
-            KP = 40;
+            //KP = 40;
             Upper[index].gantry_t.position.y = 2650.0;
 
             if (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 2) {
@@ -166,7 +166,7 @@ void Upper_State_Task(void *argument)
         else if (stake_flag == 5) {
             /***** 前往木桩 *****/
             KP                               = 30;
-            Upper[index].gantry_t.position.y = 1000.0;
+            //Upper[index].gantry_t.position.y = 1000.0;
             /***** 木桩位置 *****/
             if (index == 0) {
                 Upper[index].gantry_t.position.x = 700.0;
@@ -185,7 +185,6 @@ void Upper_State_Task(void *argument)
         }
 
         else if (stake_flag == 6) {
-            osDelay(200);
             /***** 前往木桩 *****/
             Upper[index].gantry_t.position.y = 354.0;
             /***** 砝码位置 *****/
