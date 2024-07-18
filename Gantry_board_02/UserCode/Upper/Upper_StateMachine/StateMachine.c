@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-18 14:16:23
+ * @LastEditTime: 2024-07-19 00:47:02
  * @FilePath: \Gantry_board_02\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
@@ -62,7 +62,7 @@ void Upper_State_Task(void *argument)
              if (weight_placement[2] == 1) { // 砝码在内圈
                  Upper[index].gantry_t.position.y = 2286.0;  
              } else { // 砝码在外圈
-                 Upper[index].gantry_t.position.y = 1832.0;
+                 Upper[index].gantry_t.position.y = 1836.0;
              }
 
             if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 3) && (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 4)) {
@@ -189,7 +189,7 @@ void Upper_State_Task(void *argument)
         else if (stake_flag == 6) {
             KP = 28;
             /***** 前往木桩 *****/
-            Upper[index].gantry_t.position.y = 312.0;
+            Upper[index].gantry_t.position.y = 308.0;
             /***** 砝码位置 *****/
             if (index == 0) {
                 Upper[index].gantry_t.position.x = 698.0;
