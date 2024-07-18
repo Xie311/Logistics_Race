@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-18 13:42:57
+ * @LastEditTime: 2024-07-18 14:16:23
  * @FilePath: \Gantry_board_02\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
@@ -57,12 +57,12 @@ void Upper_State_Task(void *argument)
             /***** 中央砝码夹取 *****/
             HAL_GPIO_WritePin(cylinder_05_GPIO_Port, cylinder_05_Pin, GPIO_PIN_RESET); // 气缸下落
             osDelay(400);
-            KP                               = 35;
+            KP                               = 38;
             /***** 定爪前进 *****/
              if (weight_placement[2] == 1) { // 砝码在内圈
                  Upper[index].gantry_t.position.y = 2286.0;  
              } else { // 砝码在外圈
-                 Upper[index].gantry_t.position.y = 1830.0;
+                 Upper[index].gantry_t.position.y = 1832.0;
              }
 
             if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 3) && (fabs(Upper[index].gantry_t.position.y - distance_aver[2]) < 4)) {
@@ -192,7 +192,7 @@ void Upper_State_Task(void *argument)
             Upper[index].gantry_t.position.y = 312.0;
             /***** 砝码位置 *****/
             if (index == 0) {
-                Upper[index].gantry_t.position.x = 690.0;
+                Upper[index].gantry_t.position.x = 698.0;
             } else {
                 Upper[index].gantry_t.position.x = 698.0;
             }
