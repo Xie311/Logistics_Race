@@ -6,7 +6,7 @@
  * @FilePath: \Gantry_board_02\UserCode\Lib\STP_23L_Decode\STP_Decode.c
  * @Brief: 
  * 
- * Copyright (c) 2024 by ChenYiTong, All Rights Reserved. 
+ * Copyright (c) 2024 by X311, All Rights Reserved. 
  */
 
 #include "STP_Decode.h"
