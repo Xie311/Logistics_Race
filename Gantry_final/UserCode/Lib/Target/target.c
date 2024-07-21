@@ -35,21 +35,21 @@ void Upper_Target_Init()
 void Upper_Target_Decode()
 {
     static union {
-        uint8_t data[12];
-        float weight_state[3];
+        uint8_t data[20];
+        float weight_state[5];
     } state;
     osDelay(1000);
 
-    /*******此侧接收3-5号砝码数据********/
+    /*******接收砝码数据********/
     if (receive_buffer[0] == 0xFF){
         if(receive_buffer[1]==0xFE){
             if (receive_buffer[22] == 0xFE) {
                 if (receive_buffer[23] == 0xFF){
-                    for (int i = 0; i < 12; i++) {
-                        state.data[i] = receive_buffer[i + 10];
+                    for (int i = 0; i < 20; i++) {
+                        state.data[i] = receive_buffer[i + 2];
                     }
 
-                for (int t = 0; t < 3; t++) {
+                for (int t = 0; t < 5; t++) {
                     weight_placement[t] = state.weight_state[t];
                 }
                 }
@@ -88,12 +88,12 @@ void Target_Decode_Task(void)
 
     for (;;) {
         if (Uart_State == 0) {
-            if (flag[3] == 1) {
+            if (flag[5] == 1) {
                 Upper_Target_Decode();
                 for (int i = 0; i < 5; i++) {
                     weight_placement_tmp[i] = weight_placement[i];
                 }
-                flag[3] = 0;
+                flag[5] = 0;
                 tar_count   = 1; // 首次接收时，计数器初始化为1
                 Uart_State  = 1;
             }
@@ -101,9 +101,9 @@ void Target_Decode_Task(void)
         
         else if (Uart_State == 1) {
 
-            if (flag[3] == 1) {
+            if (flag[5] == 1) {
                 Upper_Target_Decode();
-                flag[3] = 0;
+                flag[5] = 0;
                 switch_flag = 0;
 
                 for (int i = 0; i < 5; i++) {

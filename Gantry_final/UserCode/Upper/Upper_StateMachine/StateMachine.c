@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-21 00:38:44
+ * @LastEditTime: 2024-07-21 14:40:36
  * @FilePath: \Gantry_final\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
@@ -76,7 +76,7 @@ void Upper_State_Task(void *argument)
 
         else if(stake_flag == 2){
             /****** 定爪上升 ******/
-            osDelay(500);
+            osDelay(300);
             HAL_GPIO_WritePin(cylinder_05_GPIO_Port, cylinder_05_Pin, GPIO_PIN_SET); // 气缸向上
             osDelay(400);
             stake_flag = 3;
@@ -104,10 +104,10 @@ void Upper_State_Task(void *argument)
         }
 
         else if (stateflag[index] == 2) {
-            osDelay(400);
+            osDelay(300);
             // 定爪砝码下电
             HAL_GPIO_WritePin(electromagnet_05_GPIO_Port, electromagnet_05_Pin, 0);
-            osDelay(800);
+            osDelay(600);
 
             if (index == 0) {
                 HAL_GPIO_WritePin(cylinder_01_GPIO_Port, cylinder_01_Pin, GPIO_PIN_RESET); // 气缸向下
@@ -121,11 +121,10 @@ void Upper_State_Task(void *argument)
             else if (index == 3) {
                 HAL_GPIO_WritePin(cylinder_04_GPIO_Port, cylinder_04_Pin, GPIO_PIN_RESET); // 气缸向下
             } 
-            osDelay(600);
+            osDelay(500);
             
             /***** 前往砝码 *****/
             KP = 60;
-            Upper[index].gantry_t.position.y = 2548.5;
 
             /***** 砝码位置 *****/
             if (index == 0) {
@@ -159,14 +158,14 @@ void Upper_State_Task(void *argument)
                 stateflag[index] = 3;
             }
 
-            // 如果两边均完成砝码夹取则前往木桩
+            // 如果四侧均完成砝码夹取则前往木桩
             if ((stateflag[0] == 3) && (stateflag[1] == 3) && (stateflag[2] == 3) && (stateflag[3] == 3) ) {
                 osDelay(600);
                 HAL_GPIO_WritePin(cylinder_01_GPIO_Port, cylinder_01_Pin, GPIO_PIN_SET); // 气缸向上
                 HAL_GPIO_WritePin(cylinder_02_GPIO_Port, cylinder_02_Pin, GPIO_PIN_SET); // 气缸向上
                 HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET); // 气缸向上
                 HAL_GPIO_WritePin(cylinder_04_GPIO_Port, cylinder_04_Pin, GPIO_PIN_SET); // 气缸向上
-                osDelay(800);
+                osDelay(500);
 
                 stake_flag = 4;
             }
@@ -184,7 +183,8 @@ void Upper_State_Task(void *argument)
             } else if (index == 3) {
                 Upper[index].gantry_t.position.x = 690.0;
             }
-            /*****************/
+
+            /***********************************************/
             if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 3) && (fabs(Upper[0].gantry_t.position.y - distance_aver[4]) < 4) && (fabs(Upper[1].gantry_t.position.y - distance_aver[4]) < 4)) {
                 stateflag[index] = 4;
             }
@@ -210,7 +210,7 @@ void Upper_State_Task(void *argument)
 
         else if (stake_flag == 6) {
             /***** 放置B区砝码 *****/
-            osDelay(800);
+            osDelay(500);
 
             HAL_GPIO_WritePin(electromagnet_01_GPIO_Port, electromagnet_01_Pin, GPIO_PIN_RESET); // 砝码下电
             HAL_GPIO_WritePin(electromagnet_02_GPIO_Port, electromagnet_02_Pin, GPIO_PIN_RESET); // 砝码下电
@@ -219,7 +219,7 @@ void Upper_State_Task(void *argument)
         }
 
         else if (stake_flag == 7) {
-            osDelay(600);
+            osDelay(800);
             KP = 20;
 
             Upper[0].gantry_t.position.x = 750.0;
@@ -231,7 +231,8 @@ void Upper_State_Task(void *argument)
         }
 
         else if (stake_flag == 8) {
-            KP = 40;
+            osDelay(300);
+            KP = 45;
             /***** 前往A区木桩 *****/
             Upper[index].gantry_t.position.y = 408.0;
             /***** 木桩位置 *****/
@@ -249,7 +250,7 @@ void Upper_State_Task(void *argument)
 
         else if (stake_flag == 9) {
             /***** 放下砝码 *****/
-            osDelay(800);
+            osDelay(600);
             //KP = 0;
             
             HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_RESET); // 砝码下电
@@ -259,7 +260,7 @@ void Upper_State_Task(void *argument)
         }
 
         else if (stake_flag == 10) {
-            osDelay(600);
+            osDelay(800);
             KP=20;
 
             if (index == 0) {

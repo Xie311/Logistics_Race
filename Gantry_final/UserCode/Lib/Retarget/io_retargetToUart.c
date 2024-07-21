@@ -3,9 +3,9 @@
 
 // 串口号配置
 // 注：仅 GCC 编译器支持 stderr 和 stdout 指定不同串口，ARMCC 编译器的 stderr 和 stdout 都使用 stdout_huart 输出。
-static UART_HandleTypeDef *stdout_huart = &huart4;
-static UART_HandleTypeDef *stderr_huart = &huart4;
-static UART_HandleTypeDef *stdin_huart  = &huart4;
+static UART_HandleTypeDef *stdout_huart = &huart5;
+static UART_HandleTypeDef *stderr_huart = &huart5;
+static UART_HandleTypeDef *stdin_huart  = &huart5;
 
 #ifdef IORETARGET_USE_RTOS
 #include "cmsis_os.h"

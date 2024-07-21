@@ -47,6 +47,7 @@ void Upper_Servo_Task(void *argument)
                              Upper[1].Motor_X->speedPID.output,
                              Upper[2].Motor_X->speedPID.output,
                              Upper[3].Motor_X->speedPID.output );
+                             
         CanTransmit_DJI_5678(&hcan1,
                              Upper[0].Motor_Y->speedPID.output,
                              Upper[1].Motor_Y->speedPID.output,
@@ -71,13 +72,19 @@ void Upper_Motor_init() // 电机初始化
 {
 
     Upper[0].Motor_X = &hDJI[0];
-    Upper[0].Motor_Y = &hDJI[1];
-    Upper[1].Motor_X = &hDJI[2];
-    Upper[1].Motor_Y = &hDJI[3];
+    Upper[1].Motor_X = &hDJI[1];
+    Upper[2].Motor_X = &hDJI[2];
+    Upper[3].Motor_X = &hDJI[3];
+    Upper[0].Motor_Y = &hDJI[4];
+    Upper[1].Motor_Y = &hDJI[5];
+
     hDJI[0].motorType  = M2006;
     hDJI[1].motorType  = M2006;
     hDJI[2].motorType  = M2006;
     hDJI[3].motorType  = M2006;
+    hDJI[4].motorType  = M2006;
+    hDJI[5].motorType  = M2006;
+    
     DJI_Init();
     for (int i = 0; i < 2;i++)
     {
@@ -94,6 +101,14 @@ void Upper_Motor_init() // 电机初始化
     Upper[1].Motor_X->speedPID.KP = 4.0;
     Upper[1].Motor_X->speedPID.KI = 0.4;
     Upper[1].Motor_X->speedPID.KD = 0.8;
+
+    Upper[2].Motor_X->speedPID.KP = 4.0;
+    Upper[2].Motor_X->speedPID.KI = 0.4;
+    Upper[2].Motor_X->speedPID.KD = 0.8;
+
+    Upper[3].Motor_X->speedPID.KP = 4.0;
+    Upper[3].Motor_X->speedPID.KI = 0.4;
+    Upper[3].Motor_X->speedPID.KD = 0.8;
 
     CANFilterInit(&hcan1);
 }

@@ -2,8 +2,8 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-06-11 23:39:00
- * @FilePath: \Gantry_board_02\UserCode\Lib\STP_23L_Decode\STP_Decode.c
+ * @LastEditTime: 2024-07-21 14:09:58
+ * @FilePath: \Gantry_final\UserCode\Lib\STP_23L_Decode\STP_Decode.c
  * @Brief: 
  * 
  * Copyright (c) 2024 by X311, All Rights Reserved. 
@@ -11,8 +11,8 @@
 
 #include "STP_Decode.h"
 
-uint8_t Rxbuffer[4][195];  //接收数据数组，共195位，含12组数据
-LidarPointTypedef LidarData[4][12];
+uint8_t Rxbuffer[5][195];  //接收数据数组，共195位，含12组数据
+LidarPointTypedef LidarData[5][12];
 float distance_aver[5];
 void STP_23L_Decode(uint16_t num)       //num:指明是第几个雷达，本代码框架中范围为0-3
 {
@@ -67,13 +67,12 @@ void Upper_Decode_Task(void)
 {
     osDelay(20);
     for (;;) {
-        for(int i=0;i<3;i++){
+        for(int i=0;i<5;i++){
             if(flag[i]){
                 STP_23L_Decode(i);
                 flag[i] = 0;
             }
         }
-
         osDelay(3);
     }
 }

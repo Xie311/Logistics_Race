@@ -26,7 +26,7 @@
 
 
 
-extern uint8_t Rxbuffer[4][195];
+extern uint8_t Rxbuffer[5][195];
 extern float distance_aver[5];
 
 typedef struct{
@@ -39,7 +39,7 @@ typedef struct{
 } LidarPointTypedef;                //获取的测量数据结构体
 
 /*定义接收到的雷达测试数据*/
-extern LidarPointTypedef LidarData[4][12];
+extern LidarPointTypedef LidarData[5][12];
 
 /*串口宏定义*/
 #define USART_RX_HANDLE &huart1
