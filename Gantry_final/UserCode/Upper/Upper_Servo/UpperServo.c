@@ -33,7 +33,7 @@ void Upper_Servo_Task(void *argument)
         speedServo(Upper[0].gantry_t.velocity.x, Upper[0].Motor_X);
         speedServo(Upper[1].gantry_t.velocity.x, Upper[1].Motor_X);
         speedServo(Upper[2].gantry_t.velocity.x, Upper[2].Motor_X);
-        speedServo(Upper[3].gantry_t.velocity.y, Upper[3].Motor_Y);
+        speedServo(Upper[3].gantry_t.velocity.x, Upper[3].Motor_X);
 
         speedServo(Upper[0].gantry_t.velocity.y, Upper[0].Motor_Y);
         speedServo(Upper[1].gantry_t.velocity.y, Upper[1].Motor_Y);

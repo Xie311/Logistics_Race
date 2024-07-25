@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-21 13:48:48
+ * @LastEditTime: 2024-07-25 01:48:05
  * @FilePath: \Gantry_final\UserCode\Upper\Callback\Gantry_callback.c
  * @Brief: 
  * 
@@ -17,7 +17,6 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
     if (huart->Instance == USART1) {
         flag[0] = 1;
         HAL_UART_Receive_IT(&huart1, Rxbuffer[0], sizeof(Rxbuffer[0]));
-        //printf("1\n");
     }
 
     if (huart->Instance == USART2) {

@@ -2,8 +2,8 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-13 14:40:31
- * @FilePath: \Gantry_board_02\UserCode\Upper\Upper_Start\UpperStart.c
+ * @LastEditTime: 2024-07-25 16:34:00
+ * @FilePath: \Gantry_final\UserCode\Upper\Upper_Start\UpperStart.c
  * @Brief: 
  * 
  * Copyright (c) 2024 by X311, All Rights Reserved. 
@@ -18,8 +18,8 @@
 void StartDefaultTask(void *argument)
 {
     // /*** 接受树莓派串口初始化 ***/
-    Upper_Target_Init();
-    Upper_Target_Decode();
+    // Upper_Target_Init();
+    // Upper_Target_Decode();
 
     /**** 测试代码 ****/
 //    weight_placement[0]=1;
