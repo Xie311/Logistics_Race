@@ -9,7 +9,7 @@
 #include "UpperServo.h"
 
 Upper_COMPONENT Upper[4]; // 龙门蝴蝶结四侧的数据
-float KP = 20;
+float KP = 40;
 /********线程相关部分*************/
 /**
  * @brief 伺服函数
@@ -104,11 +104,11 @@ void Upper_Motor_init() // 电机初始化
 
     Upper[2].Motor_X->speedPID.KP = 4.0;
     Upper[2].Motor_X->speedPID.KI = 0.4;
-    Upper[2].Motor_X->speedPID.KD = 0.8;
+    Upper[2].Motor_X->speedPID.KD = 0.4;
 
     Upper[3].Motor_X->speedPID.KP = 4.0;
     Upper[3].Motor_X->speedPID.KI = 0.4;
-    Upper[3].Motor_X->speedPID.KD = 0.8;
+    Upper[3].Motor_X->speedPID.KD = 0.4;
 
     CANFilterInit(&hcan1);
 }
