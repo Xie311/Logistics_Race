@@ -58,7 +58,8 @@ void StartDefaultTask(void *argument)
     Upper_StateMachine_TaskStart_03();
     Upper_StateMachine_TaskStart_04();
     Upper_Servo_TaskStart();
-    //Upper_Debug_TaskStart();
+    Upper_Debug_TaskStart();
+    //Upper_OLED_TaskStart();
 
     for (;;) {
         osDelay(800);

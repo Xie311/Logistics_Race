@@ -9,7 +9,7 @@
 #include "UpperServo.h"
 
 Upper_COMPONENT Upper[4]; // 龙门蝴蝶结四侧的数据
-float KP = 40;
+float KP = 30;
 /********线程相关部分*************/
 /**
  * @brief 伺服函数

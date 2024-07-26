@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-16 22:06:32
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-25 01:38:06
+ * @LastEditTime: 2024-07-26 19:21:44
  * @FilePath: \Gantry_final\UserCode\Upper\Upper_Debug\upper_debug.c
  * 
  */
@@ -36,10 +36,40 @@ void Upper_Debug_Task(void *argument)
         //        //   (int)stateflag[0], (int)stateflag[1], (int)stake_flag,
         //        //(int)weight_placement[0], (int)weight_placement[1], (int)weight_placement[2], (int)weight_placement[3], (int)weight_placement[4]);
         // );
-        
+
         // printf("%d,%d,%d,%d,%d,%d\n",
         //        receive_buffer[0],receive_buffer[22],receive_buffer[23],
         //        (int)weight_placement[0], (int)weight_placement[1], (int)weight_placement[2]);
         // osDelay(100);
+    }
+}
+
+/**
+ * @brief OLED线程开启
+ *
+ */
+void Upper_OLED_TaskStart(void)
+{
+    const osThreadAttr_t upper_oled_Task_attributes = {
+        .name       = "upper_oled_Task",
+        .stack_size = 128 * 10,
+        .priority   = (osPriority_t)osPriorityNormal,
+    };
+    osThreadNew(Upper_OLED_Task, NULL, &upper_oled_Task_attributes);
+}
+
+/**
+ * @brief   OLED线程
+ */
+void Upper_OLED_Task(void *argument)
+{
+    OLED_Init(); //屏幕初始化
+    OLED_Clear(); //先清屏
+    osDelay(100);
+    for (;;) {
+        OLED_ShowNum(5, 1, weight_placement[0], 2, 16);
+        OLED_ShowNum(5, 4, receive_buffer[0], 2, 16);
+        OLED_ShowNum(5, 7, receive_buffer[23], 2, 16);
+        
     }
 }

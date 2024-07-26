@@ -2,8 +2,8 @@
  * @Author: X311
  * @Date: 2024-05-14 00:50:30
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-11 17:18:14
- * @FilePath: \Gantry_board_02\UserCode\Lib\Target\target.c
+ * @LastEditTime: 2024-07-26 20:18:32
+ * @FilePath: \Gantry_final\UserCode\Lib\Target\target.c
  * @Brief: 
  * 
  * Copyright (c) 2024 by X311, All Rights Reserved. 
@@ -38,7 +38,7 @@ void Upper_Target_Decode()
         uint8_t data[20];
         float weight_state[5];
     } state;
-    osDelay(1000);
+    osDelay(2000);
 
     /*******接收砝码数据********/
     if (receive_buffer[0] == 0xFF){

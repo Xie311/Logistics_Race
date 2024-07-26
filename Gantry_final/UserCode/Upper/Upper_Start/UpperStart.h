@@ -30,6 +30,7 @@
 #include "USART_Init.h"
 #include "target.h"
 #include "upper_debug.h"
+#include "oled.h"
 extern int flag[6];
 extern uint8_t Uart_State;
 #endif // __UPPERSTART_H__
