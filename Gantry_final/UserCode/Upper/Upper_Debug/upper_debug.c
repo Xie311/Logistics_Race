@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-16 22:06:32
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-26 19:21:44
+ * @LastEditTime: 2024-07-27 01:34:38
  * @FilePath: \Gantry_final\UserCode\Upper\Upper_Debug\upper_debug.c
  * 
  */
@@ -29,13 +29,13 @@ void Upper_Debug_Task(void *argument)
 {
     osDelay(100);
     for (;;) {
-        // printf("%f,%f,%f,%f,%f,%d\n",
-        //        distance_aver[0], distance_aver[1], distance_aver[2], distance_aver[3], distance_aver[4], (int)stake_flag
-        //        //    Upper[0].Motor_X->speedPID.output, Upper[1].Motor_X->speedPID.output,
-        //        //    Upper[0].Motor_Y->speedPID.output, Upper[1].Motor_Y->speedPID.output,
-        //        //   (int)stateflag[0], (int)stateflag[1], (int)stake_flag,
-        //        //(int)weight_placement[0], (int)weight_placement[1], (int)weight_placement[2], (int)weight_placement[3], (int)weight_placement[4]);
-        // );
+        printf("%f,%f,%f,%f,%f,%d\n",
+               distance_aver[0], distance_aver[1], distance_aver[2], distance_aver[3], distance_aver[4], (int)stake_flag
+               //    Upper[0].Motor_X->speedPID.output, Upper[1].Motor_X->speedPID.output,
+               //    Upper[0].Motor_Y->speedPID.output, Upper[1].Motor_Y->speedPID.output,
+               //   (int)stateflag[0], (int)stateflag[1], (int)stake_flag,
+               //(int)weight_placement[0], (int)weight_placement[1], (int)weight_placement[2], (int)weight_placement[3], (int)weight_placement[4]);
+        );
 
         // printf("%d,%d,%d,%d,%d,%d\n",
         //        receive_buffer[0],receive_buffer[22],receive_buffer[23],
