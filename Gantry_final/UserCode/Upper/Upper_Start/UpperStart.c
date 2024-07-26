@@ -22,9 +22,11 @@ void StartDefaultTask(void *argument)
     Upper_Target_Decode();
 
     /**** 测试代码 ****/
-//    weight_placement[0]=1;
-//    weight_placement[1]=1;
-//    weight_placement[2]=1;
+   weight_placement[0]=0;
+   weight_placement[1]=1;
+   weight_placement[2]=0;
+   weight_placement[3]=1;
+   weight_placement[4]=1;
    
 
     /*串口使能*/

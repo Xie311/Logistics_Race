@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-27 01:47:44
+ * @LastEditTime: 2024-07-27 03:44:45
  * @FilePath: \Gantry_final\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
@@ -33,19 +33,19 @@ void Upper_State_Task(void *argument)
     for (;;){
         if(stake_flag == 0)
         {
-            KP = 30;
+            KP = 25;
             /***** 上电 定爪前进 *****/
              if (weight_placement[4] == 1) { // 砝码在内圈
                  Upper[index].gantry_t.position.y = 1980.0;
              } else { // 砝码在外圈
-                 Upper[index].gantry_t.position.y = 1605.0; // 1605.0;
+                 Upper[index].gantry_t.position.y = 1630.0; 
              }
 
             /***** 四个爪子前往砝码 *****/
             if (weight_placement[index] == 1) { // 砝码在内圈
                 Upper[index].gantry_t.position.x = 270.0;
             } else if (weight_placement[index] == 0) { // 砝码在外圈
-                Upper[index].gantry_t.position.x = 655.0;
+                Upper[index].gantry_t.position.x = 670.0;
             }
             /************************/
 
@@ -63,12 +63,12 @@ void Upper_State_Task(void *argument)
             osDelay(300);
             HAL_GPIO_WritePin(cylinder_05_GPIO_Port, cylinder_05_Pin, GPIO_PIN_RESET); // 气缸下落
             osDelay(400);
-            KP                               = 50;
+            KP                               = 40;
             /***** 定爪前进 *****/
              if (weight_placement[4] == 1) { // 砝码在内圈
-                 Upper[index].gantry_t.position.y = 2045.0;  //2041.5
+                 Upper[index].gantry_t.position.y = 2064.0;  //2041.5
              } else { // 砝码在外圈
-                 Upper[index].gantry_t.position.y = 1674.0; //1670
+                 Upper[index].gantry_t.position.y = 1678.0; //1670
              }
 
              if ((fabs(Upper[0].gantry_t.position.y - distance_aver[4]) < 3) && (fabs(Upper[1].gantry_t.position.y - distance_aver[4]) < 3)) {
@@ -86,13 +86,13 @@ void Upper_State_Task(void *argument)
 
         else if (stake_flag == 3) {
             /***** 预备动爪抓取砝码 *****/
-            KP                               = 30;
+            KP                               = 25;
             Upper[index].gantry_t.position.y = 2430.416748;
 
             if (weight_placement[index] == 1) { // 砝码在内圈
-                Upper[index].gantry_t.position.x = 270.0; 
+                Upper[index].gantry_t.position.x = 300.0; 
             } else { // 砝码在外圈
-                Upper[index].gantry_t.position.x = 655.0;  
+                Upper[index].gantry_t.position.x = 670.0;  
             }
 
             /********************************************************************************/
@@ -122,32 +122,32 @@ void Upper_State_Task(void *argument)
             osDelay(350);
             
             /***** 前往砝码 *****/
-            KP = 70;
+            KP = 66;
 
             /***** 砝码位置 *****/
             if (index == 0) {
                 if (weight_placement[index] == 1) { // 砝码在内圈
-                    Upper[index].gantry_t.position.x = 200.0;
+                    Upper[index].gantry_t.position.x = 198.0;
                 } else if (weight_placement[index] == 0) { // 砝码在外圈
-                    Upper[index].gantry_t.position.x = 566.0;
+                    Upper[index].gantry_t.position.x = 568.0;
                 }
             } else if(index == 1) {
                 if (weight_placement[index] == 1) { // 砝码在内圈
                     Upper[index].gantry_t.position.x = 200.0;
                 } else if (weight_placement[index] == 0) { // 砝码在外圈
-                    Upper[index].gantry_t.position.x = 567.0;
+                    Upper[index].gantry_t.position.x = 568.0;
                 }
             }else if(index == 2){
                 if (weight_placement[index] == 1) { // 砝码在内圈
-                    Upper[index].gantry_t.position.x = 205.0;
+                    Upper[index].gantry_t.position.x = 200.0;
                 } else if (weight_placement[index] == 0) { // 砝码在外圈
-                    Upper[index].gantry_t.position.x = 567.0; 
+                    Upper[index].gantry_t.position.x = 568.0; 
                 }
             }else if(index == 3){
                 if (weight_placement[index] == 1) { // 砝码在内圈
-                    Upper[index].gantry_t.position.x = 210.0;
+                    Upper[index].gantry_t.position.x = 202.0;
                 } else if (weight_placement[index] == 0) { // 砝码在外圈
-                    Upper[index].gantry_t.position.x = 566.0; 
+                    Upper[index].gantry_t.position.x = 565.0; 
                 }
             }
             /*******************************************************************/
@@ -163,7 +163,7 @@ void Upper_State_Task(void *argument)
                 HAL_GPIO_WritePin(cylinder_02_GPIO_Port, cylinder_02_Pin, GPIO_PIN_SET); // 气缸向上
                 HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET); // 气缸向上
                 HAL_GPIO_WritePin(cylinder_04_GPIO_Port, cylinder_04_Pin, GPIO_PIN_SET); // 气缸向上
-                osDelay(300);
+                osDelay(500);
 
                 stake_flag = 4;
             }
@@ -175,7 +175,7 @@ void Upper_State_Task(void *argument)
 
             Upper[0].gantry_t.position.x = 695.0;
             Upper[1].gantry_t.position.x = 688.0;
-            Upper[2].gantry_t.position.x = 694.0;
+            Upper[2].gantry_t.position.x = 697.0;
             Upper[3].gantry_t.position.x = 694.0;
 
             /***********************************************/
@@ -191,7 +191,7 @@ void Upper_State_Task(void *argument)
         else if (stake_flag == 5) {
             /***** 前往B区木桩 *****/
             KP                               = 30;
-            Upper[index].gantry_t.position.y = 2988.0;
+            Upper[index].gantry_t.position.y = 2976.0;
 
             if ((fabs(Upper[index].gantry_t.position.x - distance_aver[index]) < 3) && (fabs(Upper[0].gantry_t.position.y - distance_aver[4]) < 3) && (fabs(Upper[1].gantry_t.position.y - distance_aver[4]) < 3)) {
                 stateflag[index] = 5;
@@ -225,8 +225,8 @@ void Upper_State_Task(void *argument)
 
         else if (stake_flag == 8) {
             /***** 木桩位置 *****/
-            Upper[0].gantry_t.position.y = 2432.416748;
-            Upper[1].gantry_t.position.y = 2432.416748;
+            Upper[0].gantry_t.position.y = 2428.0;
+            Upper[1].gantry_t.position.y = 2428.0;
 
             osDelay(300);
             
@@ -244,12 +244,13 @@ void Upper_State_Task(void *argument)
 
         else if (stake_flag == 10) {
             /***** 前往A区木桩 *****/
-            Upper[0].gantry_t.position.y = 348.0;
-            Upper[1].gantry_t.position.y = 348.0;
+            KP = 20;
+            Upper[0].gantry_t.position.y = 340.0;
+            Upper[1].gantry_t.position.y = 340.0;
 
             /***** 木桩位置 *****/
-            Upper[2].gantry_t.position.x = 697.0;
-            Upper[3].gantry_t.position.x = 698.0;
+            Upper[2].gantry_t.position.x = 702.0;
+            Upper[3].gantry_t.position.x = 702.0;
             /*****************/
 
             if ((fabs(Upper[2].gantry_t.position.x - distance_aver[2]) < 3) && (fabs(Upper[3].gantry_t.position.x - distance_aver[3]) < 3) && (fabs(Upper[0].gantry_t.position.y - distance_aver[4]) < 3) && (fabs(Upper[1].gantry_t.position.y - distance_aver[4]) < 3)) {
