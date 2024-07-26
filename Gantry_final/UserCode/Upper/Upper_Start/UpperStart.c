@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-25 22:06:28
+ * @LastEditTime: 2024-07-26 15:49:41
  * @FilePath: \Gantry_final\UserCode\Upper\Upper_Start\UpperStart.c
  * @Brief: 
  * 
@@ -17,9 +17,9 @@
  */
 void StartDefaultTask(void *argument)
 {
-    // /*** 接受树莓派串口初始化 ***/
-    // Upper_Target_Init();
-    // Upper_Target_Decode();
+    /*** 接受树莓派串口初始化 ***/
+    Upper_Target_Init();
+    Upper_Target_Decode();
 
     /**** 测试代码 ****/
 //    weight_placement[0]=1;
@@ -58,7 +58,7 @@ void StartDefaultTask(void *argument)
     Upper_StateMachine_TaskStart_03();
     Upper_StateMachine_TaskStart_04();
     Upper_Servo_TaskStart();
-    Upper_Debug_TaskStart();
+    //Upper_Debug_TaskStart();
 
     for (;;) {
         osDelay(800);

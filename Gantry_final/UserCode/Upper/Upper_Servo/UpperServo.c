@@ -24,8 +24,8 @@ void Upper_Servo_Task(void *argument)
     for (;;) {
         Upper[0].gantry_t.velocity.x = -KP * (Upper[0].gantry_t.position.x - distance_aver[0]);
         Upper[1].gantry_t.velocity.x =  KP * (Upper[1].gantry_t.position.x - distance_aver[1]); 
-        Upper[2].gantry_t.velocity.x = -KP * (Upper[0].gantry_t.position.x - distance_aver[2]);
-        Upper[3].gantry_t.velocity.x =  KP * (Upper[1].gantry_t.position.x - distance_aver[3]); 
+        Upper[2].gantry_t.velocity.x = -KP * (Upper[2].gantry_t.position.x - distance_aver[2]);
+        Upper[3].gantry_t.velocity.x =  KP * (Upper[3].gantry_t.position.x - distance_aver[3]); 
 
         Upper[0].gantry_t.velocity.y =  KP * (Upper[0].gantry_t.position.y - distance_aver[4]);
         Upper[1].gantry_t.velocity.y = -KP * (Upper[1].gantry_t.position.y - distance_aver[4]);
