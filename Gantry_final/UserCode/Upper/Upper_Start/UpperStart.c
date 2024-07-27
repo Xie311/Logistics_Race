@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-27 01:36:01
+ * @LastEditTime: 2024-07-28 01:18:48
  * @FilePath: \Gantry_final\UserCode\Upper\Upper_Start\UpperStart.c
  * @Brief: 
  * 
@@ -19,15 +19,15 @@ void StartDefaultTask(void *argument)
 {
     /*** 接受树莓派串口初始化 ***/
     Upper_Target_Init();
-    Upper_Target_Decode();
+    //Upper_Target_Decode();
+    Target_Decode();
 
     /**** 测试代码 ****/
-   weight_placement[0]=0;
-   weight_placement[1]=1;
-   weight_placement[2]=0;
-   weight_placement[3]=1;
-   weight_placement[4]=1;
-   
+    //    weight_placement[0]=0;
+    //    weight_placement[1]=1;
+    //    weight_placement[2]=0;
+    //    weight_placement[3]=1;
+    //    weight_placement[4]=1;
 
     /*串口使能*/
     Gantry_usart_init();
@@ -60,8 +60,8 @@ void StartDefaultTask(void *argument)
     Upper_StateMachine_TaskStart_03();
     Upper_StateMachine_TaskStart_04();
     Upper_Servo_TaskStart();
-    Upper_Debug_TaskStart();
-    //Upper_OLED_TaskStart();
+    //Upper_Debug_TaskStart();
+    Upper_OLED_TaskStart();
 
     for (;;) {
         osDelay(800);

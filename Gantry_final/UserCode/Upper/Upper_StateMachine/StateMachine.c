@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-27 03:44:45
+ * @LastEditTime: 2024-07-27 19:44:58
  * @FilePath: \Gantry_final\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
@@ -273,6 +273,8 @@ void Upper_State_Task(void *argument)
 
             Upper[2].gantry_t.position.x = 735.0;
             Upper[3].gantry_t.position.x = 735.0;
+
+            KP = 0;
             // if ((fabs(Upper[2].gantry_t.position.x - distance_aver[2]) < 3) && (fabs(Upper[3].gantry_t.position.x - distance_aver[3]) < 3) && (fabs(Upper[0].gantry_t.position.y - distance_aver[4]) < 3) && (fabs(Upper[1].gantry_t.position.y - distance_aver[4]) < 3)) {
             //     stake_flag = 13;
             // }

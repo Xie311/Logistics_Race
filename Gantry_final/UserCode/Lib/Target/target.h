@@ -16,6 +16,8 @@ void Upper_Target_Init();
 void Upper_Target_Decode();
 void Target_Decode_TaskStart();
 void Target_Decode_Task();
+
+void Target_Decode();
 /************************ 用户定义 ***************************/
 #define Tar_UART_HANDLE huart5 // 串口选项
 #define Tar_UART        UART5  // 串口选项
