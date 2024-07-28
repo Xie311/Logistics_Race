@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-28 01:18:48
+ * @LastEditTime: 2024-07-28 04:03:38
  * @FilePath: \Gantry_final\UserCode\Upper\Upper_Start\UpperStart.c
  * @Brief: 
  * 
@@ -17,10 +17,14 @@
  */
 void StartDefaultTask(void *argument)
 {
+    Gantry_usart_init();
+    Upper_Decode_TaskStart();
+
     /*** 接受树莓派串口初始化 ***/
     Upper_Target_Init();
     //Upper_Target_Decode();
-    Target_Decode();
+    Target_Decode_TaskStart();
+    //Target_Decode();
 
     /**** 测试代码 ****/
     //    weight_placement[0]=0;
@@ -30,7 +34,7 @@ void StartDefaultTask(void *argument)
     //    weight_placement[4]=1;
 
     /*串口使能*/
-    Gantry_usart_init();
+
 
     /*初始化函数*/
     Upper_StateMachine_Init_01();
@@ -50,11 +54,12 @@ void StartDefaultTask(void *argument)
     HAL_GPIO_WritePin(electromagnet_04_GPIO_Port, electromagnet_04_Pin, GPIO_PIN_SET);
     HAL_GPIO_WritePin(electromagnet_05_GPIO_Port, electromagnet_05_Pin, GPIO_PIN_SET);
 
-    osDelay(500);
+    //Upper_Decode_TaskStart();
+    osDelay(1500);
     Upper_Motor_init();
 
     /*开启线程*/
-    Upper_Decode_TaskStart();
+    //Upper_Decode_TaskStart();
     Upper_StateMachine_TaskStart_01();
     Upper_StateMachine_TaskStart_02();
     Upper_StateMachine_TaskStart_03();
