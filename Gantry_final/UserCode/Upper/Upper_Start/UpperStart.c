@@ -42,7 +42,7 @@ void StartDefaultTask(void *argument)
     Upper_StateMachine_Init_03();
     Upper_StateMachine_Init_04();
 
-    osDelay(2000);
+    osDelay(2100);
 
     HAL_GPIO_WritePin(cylinder_01_GPIO_Port, cylinder_01_Pin, GPIO_PIN_SET);       // SET气缸抬升
     HAL_GPIO_WritePin(cylinder_02_GPIO_Port, cylinder_02_Pin, GPIO_PIN_SET);       // SET气缸抬升
@@ -57,7 +57,7 @@ void StartDefaultTask(void *argument)
     HAL_GPIO_WritePin(electromagnet_05_GPIO_Port, electromagnet_05_Pin, GPIO_PIN_SET);
 
     //Upper_Decode_TaskStart();
-    osDelay(500);
+    osDelay(400);
     Upper_Motor_init();
 
     /*开启线程*/

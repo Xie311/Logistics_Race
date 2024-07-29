@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-29 09:32:35
+ * @LastEditTime: 2024-07-29 11:20:39
  * @FilePath: \Gantry_final\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
@@ -86,11 +86,11 @@ void Upper_State_Task(void *argument)
 
         else if (stake_flag == 1) {
             /***** 中央砝码夹取 *****/
-            //osDelay(200);
+            osDelay(200);
             HAL_GPIO_WritePin(cylinder_05_GPIO_Port, cylinder_05_Pin, GPIO_PIN_RESET); // 气缸下落
             osDelay(450);
-            //float start_tick_05 = xTaskGetTickCount();
-            KP = 40;
+
+            KP = 55;
             /***** 定爪前进 *****/
             if (weight_placement[4] == 1) { // 砝码在内圈
                  Upper[index].gantry_t.position.y = 2074.0;  //2041.5
@@ -107,8 +107,8 @@ void Upper_State_Task(void *argument)
 
              float pro_tick_05 = cur_tick_05 - start_tick_05;
 
-             //if (((fabs(Upper[0].gantry_t.position.y - distance_aver[4]) < 3) && (fabs(Upper[1].gantry_t.position.y - distance_aver[4]) < 3))||(pro_tick_05>=delay_tick)) {
-            if (pro_tick_05 >= delay_tick) {
+            if (((fabs(Upper[0].gantry_t.position.y - distance_aver[4]) < 3) && (fabs(Upper[1].gantry_t.position.y - distance_aver[4]) < 3))||(pro_tick_05>=3000)) {
+            //if (pro_tick_05 >= delay_tick) {
                  stake_flag = 2;
              }
         }
@@ -203,7 +203,7 @@ void Upper_State_Task(void *argument)
 
                 float pro_tick_01 = cur_tick_01 - start_tick_01;
 
-                if(pro_tick_01>=2500){
+                if(pro_tick_01>=3000){
                     stateflag[0] = 3;
                 }
             }
@@ -217,7 +217,7 @@ void Upper_State_Task(void *argument)
 
                 float pro_tick_02 = cur_tick_02 - start_tick_02;
 
-                if (pro_tick_02 >= 2500) {
+                if (pro_tick_02 >= 3000) {
                     stateflag[1] = 3;
                 }
             }
@@ -231,7 +231,7 @@ void Upper_State_Task(void *argument)
 
                 float pro_tick_03 = cur_tick_03 - start_tick_03;
 
-                if (pro_tick_03 >= 2500) {
+                if (pro_tick_03 >= 3000) {
                     stateflag[2] = 3;
                 }
             }
@@ -245,11 +245,11 @@ void Upper_State_Task(void *argument)
 
                 float pro_tick_04 = cur_tick_04 - start_tick_04;
 
-                if (pro_tick_04 >= 2500) {
+                if (pro_tick_04 >= 3000) {
                     stateflag[3] = 3;
                 }
             }
-            /***************************/
+            /**********************************************************/
 
             // if (tick_flag[index] == 0) {
             //     start_tick[index] = xTaskGetTickCount();
@@ -318,7 +318,7 @@ void Upper_State_Task(void *argument)
         else if (stake_flag == 7) {
             osDelay(600);
 
-            Upper[0].gantry_t.position.x = 760;
+            Upper[0].gantry_t.position.x = 760.0;
             Upper[1].gantry_t.position.x = 760.0;
 
             if ((fabs(Upper[0].gantry_t.position.x - distance_aver[0]) < 3) && (fabs(Upper[1].gantry_t.position.x - distance_aver[1]) < 3)) {
