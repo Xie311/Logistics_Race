@@ -32,6 +32,7 @@ void Upper_Target_Init()
     HAL_UART_Receive_IT(&huart5, receive_buffer, sizeof(receive_buffer));
 }
 
+//单次接收
 void Upper_Target_Decode()
 {
     static union {

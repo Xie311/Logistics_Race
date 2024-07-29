@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-28 04:03:38
+ * @LastEditTime: 2024-07-28 22:40:42
  * @FilePath: \Gantry_final\UserCode\Upper\Upper_Start\UpperStart.c
  * @Brief: 
  * 
@@ -17,23 +17,23 @@
  */
 void StartDefaultTask(void *argument)
 {
+    /*** 接收雷达数据 ***/
     Gantry_usart_init();
     Upper_Decode_TaskStart();
 
-    /*** 接受树莓派串口初始化 ***/
+    /*** 接受树莓派数据 ***/
     Upper_Target_Init();
-    //Upper_Target_Decode();
-    Target_Decode_TaskStart();
+    //Upper_Target_Decode();      // 单次接收
+    Target_Decode_TaskStart();    // 接收线程开启
+
     //Target_Decode();
 
     /**** 测试代码 ****/
-    //    weight_placement[0]=0;
+    weight_placement[0]=1;
     //    weight_placement[1]=1;
     //    weight_placement[2]=0;
     //    weight_placement[3]=1;
     //    weight_placement[4]=1;
-
-    /*串口使能*/
 
 
     /*初始化函数*/
@@ -41,6 +41,8 @@ void StartDefaultTask(void *argument)
     Upper_StateMachine_Init_02();
     Upper_StateMachine_Init_03();
     Upper_StateMachine_Init_04();
+
+    osDelay(2000);
 
     HAL_GPIO_WritePin(cylinder_01_GPIO_Port, cylinder_01_Pin, GPIO_PIN_SET);       // SET气缸抬升
     HAL_GPIO_WritePin(cylinder_02_GPIO_Port, cylinder_02_Pin, GPIO_PIN_SET);       // SET气缸抬升
@@ -55,7 +57,7 @@ void StartDefaultTask(void *argument)
     HAL_GPIO_WritePin(electromagnet_05_GPIO_Port, electromagnet_05_Pin, GPIO_PIN_SET);
 
     //Upper_Decode_TaskStart();
-    osDelay(1500);
+    osDelay(500);
     Upper_Motor_init();
 
     /*开启线程*/

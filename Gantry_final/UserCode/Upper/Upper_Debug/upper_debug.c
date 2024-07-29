@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-16 22:06:32
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-28 01:02:52
+ * @LastEditTime: 2024-07-28 16:50:09
  * @FilePath: \Gantry_final\UserCode\Upper\Upper_Debug\upper_debug.c
  * 
  */
@@ -67,15 +67,15 @@ void Upper_OLED_Task(void *argument)
     OLED_Clear(); //先清屏
     osDelay(100);
     for (;;) {
-        OLED_ShowNum(5, 1, weight_placement[0], 2, 16);
-        OLED_ShowNum(25, 1, weight_placement[1], 2, 16);
-        OLED_ShowNum(45, 1, weight_placement[2], 2, 16);
-        OLED_ShowNum(65, 1, weight_placement[3], 2, 16);
-        OLED_ShowNum(85, 1, weight_placement[4], 2, 16);
+        OLED_ShowNum(5, 1, distance_aver[0], 10, 14);
+        // OLED_ShowNum(25, 1, distance_aver[1], 2, 16);
+        // OLED_ShowNum(45, 1, distance_aver[2], 2, 16);
+        // OLED_ShowNum(65, 1, distance_aver[3], 2, 16);
+        // OLED_ShowNum(85, 1, distance_aver[4], 2, 16);
 
-        OLED_ShowNum(5, 4, (int)Uart_State , 5, 16);
+       // OLED_ShowNum(5, 4, (int)Uart_State , 5, 16);
         //OLED_ShowNum(80,4, (int)receive_buffer[23], 5, 16);
 
-        osDelay(100);
+        osDelay(20);
     }
 }
