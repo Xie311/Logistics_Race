@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-16 22:06:32
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-28 16:50:09
+ * @LastEditTime: 2024-07-31 08:03:10
  * @FilePath: \Gantry_final\UserCode\Upper\Upper_Debug\upper_debug.c
  * 
  */
@@ -67,7 +67,7 @@ void Upper_OLED_Task(void *argument)
     OLED_Clear(); //先清屏
     osDelay(100);
     for (;;) {
-        OLED_ShowNum(5, 1, distance_aver[0], 10, 14);
+        OLED_ShowNum(5, 1, distance_aver[3], 10, 14);
         // OLED_ShowNum(25, 1, distance_aver[1], 2, 16);
         // OLED_ShowNum(45, 1, distance_aver[2], 2, 16);
         // OLED_ShowNum(65, 1, distance_aver[3], 2, 16);
@@ -77,5 +77,74 @@ void Upper_OLED_Task(void *argument)
         //OLED_ShowNum(80,4, (int)receive_buffer[23], 5, 16);
 
         osDelay(20);
+    }
+}
+
+/**
+ * @brief 复位线程开启
+ *
+ */
+void Upper_Reset_TaskStart(void)
+{
+    const osThreadAttr_t upper_reset_Task_attributes = {
+        .name       = "upper_reset_Task",
+        .stack_size = 128 * 10,
+        .priority   = (osPriority_t)osPriorityNormal,
+    };
+    osThreadNew(Upper_Reset_Task, NULL, &upper_reset_Task_attributes);
+}
+
+/**
+ * @brief   复位线程
+ */
+void Upper_Reset_Task(void *argument)
+{
+    osDelay(100);
+    for (;;) {
+        //uint16_t reset_flag = HAL_GPIO_ReadPin(Reset_GPIO_Port,Reset_Pin);
+        uint16_t reset_flag_01 = HAL_GPIO_ReadPin(Reset_01_GPIO_Port,Reset_01_Pin);
+        uint16_t reset_flag_02 = HAL_GPIO_ReadPin(Reset_02_GPIO_Port,Reset_01_Pin);
+        uint16_t reset_flag_03 = HAL_GPIO_ReadPin(Reset_03_GPIO_Port,Reset_01_Pin);
+
+        if ((reset_flag_01 == 1) && (reset_flag_02 == 1) && (reset_flag_03 == 1) ) {
+            reset_flag_01   = 0;
+            reset_flag_02   = 0;
+            reset_flag_03   = 0;
+
+            stateflag[0] = 100;
+            stateflag[1] = 100;
+            stateflag[2] = 100;
+            stateflag[3] = 100;
+            stateflag[4] = 100;
+
+            stake_flag = 100;
+
+            HAL_GPIO_WritePin(electromagnet_01_GPIO_Port, electromagnet_01_Pin, GPIO_PIN_RESET); // 砝码下电
+            HAL_GPIO_WritePin(electromagnet_02_GPIO_Port, electromagnet_02_Pin, GPIO_PIN_RESET); // 砝码下电
+            HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_RESET); // 砝码下电
+            HAL_GPIO_WritePin(electromagnet_04_GPIO_Port, electromagnet_04_Pin, GPIO_PIN_RESET); // 砝码下电
+            HAL_GPIO_WritePin(electromagnet_05_GPIO_Port, electromagnet_05_Pin, GPIO_PIN_RESET); // 砝码下电
+
+            osDelay(200);
+
+            HAL_GPIO_WritePin(cylinder_01_GPIO_Port, cylinder_01_Pin, GPIO_PIN_SET); // 气缸向上
+            HAL_GPIO_WritePin(cylinder_02_GPIO_Port, cylinder_02_Pin, GPIO_PIN_SET); // 气缸向上
+            HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET); // 气缸向上
+            HAL_GPIO_WritePin(cylinder_04_GPIO_Port, cylinder_04_Pin, GPIO_PIN_SET); // 气缸向上
+            HAL_GPIO_WritePin(cylinder_05_GPIO_Port, cylinder_05_Pin, GPIO_PIN_SET); // 气缸向上
+
+            osDelay(300);
+
+            KP  = 30;
+
+            Upper[0].gantry_t.position.y = 1227.0;
+            Upper[1].gantry_t.position.y = 1227.0;
+
+            Upper[0].gantry_t.position.x = 700.0;
+            Upper[1].gantry_t.position.x = 700.0;
+            Upper[2].gantry_t.position.x = 700.0;
+            Upper[3].gantry_t.position.x = 700.0;
+        }
+        osDelay(10);
     }
 }

@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-28 22:40:42
+ * @LastEditTime: 2024-07-31 08:01:20
  * @FilePath: \Gantry_final\UserCode\Upper\Upper_Start\UpperStart.c
  * @Brief: 
  * 
@@ -29,7 +29,7 @@ void StartDefaultTask(void *argument)
     //Target_Decode();
 
     /**** 测试代码 ****/
-    weight_placement[0]=1;
+    //weight_placement[0]=1;
     //    weight_placement[1]=1;
     //    weight_placement[2]=0;
     //    weight_placement[3]=1;
@@ -42,7 +42,7 @@ void StartDefaultTask(void *argument)
     Upper_StateMachine_Init_03();
     Upper_StateMachine_Init_04();
 
-    osDelay(2100);
+    osDelay(2000);
 
     HAL_GPIO_WritePin(cylinder_01_GPIO_Port, cylinder_01_Pin, GPIO_PIN_SET);       // SET气缸抬升
     HAL_GPIO_WritePin(cylinder_02_GPIO_Port, cylinder_02_Pin, GPIO_PIN_SET);       // SET气缸抬升
@@ -57,7 +57,7 @@ void StartDefaultTask(void *argument)
     HAL_GPIO_WritePin(electromagnet_05_GPIO_Port, electromagnet_05_Pin, GPIO_PIN_SET);
 
     //Upper_Decode_TaskStart();
-    osDelay(400);
+    osDelay(500);
     Upper_Motor_init();
 
     /*开启线程*/
@@ -68,7 +68,9 @@ void StartDefaultTask(void *argument)
     Upper_StateMachine_TaskStart_04();
     Upper_Servo_TaskStart();
     //Upper_Debug_TaskStart();
-    Upper_OLED_TaskStart();
+    //Upper_OLED_TaskStart();
+
+    Upper_Reset_TaskStart();
 
     for (;;) {
         osDelay(800);
