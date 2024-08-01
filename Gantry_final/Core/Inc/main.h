@@ -77,6 +77,8 @@ void Error_Handler(void);
 #define cylinder_04_GPIO_Port GPIOD
 #define electromagnet_04_Pin GPIO_PIN_15
 #define electromagnet_04_GPIO_Port GPIOD
+#define Gantry_reset_Pin GPIO_PIN_1
+#define Gantry_reset_GPIO_Port GPIOE
 
 /* USER CODE BEGIN Private defines */
 
