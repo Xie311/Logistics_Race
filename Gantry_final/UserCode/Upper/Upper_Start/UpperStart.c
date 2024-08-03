@@ -19,13 +19,12 @@ void StartDefaultTask(void *argument)
 {
     /*** 接收雷达数据 ***/
     Gantry_usart_init();
-    Upper_Decode_TaskStart();
+    Upper_Decode_TaskStart();  //在最前面开启decode线程，尽量避免雷达传零导致疯跑
 
     /*** 接受树莓派数据 ***/
     Upper_Target_Init();
     //Upper_Target_Decode();      // 单次接收
     Target_Decode_TaskStart();    // 接收线程开启
-
     //Target_Decode();
 
     /**** 测试代码 ****/
@@ -56,7 +55,6 @@ void StartDefaultTask(void *argument)
     HAL_GPIO_WritePin(electromagnet_04_GPIO_Port, electromagnet_04_Pin, GPIO_PIN_SET);
     HAL_GPIO_WritePin(electromagnet_05_GPIO_Port, electromagnet_05_Pin, GPIO_PIN_SET);
 
-    //Upper_Decode_TaskStart();
     osDelay(500);
     Upper_Motor_init();
 
@@ -67,8 +65,9 @@ void StartDefaultTask(void *argument)
     Upper_StateMachine_TaskStart_03();
     Upper_StateMachine_TaskStart_04();
     Upper_Servo_TaskStart();
-    //Upper_Debug_TaskStart();
-    //Upper_OLED_TaskStart();
+
+    /*** 如果要用OLED调试，先注释servo线程的cantransmit，然后开启此线程，在Upper_debug文件中的oled显示函数里加上想要显示的数据 ***/
+    // Upper_OLED_TaskStart();
 
     Upper_Reset_TaskStart();
 

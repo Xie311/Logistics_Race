@@ -4,7 +4,7 @@
  * @LastEditors: X311 
  * @LastEditTime: 2024-07-25 01:48:05
  * @FilePath: \Gantry_final\UserCode\Upper\Callback\Gantry_callback.c
- * @Brief: 
+ * @note: 串口1、2、3、4分别接收x轴四组斜区距离数据；串口5接收上位机发送的砝码位置数组；串口6接收y轴距离数据
  * 
  * Copyright (c) 2024 by X311, All Rights Reserved. 
  */

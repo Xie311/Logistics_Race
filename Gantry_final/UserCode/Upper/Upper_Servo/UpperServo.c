@@ -38,6 +38,7 @@ void Upper_Servo_Task(void *argument)
         speedServo(Upper[0].gantry_t.velocity.y, Upper[0].Motor_Y);
         speedServo(Upper[1].gantry_t.velocity.y, Upper[1].Motor_Y);
 
+        /*** 如果加入这句，若有雷达传零整个架子线程卡死，运动停止（但不会疯跑了）（不建议加）**/
         // if ((distance_aver[0] == 0) || (distance_aver[1] == 0) || (distance_aver[2] == 0) || (distance_aver[3] == 0)||(distance_aver[4] == 0)) {
         //     StartDefaultTask();
         // }

@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-07-30 17:03:37
+ * @LastEditTime: 2024-08-03 20:09:23
  * @FilePath: \Gantry_final\UserCode\Upper\Upper_StateMachine\StateMachine.c
  * @Brief: 
  * 
@@ -91,7 +91,7 @@ void Upper_State_Task(void *argument)
             osDelay(400);
 
             KP = 68;
-            /***** 定爪前进 *****/
+            /***** 定爪前进（参数给的要比实际更前一点点，因为爪子能推着砝码往前走，有超时保护不用担心走不动了卡着不动） *****/
             if (weight_placement[4] == 1) { // 砝码在内圈
                  Upper[index].gantry_t.position.y = 2074.0;  //2041.5
              } else { // 砝码在外圈
@@ -107,6 +107,7 @@ void Upper_State_Task(void *argument)
 
             float pro_tick_05 = cur_tick_05 - start_tick_05;
 
+            /******* 当机构到达预设位置或爪子落下后的时间大于2500ms（可能出现吸上砝码后负载大走不动）爪子上升 *******/
             if (((fabs(Upper[0].gantry_t.position.y - distance_aver[4]) < 3) && (fabs(Upper[1].gantry_t.position.y - distance_aver[4]) < 3))||(pro_tick_05>=2500)) {
             //if (pro_tick_05 >= delay_tick) {
                  stake_flag = 2;
@@ -114,7 +115,7 @@ void Upper_State_Task(void *argument)
         }
 
         else if(stake_flag == 2){
-            /****** 定爪上升 ******/
+            /****** 定爪上升（改成步进电机驱动！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！视情况调整延时！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！ ！！！！！） ******/
             osDelay(650);
             HAL_GPIO_WritePin(cylinder_05_GPIO_Port, cylinder_05_Pin, GPIO_PIN_SET); // 气缸向上
             osDelay(400);
@@ -161,7 +162,7 @@ void Upper_State_Task(void *argument)
             /***** 前往砝码 *****/
             KP = 68;
 
-            /***** 砝码位置 *****/
+            /***** 砝码位置（参数给的要比实际更前一点点，因为爪子能推着砝码往前走，有超时保护不用担心走不动了卡着不动） *****/
             if (index == 0) {
                 if (weight_placement[index] == 1) { // 砝码在内圈
                     Upper[index].gantry_t.position.x = 200.0;
@@ -193,7 +194,7 @@ void Upper_State_Task(void *argument)
                      stateflag[index] = 3;
             }
 
-            /******** 延时保护，防止卡死 ********/
+            /******** 超时保护，防止卡死 ********/
             if(index==0){
                 if (tick_flag_01 == 0) {
                     start_tick_01 = xTaskGetTickCount();
@@ -367,7 +368,8 @@ void Upper_State_Task(void *argument)
 
             HAL_GPIO_WritePin(electromagnet_03_GPIO_Port, electromagnet_03_Pin, GPIO_PIN_RESET); // 砝码下电
             HAL_GPIO_WritePin(electromagnet_04_GPIO_Port, electromagnet_04_Pin, GPIO_PIN_RESET); // 砝码下电
-
+            
+            /***** 此刻比赛完成，停止计时  后续动作只是为了避免靠爪子扶住砝码的嫌疑 *****/
             stake_flag = 12;
         }
 
