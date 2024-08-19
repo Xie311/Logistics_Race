@@ -9,7 +9,7 @@
 #include "UpperServo.h"
 
 Upper_COMPONENT Upper[4]; // 龙门蝴蝶结四侧的数据
-float KP = 30;
+float KP = 8;  //30
 /********线程相关部分*************/
 /**
  * @brief 伺服函数
@@ -27,8 +27,8 @@ void Upper_Servo_Task(void *argument)
         Upper[2].gantry_t.velocity.x = -KP * (Upper[2].gantry_t.position.x - distance_aver[2]);
         Upper[3].gantry_t.velocity.x =  KP * (Upper[3].gantry_t.position.x - distance_aver[3]); 
 
-        Upper[0].gantry_t.velocity.y =  KP * (Upper[0].gantry_t.position.y - distance_aver[4]);
-        Upper[1].gantry_t.velocity.y = -KP * (Upper[1].gantry_t.position.y - distance_aver[4]);
+        Upper[0].gantry_t.velocity.y =  -KP * (Upper[0].gantry_t.position.y - distance_aver[4]);
+        Upper[1].gantry_t.velocity.y = KP * (Upper[1].gantry_t.position.y - distance_aver[4]);
 
         speedServo(Upper[0].gantry_t.velocity.x, Upper[0].Motor_X);
         speedServo(Upper[1].gantry_t.velocity.x, Upper[1].Motor_X);
@@ -43,18 +43,21 @@ void Upper_Servo_Task(void *argument)
         //     StartDefaultTask();
         // }
 
-        CanTransmit_DJI_1234(&hcan1,
-                             Upper[0].Motor_X->speedPID.output,
-                             Upper[1].Motor_X->speedPID.output,
-                             Upper[2].Motor_X->speedPID.output,
-                             Upper[3].Motor_X->speedPID.output );
-                             
-        CanTransmit_DJI_5678(&hcan1,
-                             Upper[0].Motor_Y->speedPID.output,
-                             Upper[1].Motor_Y->speedPID.output,
-                             Upper[0].Motor_Y->speedPID.output,
-                             Upper[1].Motor_Y->speedPID.output);
-        osDelay(3);
+        // CanTransmit_DJI_1234(&hcan1,
+        //                      Upper[0].Motor_X->speedPID.output,
+        //                      Upper[1].Motor_X->speedPID.output,
+        //                      Upper[2].Motor_X->speedPID.output,
+        //                      Upper[3].Motor_X->speedPID.output );
+
+
+        // CanTransmit_DJI_5678(&hcan1,
+        //                 Upper[0].Motor_Y->speedPID.output,
+        //                 Upper[1].Motor_Y->speedPID.output,
+        //                 Upper[0].Motor_Y->speedPID.output,
+        //                 Upper[1].Motor_Y->speedPID.output);
+
+
+        osDelay(4);
     }
 }
 
@@ -91,7 +94,7 @@ void Upper_Motor_init() // 电机初始化
     {
         Upper[i].Motor_Y->speedPID.KP = 4.0;
         Upper[i].Motor_Y->speedPID.KI = 0.4;
-        Upper[i].Motor_Y->speedPID.KD = 0.2; // 1.2;
+        Upper[i].Motor_Y->speedPID.KD = 0.4; // 1.2;
     }
 
     // speed_PID

@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-08-03 21:15:27
+ * @LastEditTime: 2024-08-19 20:23:04
  * @FilePath: \Gantry_final\UserCode\Upper\Upper_Start\UpperStart.c
  * @Brief: 
  * 
@@ -22,10 +22,8 @@ void StartDefaultTask(void *argument)
     Upper_Decode_TaskStart();  //在最前面开启decode线程，尽量避免雷达传零导致疯跑
 
     /*** 接受树莓派数据 ***/
-    Upper_Target_Init();
-    //Upper_Target_Decode();      // 单次接收
-    Target_Decode_TaskStart();    // 接收线程开启
-    //Target_Decode();
+    // Upper_Target_Init();
+    // Target_Decode_TaskStart();    // 接收线程开启
 
     /**** 测试代码 ****/
     //weight_placement[0]=1;
@@ -41,14 +39,13 @@ void StartDefaultTask(void *argument)
     Upper_StateMachine_Init_03();
     Upper_StateMachine_Init_04();
 
-    HAL_GPIO_WritePin(cylinder_05_GPIO_Port, cylinder_05_Pin, GPIO_PIN_SET); // SET气缸抬升//要改！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
-
-    osDelay(2000);
+    osDelay(200);
 
     HAL_GPIO_WritePin(cylinder_01_GPIO_Port, cylinder_01_Pin, GPIO_PIN_SET);       // SET气缸抬升
     HAL_GPIO_WritePin(cylinder_02_GPIO_Port, cylinder_02_Pin, GPIO_PIN_SET);       // SET气缸抬升
     HAL_GPIO_WritePin(cylinder_03_GPIO_Port, cylinder_03_Pin, GPIO_PIN_SET);       // SET气缸抬升
     HAL_GPIO_WritePin(cylinder_04_GPIO_Port, cylinder_04_Pin, GPIO_PIN_SET);       // SET气缸抬升
+    HAL_GPIO_WritePin(cylinder_05_GPIO_Port, cylinder_05_Pin, GPIO_PIN_SET);       // SET气缸抬升
 
 
     HAL_GPIO_WritePin(electromagnet_01_GPIO_Port, electromagnet_01_Pin, GPIO_PIN_SET);
@@ -57,11 +54,11 @@ void StartDefaultTask(void *argument)
     HAL_GPIO_WritePin(electromagnet_04_GPIO_Port, electromagnet_04_Pin, GPIO_PIN_SET);
     HAL_GPIO_WritePin(electromagnet_05_GPIO_Port, electromagnet_05_Pin, GPIO_PIN_SET);
 
-    osDelay(500);
+    osDelay(2000);
     Upper_Motor_init();
+    
 
     /*开启线程*/
-    //Upper_Decode_TaskStart();
     Upper_StateMachine_TaskStart_01();
     Upper_StateMachine_TaskStart_02();
     Upper_StateMachine_TaskStart_03();
@@ -69,9 +66,11 @@ void StartDefaultTask(void *argument)
     Upper_Servo_TaskStart();
 
     /*** 如果要用OLED调试，先注释servo线程的cantransmit，然后开启此线程，在Upper_debug文件中的oled显示函数里加上想要显示的数据 ***/
-    // Upper_OLED_TaskStart();
+    //Upper_OLED_TaskStart();
 
-    Upper_Reset_TaskStart();
+    //Upper_Debug_TaskStart();
+
+    // Upper_Reset_TaskStart();
 
     for (;;) {
         osDelay(800);

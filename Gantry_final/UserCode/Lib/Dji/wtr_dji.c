@@ -7,10 +7,10 @@ DJI_t hDJI[8];
 void DJI_Init()
 {
     for (int i = 0; i < 8; i++) {
-        hDJI[i].speedPID.KP        = 12;
+        hDJI[i].speedPID.KP        = 4;
         hDJI[i].speedPID.KI        = 0.2;
         hDJI[i].speedPID.KD        = 5;
-        hDJI[i].speedPID.outputMax = 9000;
+        hDJI[i].speedPID.outputMax = 5000;
 
         hDJI[i].posPID.KP        = 80.0f;
         hDJI[i].posPID.KI        = 1.0f;

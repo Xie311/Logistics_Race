@@ -31,6 +31,9 @@
 #include "target.h"
 #include "upper_debug.h"
 #include "oled.h"
+#include "Stepper_motors.h"
+#include "BSP_Delay.h"
+extern uint16_t stepper_flag;
 extern int flag[6];
 extern uint8_t Uart_State;
 #endif // __UPPERSTART_H__
