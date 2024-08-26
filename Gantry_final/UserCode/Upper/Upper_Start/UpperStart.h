@@ -2,8 +2,8 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-05-17 00:55:28
- * @FilePath: \Gantry\UserCode\Upper\Upper_Start\UpperStart.h
+ * @LastEditTime: 2024-08-22 15:51:22
+ * @FilePath: \Gantry_final\UserCode\Upper\Upper_Start\UpperStart.h
  * @Brief: 
  * 
  * Copyright (c) 2024 by ChenYiTong, All Rights Reserved. 
@@ -31,7 +31,6 @@
 #include "target.h"
 #include "upper_debug.h"
 #include "oled.h"
-#include "Stepper_motors.h"
 #include "BSP_Delay.h"
 extern uint16_t stepper_flag;
 extern int flag[6];

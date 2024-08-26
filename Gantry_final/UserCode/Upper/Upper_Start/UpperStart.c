@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-13 09:00:14
  * @LastEditors: X311 
- * @LastEditTime: 2024-08-19 20:23:04
+ * @LastEditTime: 2024-08-22 16:15:48
  * @FilePath: \Gantry_final\UserCode\Upper\Upper_Start\UpperStart.c
  * @Brief: 
  * 
@@ -22,15 +22,15 @@ void StartDefaultTask(void *argument)
     Upper_Decode_TaskStart();  //在最前面开启decode线程，尽量避免雷达传零导致疯跑
 
     /*** 接受树莓派数据 ***/
-    // Upper_Target_Init();
-    // Target_Decode_TaskStart();    // 接收线程开启
+    Upper_Target_Init();
+    Target_Decode_TaskStart();    // 接收线程开启
 
-    /**** 测试代码 ****/
-    //weight_placement[0]=1;
-    //    weight_placement[1]=1;
-    //    weight_placement[2]=0;
-    //    weight_placement[3]=1;
-    //    weight_placement[4]=1;
+    /**** 调试代码 ****/
+    // weight_placement[0]=1;
+    // weight_placement[1]=1;
+    // weight_placement[2]=1;
+    // weight_placement[3]=1;
+    // weight_placement[4]=1;
 
 
     /*初始化函数*/
@@ -40,6 +40,11 @@ void StartDefaultTask(void *argument)
     Upper_StateMachine_Init_04();
 
     osDelay(200);
+
+    // HAL_GPIO_WritePin(Reset_01_GPIO_Port, Reset_01_Pin, 0);
+    // HAL_GPIO_WritePin(Reset_02_GPIO_Port, Reset_02_Pin, 0);
+    // HAL_GPIO_WritePin(Reset_03_GPIO_Port, Reset_03_Pin, 0);
+    // HAL_GPIO_WritePin(Reset_04_GPIO_Port, Reset_04_Pin, 0);
 
     HAL_GPIO_WritePin(cylinder_01_GPIO_Port, cylinder_01_Pin, GPIO_PIN_SET);       // SET气缸抬升
     HAL_GPIO_WritePin(cylinder_02_GPIO_Port, cylinder_02_Pin, GPIO_PIN_SET);       // SET气缸抬升
@@ -54,7 +59,7 @@ void StartDefaultTask(void *argument)
     HAL_GPIO_WritePin(electromagnet_04_GPIO_Port, electromagnet_04_Pin, GPIO_PIN_SET);
     HAL_GPIO_WritePin(electromagnet_05_GPIO_Port, electromagnet_05_Pin, GPIO_PIN_SET);
 
-    osDelay(2000);
+    osDelay(2500);
     Upper_Motor_init();
     
 
@@ -70,7 +75,7 @@ void StartDefaultTask(void *argument)
 
     //Upper_Debug_TaskStart();
 
-    // Upper_Reset_TaskStart();
+    Upper_Reset_TaskStart();
 
     for (;;) {
         osDelay(800);

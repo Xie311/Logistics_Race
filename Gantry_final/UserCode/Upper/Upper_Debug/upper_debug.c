@@ -2,7 +2,7 @@
  * @Author: X311
  * @Date: 2024-05-16 22:06:32
  * @LastEditors: X311 
- * @LastEditTime: 2024-08-19 11:28:41
+ * @LastEditTime: 2024-08-20 21:14:19
  * @FilePath: \Gantry_final\UserCode\Upper\Upper_Debug\upper_debug.c
  * 
  */
@@ -69,9 +69,9 @@ void Upper_OLED_Task(void *argument)
     OLED_Clear(); //先清屏
     osDelay(100);
     for (;;) {
-        OLED_ShowNum(5, 1, distance_aver[4], 10, 16);
+        OLED_ShowNum(5, 1, distance_aver[0], 10, 16);
         //OLED_ShowNum(25, 1, distance_aver[2], 10, 16);
-        OLED_ShowNum(45, 2, distance_aver[3], 10, 16);
+        OLED_ShowNum(45, 2, distance_aver[1], 10, 16);
         //OLED_ShowNum(65, 1, distance_aver[3], 10, 16);
         // OLED_ShowNum(85, 1, distance_aver[4], 10, 16);
 
@@ -105,10 +105,11 @@ void Upper_Reset_Task(void *argument)
     for (;;) {
         //uint16_t reset_flag = HAL_GPIO_ReadPin(Reset_GPIO_Port,Reset_Pin);
         uint16_t reset_flag_01 = HAL_GPIO_ReadPin(Reset_01_GPIO_Port,Reset_01_Pin);
-        uint16_t reset_flag_02 = HAL_GPIO_ReadPin(Reset_02_GPIO_Port,Reset_01_Pin);
-        uint16_t reset_flag_03 = HAL_GPIO_ReadPin(Reset_03_GPIO_Port,Reset_01_Pin);
+        uint16_t reset_flag_02 = HAL_GPIO_ReadPin(Reset_02_GPIO_Port,Reset_02_Pin);
+        uint16_t reset_flag_03 = HAL_GPIO_ReadPin(Reset_03_GPIO_Port,Reset_03_Pin);
+        uint16_t reset_flag_04 = HAL_GPIO_ReadPin(Reset_04_GPIO_Port,Reset_04_Pin);
 
-        if ((reset_flag_01 == 1) && (reset_flag_02 == 1) && (reset_flag_03 == 1) ) {
+        if ((reset_flag_01 == 1) && (reset_flag_02 == 1) && (reset_flag_03 == 1) && (reset_flag_04 == 1)) {
             reset_flag_01   = 0;
             reset_flag_02   = 0;
             reset_flag_03   = 0;

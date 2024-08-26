@@ -43,18 +43,19 @@ void Upper_Servo_Task(void *argument)
         //     StartDefaultTask();
         // }
 
-        // CanTransmit_DJI_1234(&hcan1,
-        //                      Upper[0].Motor_X->speedPID.output,
-        //                      Upper[1].Motor_X->speedPID.output,
-        //                      Upper[2].Motor_X->speedPID.output,
-        //                      Upper[3].Motor_X->speedPID.output );
+        CanTransmit_DJI_1234(&hcan1,
+                             Upper[0].Motor_X->speedPID.output,
+                             Upper[1].Motor_X->speedPID.output,
+                             Upper[2].Motor_X->speedPID.output,
+                             Upper[3].Motor_X->speedPID.output 
+                             );
 
 
-        // CanTransmit_DJI_5678(&hcan1,
-        //                 Upper[0].Motor_Y->speedPID.output,
-        //                 Upper[1].Motor_Y->speedPID.output,
-        //                 Upper[0].Motor_Y->speedPID.output,
-        //                 Upper[1].Motor_Y->speedPID.output);
+        CanTransmit_DJI_5678(&hcan1,
+                        Upper[0].Motor_Y->speedPID.output,
+                        Upper[1].Motor_Y->speedPID.output,
+                        Upper[0].Motor_Y->speedPID.output,
+                        Upper[1].Motor_Y->speedPID.output);
 
 
         osDelay(4);
